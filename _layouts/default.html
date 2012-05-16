@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>{{ site.title }}</title>
+    <meta content='text/html; charset=UTF-8' http-equiv='content-type' />
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <div class='site-title'>
+          <a href='/'>{{ site.title }}</a>
+        </div>
+      </header>
+
+      <section class='posts'>
+        {{ content }}
+      </section>
+    </div>
+
+    <footer>
+      <p>Powered by <a href="https://github.com/pattex/octopod">Octopod</a></p>
+    </footer>
+  </body>
+</html>

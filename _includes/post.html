@@ -1,0 +1,20 @@
+{% if post %}
+{% elsif page %}
+  {% assign post = page %}
+{% endif %}
+<article class='post podcast'>
+  <header>
+    <h1>
+      <a class='post_title' href='{{ post.url }}'>{{ post.title }}</a>
+      <a href="{{ post.url }}"></a>
+    </h1>
+  </header>
+  <div class='post_body'>
+    {{ post.content }}
+  </div>
+  <footer>
+    <p class='permalink'>
+      <a href='{{ post.url }}'>{{ post.date }}</a>
+    </p>
+  </footer>
+</article>
