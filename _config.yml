@@ -1,5 +1,9 @@
 title: Octopod
 host: localhost:4000
+# Everything below is optional #################################################
+subtitle: podcasting for geeks
+description: My super duper cool podcast.
+author: Uncle Octopod
 exclude:
 - Gemfile
 - Rakefile
