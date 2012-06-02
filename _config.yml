@@ -1,9 +1,16 @@
 title: Octopod
-host: localhost:4000
+url: http://127.0.0.1:4000
 # Everything below is optional #################################################
 subtitle: podcasting for geeks
 description: My super duper cool podcast.
 author: Uncle Octopod
+email: octopod@example.com
+keywords: [octopod, podcast, magic]
+itunes_categories: [Technology]
+# Some more Configuration ######################################################
+language: en
+explicit: 'no'  # 'yes'/'no'/clean
+license: CC BY-NC-SA 3.0
 exclude:
 - Gemfile
 - Rakefile
