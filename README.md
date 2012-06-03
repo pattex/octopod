@@ -1,5 +1,3 @@
----
----
 # Octopod - Jekyll based podcast delivery for geeks
 
 Octopod is set of [Jekyll](http://jekyllrb.com/) templates and helpers to deliver your podcasts the cool, stable and PHP free way.
