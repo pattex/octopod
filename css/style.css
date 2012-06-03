@@ -6,3 +6,5 @@ header .site-title a {
   font-size: 250%;
   font-weight: bold;
 }
+
+article header span { float: right; }
