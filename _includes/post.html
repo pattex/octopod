@@ -7,7 +7,12 @@
   <div class='episode_body'>
     {{ post.content }}
   </div>
-  {{ post.audio | audio }}
+  <div class="audio">
+    <a href="/files/episodes/{{ post.audio }}" title="{{ post.audio }}">Download</a>
+    (Size: {{ post.file_size | string_of_size }})
+    (Duration: {{ post.duration | string_of_duration }})
+    {{ post.audio | audio }}
+  </div>
   <footer>
     <p class='permalink'>
       <a href='{{ post.url }}'>{{ post.date | date_to_long_string }}</a>
