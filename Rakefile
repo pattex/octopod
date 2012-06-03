@@ -11,7 +11,7 @@ site_config = YAML.load_file(File.join(ROOT_PATH, '_config.yml'))
 
 post_header = {
   'title'    => nil,
-  'layout'   => 'podcast',
+  'layout'   => 'post',
   'tags'     => ['podcast'],
   'subtitle' => nil,
   'author'   => site_config['author'],
@@ -41,7 +41,8 @@ task :episode do
   open(filename, 'w') do |post|
     post.puts post_header.to_yaml
     post.puts '---'
-    post.puts 'Insert eloquent and worth reading article here.'
+    post.puts "Insert eloquent and worth reading text here.\n\n"
+    post.puts "## Shownotes\n* Note"
   end
 
   puts "Created new episode: #{filename}" if File.exists?(filename)
