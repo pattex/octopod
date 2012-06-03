@@ -2,14 +2,9 @@
 {% elsif page %}
   {% assign post = page %}
 {% endif %}
-<article class='post podcast'>
-  <header>
-    <h1>
-      <a class='post_title' href='{{ post.url }}'>{{ post.title }}</a>
-      <a href="{{ post.url }}"></a>
-    </h1>
-  </header>
-  <div class='post_body'>
+<article class='episode podcast'>
+  {% include post_header.html %}
+  <div class='episode_body'>
     {{ post.content }}
   </div>
   <footer>
