@@ -28,7 +28,8 @@ module Jekyll
     #
     # {{ post.author | otherwise:site.author }}
     def otherwise(first, second)
-      first.nil? || first.empty? ? second : first
+      first = first.to_s
+      first.empty? ? second : first
     end
 
     # Returns an <audio> tag for the given file. As a second argument it takes
