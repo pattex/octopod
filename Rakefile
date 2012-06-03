@@ -3,13 +3,13 @@ require 'yaml'
 
 ROOT_PATH = '.'
 
-PATHS = { :episodes => File.join(ROOT_PATH, '_episodes') }
+PATHS = { :posts => File.join(ROOT_PATH, '_posts') }
 
 DEFAULT_EXT = '.md'
 
 site_config = YAML.load_file(File.join(ROOT_PATH, '_config.yml'))
 
-episode_header = {
+post_header = {
   'title'    => nil,
   'layout'   => 'podcast',
   'tags'     => ['podcast'],
@@ -20,26 +20,28 @@ episode_header = {
   'duration' => nil
 }
 
-desc "Puts a new podcast episode template in #{PATHS[:episodes]}."
+desc "Puts a new podcast episode template in #{PATHS[:posts]}."
 task :episode do
   if ENV['title'].nil?
     abort('Usage: rake episode title="Title of your episode"')
   end
 
-  abort("rake aborted: '#{PATHS[:episodes]}' directory not found.") unless FileTest.directory?(PATHS[:episodes])
+  unless FileTest.directory?(PATHS[:posts])
+    abort("rake aborted: '#{PATHS[:posts]}' directory not found.")
+  end
 
-  episode_header['title'] = ENV['title']
-  slug = episode_header['title'].downcase.strip.gsub(' ', '-').gsub(/[^\w-]/, '_')
+  post_header['title'] = ENV['title']
+  slug = post_header['title'].downcase.strip.gsub(' ', '-').gsub(/[^\w-]/, '_')
   date = Time.now.strftime('%Y-%m-%d')
 
-  filename = File.join(PATHS[:episodes], "#{date}-#{slug}#{DEFAULT_EXT}")
+  filename = File.join(PATHS[:posts], "#{date}-#{slug}#{DEFAULT_EXT}")
 
   abort() unless write_file?(filename)
 
-  open(filename, 'w') do |episode|
-    episode.puts episode_header.to_yaml
-    episode.puts '---'
-    episode.puts 'Insert eloquent and worth reading article here.'
+  open(filename, 'w') do |post|
+    post.puts post_header.to_yaml
+    post.puts '---'
+    post.puts 'Insert eloquent and worth reading article here.'
   end
 
   puts "Created new episode: #{filename}" if File.exists?(filename)
