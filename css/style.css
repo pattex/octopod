@@ -2,9 +2,70 @@
    Put your own styles in here if you want
    ========================================================================== */
 
+body {
+  max-width: 1000px;
+  position: relative;
+  margin: 0 auto;
+  border-left: 1px solid gray;
+  border-right: 1px solid gray;
+}
+
+body > header {
+  background-color: #999;
+}
+
+header, nav, body > footer, div.episode_body, div.audio, article > footer {
+  padding-left: 55px;
+  padding-right: 55px;
+}
+
+header::after, nav::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
 header .site-title a {
   font-size: 250%;
   font-weight: bold;
 }
 
-article header span { float: right; }
+nav , body > footer{
+  border-top: 1px solid gray;
+  border-bottom: 1px solid gray;
+  padding-top: .35em;
+  padding-bottom: .35em;
+}
+
+nav form { float: right; }
+
+nav ul {
+  float: left;
+  display: block;
+  padding-top: .15em;
+}
+
+nav ul li {
+  list-style-image: none;
+  list-style-type: none;
+  display: inline;
+  float: left;
+}
+
+nav li + li {
+border-left: 1px solid lightgray;
+margin-left: .8em;
+}
+
+nav li + li a {
+  padding-left: .8em;
+  border-left: 1px solid gray;
+}
+
+article > header {
+  background-color: pink;
+}
+
+article > header span { float: right; }
+
+body > footer { text-align: right; }
