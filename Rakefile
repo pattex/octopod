@@ -3,11 +3,14 @@ require 'yaml'
 
 ROOT_PATH = '.'
 
-PATHS = { :posts => File.join(ROOT_PATH, '_posts') }
-
 DEFAULT_EXT = '.md'
 
 site_config = YAML.load_file(File.join(ROOT_PATH, '_config.yml'))
+
+PATHS = {
+  :posts      => File.join(ROOT_PATH, '_posts'),
+  :public_dir => File.join(ROOT_PATH, '_site')
+}
 
 post_header = {
   'title'    => nil,
@@ -48,6 +51,21 @@ task :episode do
   puts "Created new episode: #{filename}" if File.exists?(filename)
 end
 
+desc "Deploy website via rsync"
+task :rsync do
+  exclude = ""
+  if File.exists?('./rsync-exclude')
+    exclude = "--exclude-from '#{File.expand_path('./rsync-exclude')}'"
+  end
+  puts "## Deploying website via Rsync"
+
+  rsync_command = "rsync -avze 'ssh -p #{site_config['ssh_port']}' #{exclude} \
+    #{"--delete" unless site_config['rsync_delete'] == false} \
+    #{PATHS[:public_dir]}/ #{site_config['ssh_user']}:#{site_config['document_root']}"
+
+  ok_failed system(rsync_command)
+end
+
 def write_file?(filename)
   if File.exists?(filename)
     'y' == ask("Fiel '#{filename}' already exists. Overwrite?", ['y', 'n'])
@@ -68,4 +86,12 @@ end
 def get_stdin(message)
   print message
   STDIN.gets.chomp
+end
+
+def ok_failed(condition)
+  if (condition)
+    puts "OK"
+  else
+    puts "FAILED"
+  end
 end

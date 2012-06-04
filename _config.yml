@@ -8,6 +8,13 @@ author: Uncle Octopod
 email: octopod@example.com
 keywords: [octopod, podcast, magic]
 itunes_categories: [Technology]
+## Rsync Deploy config #########################################################
+# Be sure your public key is listed in your server's ~/.ssh/authorized_keys file
+ssh_user: user@host
+ssh_port: 22
+document_root: /path/to/your/htdocs/
+rsync_delete: true
+deploy_default: rsync
 # You can configure this #######################################################
 language: en
 explicit: 'no'  # 'yes'/'no'/clean
