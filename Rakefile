@@ -52,7 +52,7 @@ task :episode do
 end
 
 desc "Deploy website via rsync"
-task :rsync do
+task :deploy do
   exclude = ""
   if File.exists?('./rsync-exclude')
     exclude = "--exclude-from '#{File.expand_path('./rsync-exclude')}'"
