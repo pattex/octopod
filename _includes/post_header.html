@@ -1,7 +1,7 @@
 <header>
+  <span>{{ post.date | date_to_long_string }}</span>
   <h1>
     <a class='episode_title' href='{{ post.url }}'>{{ post.title }}</a>
     <a href="{{ post.url }}"></a>
   </h1>
-  <span>{{ post.date | date_to_long_string }}</span>
 </header>

@@ -28,6 +28,18 @@
       {% if site.subtitle %}<p class="subtitle">{{ site.subtitle }}</p>{% endif %}
     </div>
   </header>
+  <nav>
+    <ul role="main-navigation" class="main-navigation">
+      <li><a href="/">Episodes</a></li>
+      <li><a href="about.html">About</a></li>
+    </ul>
+    <form action="http://google.com/search" method="get">
+      <fieldset role="search">
+        <input type="hidden" name="q" value="site:{{ site.url | host_from_url }}" />
+        <input class="search" type="text" name="q" results="0" placeholder="Search"/>
+      </fieldset>
+    </form>
+  </nav>
   <div role="main">
     <section class='posts'>
       {{ content }}
