@@ -1,4 +1,5 @@
 require 'erb'
+require 'uri'
 
 module Jekyll
   module OctopodFilters
@@ -71,6 +72,13 @@ module Jekyll
       }
 
       return out
+    end
+
+    # Returns the host a given url
+    #
+    # {{ 'https://github.com/pattex/octopod' | host_from_url }} => "github.com"
+    def host_from_url(url)
+      URI.parse(url).host
     end
 
   end
