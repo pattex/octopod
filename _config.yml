@@ -9,7 +9,8 @@ email: octopod@example.com
 keywords: [octopod, podcast, magic]
 itunes_categories: [Technology]
 ## Rsync Deploy config #########################################################
-# Be sure your public key is listed in your server's ~/.ssh/authorized_keys file
+### Be sure your public key is listed in your server's ~/.ssh/authorized_keys
+### file.
 ssh_user: user@host
 ssh_port: 22
 document_root: /path/to/your/htdocs/
@@ -19,6 +20,14 @@ deploy_default: rsync
 language: en
 explicit: 'no'  # 'yes'/'no'/clean
 license: CC BY-NC-SA 3.0
+## Flattr ######################################################################
+flattr_username: # Flattr will not be used unless this is set
+flattr_button: compact # compact | default
+flattr_mode: auto # auto | manual(default)
+flattr_popout:  0 # 1 | 0 (show popout when hovering mouse over button)
+flattr_lang: en_GB # available languages - https://api.flattr.com/rest/v2/languages.txt
+flattr_category: audio # available categories - https://api.flattr.com/rest/v2/categories.txt
+## Other #######################################################################
 exclude:
 - Gemfile
 - Rakefile

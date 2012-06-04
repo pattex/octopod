@@ -19,6 +19,7 @@
 
   <script src="/js/libs/modernizr-2.5.3.min.js"></script>
   <script src="/audiojs/audio.min.js"></script>
+  {% if site.flattr_username %}{% include flattr_loader.html %}{% endif %}
 </head>
 
 <body>
@@ -47,6 +48,7 @@
   </div>
 
   <footer>
+    {{ site | flattr_button }}
     <p>Powered by <a href="http://jekyllrb.com/">Jekyll</a></p>
   </footer>
 
