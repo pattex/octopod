@@ -81,6 +81,20 @@ module Jekyll
       URI.parse(url).host
     end
 
+    def disqus_config(site, page)
+      disqus_vars = {
+        'disqus_developer'   => site['disqus_developer'],
+        'disqus_shortname'   => site['disqus_shortname'],
+        'disqus_identifier'  => page['url'],
+        'disqus_url'         => site['url'] + page['url'],
+        'disqus_category_id' => page['disqus_category_id'] || site['disqus_category_id'],
+        'disqus_title'       => page['title'] || site['site']
+      }
+      disqus_vars.delete_if { |_, v| v.nil? }
+
+      disqus_vars.map { |k, v| "var #{k} = '#{v}';" }.compact.join("\n")
+    end
+
   end
 end
 
