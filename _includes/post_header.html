@@ -1,7 +1,7 @@
-<header>
-  <span>{{ post.date | date_to_long_string }}</span>
+<div class="page-header">
   <h1>
     <a class='episode_title' href='{{ post.url }}'>{{ post.title }}</a>
-    <a href="{{ post.url }}"></a>
+    <small>{{ post.date | date_to_long_string }}</small>
+    <a class="btn btn-info pull-right" href="{{ post.url }}#comments">42</a>
   </h1>
-</header>
+</div>

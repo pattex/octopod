@@ -3,25 +3,25 @@
   {% assign post = page %}
 {% endif %}
 
-<article class='episode podcast'>
+{% include post_header.html %}
 
-  {% include post_header.html %}
-
-  <div class='episode_body'>
-    {{ post.content }}
-  </div>
+{{ post.content }}
 
   {% if post.audio %}
   <div class="audio">
-    <a href="/files/episodes/{{ post.audio }}" title="{{ post.audio }}">Download</a>
-    (Size: {{ post.file_size | string_of_size }})
-    (Duration: {{ post.duration | string_of_duration }})
-    {{ post.audio | audio }}
+    <div class="audio-meta">
+      <a class="btn btn-primary" href="/files/episodes/{{ post.audio }}" title="{{ post.audio }}">Download</a>
+      <span class="label label-info">Size: {{ post.file_size | string_of_size }}</span>
+      <span class="label label-info">Duration: {{ post.duration | string_of_duration }}</span>
+    </div>
+    <div class="audio-player">
+      {{ post.audio | audio }}
+    </div>
   </div>
   {% endif %}
 
-  <footer>
-    {{ site | flattr_button:post }}
-  </footer>
+<hr>
+{{ site | flattr_button:post }}
+<hr>
 
 </article>
