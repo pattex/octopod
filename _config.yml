@@ -21,12 +21,15 @@ language: en
 explicit: 'no'  # 'yes'/'no'/clean
 license: CC BY-NC-SA 3.0
 ## Flattr ######################################################################
-flattr_username: # Flattr will not be used unless this is set
+flattr_username: peng # Flattr will not be used unless this is set
 flattr_button: compact # compact | default
 flattr_mode: auto # auto | manual(default)
 flattr_popout:  0 # 1 | 0 (show popout when hovering mouse over button)
 flattr_lang: en_GB # available languages - https://api.flattr.com/rest/v2/languages.txt
 flattr_category: audio # available categories - https://api.flattr.com/rest/v2/categories.txt
+## Disqus comments #############################################################
+disqus_shortname: megamagisch
+disqus_developer: 1 # 1 / 0
 ## Other #######################################################################
 exclude:
 - Gemfile
