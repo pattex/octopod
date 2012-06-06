@@ -22,5 +22,5 @@
 
 <hr>
 {{ site | flattr_button:post }}
-{% include disqus_thread.html %}
+{% unless page.url == '/index.html' %}{% include disqus_thread.html %}{% endunless %}
 <hr>
