@@ -2,6 +2,6 @@
   <h1>
     <a class='episode_title' href='{{ post.url }}'>{{ post.title }}</a>
     <small>{{ post.date | date_to_long_string }}</small>
-    <a class="btn btn-info pull-right" href="{{ post.url }}#comments">42</a>
+    {% include disqus_count.html %}
   </h1>
 </div>

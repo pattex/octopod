@@ -36,7 +36,7 @@ layout: nil
     <item>
       <title>{{ post.title }}</title>
       <link>{{ site.url }}{{ post.url }}</link>
-      <comments>{{ site.url }}{{ post.url }}#comments</comments>
+      <comments>{{ site.url }}{{ post.url }}#disqus_thread</comments>
       <pubDate>{{ post.date | time_to_rssschema }}</pubDate>
       {% for category in post.categories %}
       <category><![CDATA[{{ category }}]]></category>
