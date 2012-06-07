@@ -4,9 +4,7 @@
 {% endif %}
 
 {% include post_header.html %}
-
 {{ post.content }}
-
   {% if post.audio %}
   <div class="audio">
     <div class="audio-meta">
@@ -19,7 +17,6 @@
     </div>
   </div>
   {% endif %}
-
 <hr>
 {{ site | flattr_button:post }}
 <a href="https://twitter.com/share" class="twitter-share-button" data-url="{{ site.url }}{{post.url }}" data-text="{{ post.title }}">Tweet</a>
