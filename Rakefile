@@ -23,6 +23,18 @@ post_header = {
   'duration' => nil
 }
 
+task :default => [:build]
+
+desc "Builds the website."
+task :build do
+  system('jekyll')
+end
+
+desc "Runs the site on a local webserver."
+task :server do
+  system('jekyll --auto --server')
+end
+
 desc "Puts a new podcast episode template in #{PATHS[:posts]}."
 task :episode do
   if ENV['title'].nil?
@@ -52,7 +64,7 @@ task :episode do
 end
 
 desc "Deploy website via rsync"
-task :deploy do
+task :deploy => :build do
   exclude = ""
   if File.exists?('./rsync-exclude')
     exclude = "--exclude-from '#{File.expand_path('./rsync-exclude')}'"
