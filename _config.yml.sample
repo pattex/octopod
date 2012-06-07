@@ -36,3 +36,4 @@ exclude:
 - Gemfile
 - Rakefile
 - README.md
+- _config.yml.sample
