@@ -40,7 +40,7 @@ module Jekyll
     def audio(filename, preload = nil)
       return if filename.nil?
       preload ||= 'none'
-      %Q{<audio src="/files/episodes/#{ERB::Util.url_encode(filename)}" preload="#{preload}" />}
+      %Q{<audio src="/episodes/#{ERB::Util.url_encode(filename)}" preload="#{preload}" />}
     end
 
     # Gets a number of seconds and returns an human readable duration string of
