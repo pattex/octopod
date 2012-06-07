@@ -17,11 +17,12 @@ document_root: /path/to/your/htdocs/
 rsync_delete: true
 deploy_default: rsync
 # You can configure this #######################################################
+twitter_nick:
 language: en
 explicit: 'no'  # 'yes'/'no'/clean
 license: CC BY-NC-SA 3.0
 ## Flattr ######################################################################
-flattr_username: peng # Flattr will not be used unless this is set
+flattr_username: # Flattr will not be used unless this is set
 flattr_button: compact # compact | default
 flattr_mode: auto # auto | manual(default)
 flattr_popout:  0 # 1 | 0 (show popout when hovering mouse over button)

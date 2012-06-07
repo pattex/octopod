@@ -81,6 +81,7 @@ module Jekyll
       URI.parse(url).host
     end
 
+    # Generates the config for disqus integration
     def disqus_config(site, page)
       disqus_vars = {
         'disqus_developer'   => site['disqus_developer'],

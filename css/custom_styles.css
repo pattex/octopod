@@ -1,5 +1,4 @@
 body { padding-top: 80px; }
-body > div.container { max-width: 900px; }
 
 div.container a.brand {
   font-size: 30px;

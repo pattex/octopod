@@ -44,10 +44,10 @@ module Jekyll
       }
       params['tags'] = page['tags'].join(', ') if page['tags']
 
-      button =  '<div class="button-wrapper"><a class="FlattrButton" style="display:none;" '
+      button =  '<a class="FlattrButton" style="display:none;" '
       button << %Q{title="#{title}" href="#{url}" }
       button << params.map { |k, v| %Q{data-flattr-#{k}="#{v}"} }.join(' ')
-      button << ">\n\n#{description.gsub(/<\/?[^>]*>/, "")}\n</a></div>"
+      button << ">\n\n#{description.gsub(/<\/?[^>]*>/, "")}\n</a>"
     end
 
   end
