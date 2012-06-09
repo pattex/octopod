@@ -1,5 +1,6 @@
 require 'erb'
 require 'uri'
+require 'digest/sha1'
 
 module Jekyll
   module OctopodFilters
@@ -94,6 +95,16 @@ module Jekyll
       disqus_vars.delete_if { |_, v| v.nil? }
 
       disqus_vars.map { |k, v| "var #{k} = '#{v}';" }.compact.join("\n")
+    end
+
+    # Returns the hex-encoded hash value of a given string. The optional
+    # second argument defines the length of the returned string.
+    #
+    # {{ "Octopod" | sha1:8 }} => "8b20a59c"
+    def sha1(str, lenght = nil)
+      sha1 = Digest::SHA1.hexdigest(str)
+
+      lenght.nil? ? sha1 : sha1[0, lenght.to_i]
     end
 
   end

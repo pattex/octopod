@@ -2,7 +2,7 @@
 {% elsif page %}
   {% assign post = page %}
 {% endif %}
-<section id="e{{ forloop.rindex }}" class="active">
+<section id="{{ post.id | sha1:8 }}" class="active">
   {% include post_header.html %}
   {{ post.content }}
     {% if post.audio %}
