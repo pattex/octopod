@@ -81,13 +81,6 @@ module Jekyll
       URI.parse(url).host
     end
 
-    # Returns a slug for a page
-    #
-    # {{ page | slug }} => "my-example-slug"
-    def slug(page)
-      File.basename(page['id'])
-    end
-
     # Generates the config for disqus integration
     def disqus_config(site, page)
       disqus_vars = {
