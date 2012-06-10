@@ -8,46 +8,86 @@ module Jekyll
     #
     # {{ site | flattr_loader_options }}
     def flattr_loader_options(site)
-      return if site['flattr_username'].nil?
+      return if site['flattr_uid'].nil?
+      keys = %w[mode https popout uid button language category]
+      options = flattr_options(site, nil, keys).delete_if { |_, v| v.to_s.empty? }
 
-      params = {
-        'mode'     => site['flattr_mode'],
-        'https'    => 1,
-        'popout'   => site['flattr_popout'],
-        'uid'      => site['flattr_username'],
-        'button'   => site['flattr_button'],
-        'language' => site['flattr_lang'],
-        'category' => site['flattr_category']
-      }
-      params.delete_if { |_, v| v.to_s.empty? }
-
-      params.map { |k, v| "#{k}=#{ERB::Util.url_encode(v)}" }.join('&')
+      options.map { |k, v| "#{k}=#{ERB::Util.url_encode(v)}" }.join('&')
     end
 
     # Returns a flattr button
     #
     # {{ site | flattr_button:page }}
     def flattr_button(site, page = nil)
-      return if site['flattr_username'].nil?
-      page = {} if page.nil?
+      return if site['flattr_uid'].nil?
 
-      url         = site['url'] + page['url'].to_s
-      title       = page['title']   || site['title']
-      description = page['content'] || site['description'] || site['title']
-
-      params = {
-        'uid'      => page['flattr_username'] || site['flattr_username'],
-        'popout'   => page['flattr_popout']   || site['flattr_popout']   || '0',
-        'button'   => page['flattr_button']   || site['flattr_button']   || '',
-        'category' => page['flattr_category'] || site['flattr_category'] || 'audio',
-        'language' => page['flattr_lang']     || site['flattr_lang']     || 'en_GB'
-      }
-      params['tags'] = page['tags'].join(', ') if page['tags']
+      keys = %w[url title description uid popout button category language tags]
+      options = flattr_options(site, page, keys)
 
       button =  '<a class="FlattrButton" style="display:none;" '
-      button << %Q{title="#{title}" href="#{url}" }
-      button << params.map { |k, v| %Q{data-flattr-#{k}="#{v}"} }.join(' ')
-      button << ">\n\n#{description.gsub(/<\/?[^>]*>/, "")}\n</a>"
+      button << %Q{title="#{options.delete('title')}" href="#{options.delete('url')}" }
+      button << options.map { |k, v|
+        %Q{data-flattr-#{k}="#{v}"} unless k == 'description'
+      }.join(' ')
+      button << ">\n\n#{options['description'].gsub(/<\/?[^>]*>/, "")}\n</a>"
+    end
+
+    # Returns a RSS payment link.
+    #
+    # {{ site | flattr_rss:post }}
+    def flattr_rss(site, page = nil)
+      return if site['flattr_uid'].nil?
+
+      keys = %w[url title uid category language]
+      options = flattr_options(site, page, keys).map { |k, v| "#{k}=#{v}" }.join('&')
+
+      link =  '<atom:link rel="payment" href="https://flattr.com/submit/auto?'
+      link << %Q{#{ERB::Util.url_encode(options)}" type="text/html" />}
+    end
+
+    # Removes all leading "flattr_" from the keys of the given hash.
+    #
+    # flattrize({ 'octopod' => 'awesome', 'flattr_uid' => 'pattex' })
+    # => { "octopod" => "awesome", "uid" => "pattex" }
+    def flattrize(hsh)
+      config = {}
+      hsh.each { |k, v|
+        if new_key = k.to_s.match(/\Aflattr_(.*)\z/)
+          config[new_key[1]] = v
+        else
+          config[k] = v
+        end
+      }
+
+      config
+    end
+
+    def flattr_options(site, page, keys)
+      page = {} if page.nil?
+      site = flattrize(site)
+      page = flattrize(page)
+      options = {}
+
+      keys.each { |k|
+        case k
+        when 'https'
+          options[k] = 1
+        when 'url'
+          options[k] = site['url'] + page['url'].to_s
+        when 'description'
+          options[k] = page['content'] || site['description'] || site['title']
+        when 'category'
+          options[k] = page['flattr_category'] || site['flattr_category'] || 'audio'
+        when 'language'
+          options[k] = page['flattr_language'] || site['flattr_language'] || 'en_GB'
+        when 'tags'
+          options[k] = page['tags'].join(', ') if page['tags']
+        else
+          options[k] = page[k] || site[k]
+        end
+       }
+
+       options
     end
 
   end
