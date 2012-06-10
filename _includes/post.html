@@ -8,12 +8,12 @@
     {% if post.audio %}
     <div class="audio">
       <div class="audio-meta">
-        <strong><a href="/episodes/{{ post.audio }}" title="{{ post.audio }}">Download</a></strong>
+        <strong><a href="/episodes/{{ post.audio.mp3 | otherwise:post.audio.m4a }}" title="{{ post.audio.mp3 | otherwise:post.audio.m4a }}">Download</a></strong>
         <span class="label label-info">Size: {{ post.file_size | string_of_size }}</span>
         <span class="label label-info">Duration: {{ post.duration | string_of_duration }}</span>
       </div>
       <div class="audio-player">
-        {{ post.audio | audio }}
+        {{ post.audio | audio | audio_tag }}
       </div>
     </div>
     {% endif %}

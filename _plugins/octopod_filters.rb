@@ -34,11 +34,43 @@ module Jekyll
       first.empty? ? second : first
     end
 
+    # Returns the value of a given hash. Is no key as second parameter given, it
+    # try first "mp3", than "m4a" and than it will return a more or less random
+    # value.
+    #
+    # {{ post.audio | audio:"m4a" }} => "my-episode.m4a"
+    def audio(hsh, key = nil)
+      if format.nil?
+        hsh['mp3'] ? hsh['mp3'] : hsh['m4a'] ? hsh['m4a'] : hsh.values.first
+      else
+        hsh[key]
+      end
+    end
+
+    # Returns the MIME-Type of a given file format.
+    #
+    # {{ "m4a" | mime_type }} => "audio/mp4a-latm"
+    def mime_type(format)
+      types = {
+        'mp3' => 'audio/mpeg',
+        'm4a' => 'audio/mp4a-latm',
+        'ogg' => 'application/ogg'
+      }
+
+      types[format]
+    end
+
+    def file_size(path)
+      path = path =~ /\// ? path : File.join('episodes', path)
+
+      File.size(path)
+    end
+
     # Returns an <audio> tag for the given file. As a second argument it takes
     # one of the three possible preload behaviors auto/metadata/none.
     #
-    # {{ 'audiofile.m4a' | audio }}
-    def audio(filename, preload = nil)
+    # {{ 'audiofile.m4a' | audio_tag }}
+    def audio_tag(filename, preload = nil)
       return if filename.nil?
       preload ||= 'none'
       %Q{<audio src="/episodes/#{ERB::Util.url_encode(filename)}" preload="#{preload}" />}
