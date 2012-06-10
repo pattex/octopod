@@ -60,9 +60,9 @@ module Jekyll
       types[format]
     end
 
-    def file_size(path)
+    def file_size(path, rel = nil)
       path = path =~ /\// ? path : File.join('episodes', path)
-
+      path = rel + path if rel
       File.size(path)
     end
 
@@ -72,7 +72,7 @@ module Jekyll
     # {{ 'audiofile.m4a' | audio_tag }}
     def audio_tag(filename, preload = nil)
       return if filename.nil?
-      preload ||= 'metadata'
+      preload ||= 'none'
       %Q{<audio src="/episodes/#{ERB::Util.url_encode(filename)}" preload="#{preload}" />}
     end
 
@@ -99,7 +99,7 @@ module Jekyll
       jedec = %w[b K M G]
       [3, 2, 1, 0].each { |i|
         if bytes > 1024 ** i
-          out = "%.2f#{jedec[i]}" % (bytes / 1024 ** i)
+          out = "%.1f#{jedec[i]}" % (bytes / 1024 ** i)
           break
         end
       }
