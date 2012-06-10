@@ -37,12 +37,17 @@ module Jekyll
     # {{ site | flattr_rss:post }}
     def flattr_rss(site, page = nil)
       return if site['flattr_uid'].nil?
-
-      keys = %w[url title uid category language]
-      options = flattr_options(site, page, keys).map { |k, v| "#{k}=#{v}" }.join('&')
-
       link =  '<atom:link rel="payment" href="https://flattr.com/submit/auto?'
-      link << %Q{#{ERB::Util.url_encode(options)}" type="text/html" />}
+      link << %Q{#{flattr_feed_options(site, page)}" type="text/html" />}
+    end
+
+    # Returns a ATOM payment link.
+    #
+    # {{ site | flattr_atom:post }}
+    def flattr_atom(site, page = nil)
+      return if site['flattr_uid'].nil?
+      link =  '<link rel="payment" href="https://flattr.com/submit/auto?'
+      link << %Q{#{flattr_feed_options(site, page)}" type="text/html" />}
     end
 
     # Removes all leading "flattr_" from the keys of the given hash.
@@ -88,6 +93,13 @@ module Jekyll
        }
 
        options
+    end
+
+    def flattr_feed_options(site, page)
+      keys = %w[url title uid category language]
+      options = flattr_options(site, page, keys).map { |k, v| "#{k}=#{v}" }.join('&')
+
+      ERB::Util.url_encode(options)
     end
 
   end
