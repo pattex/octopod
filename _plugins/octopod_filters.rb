@@ -40,7 +40,7 @@ module Jekyll
     #
     # {{ post.audio | audio:"m4a" }} => "my-episode.m4a"
     def audio(hsh, key = nil)
-      if format.nil?
+      if key.nil?
         hsh['mp3'] ? hsh['mp3'] : hsh['m4a'] ? hsh['m4a'] : hsh.values.first
       else
         hsh[key]
@@ -72,7 +72,7 @@ module Jekyll
     # {{ 'audiofile.m4a' | audio_tag }}
     def audio_tag(filename, preload = nil)
       return if filename.nil?
-      preload ||= 'none'
+      preload ||= 'metadata'
       %Q{<audio src="/episodes/#{ERB::Util.url_encode(filename)}" preload="#{preload}" />}
     end
 
