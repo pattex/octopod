@@ -82,9 +82,9 @@ module Jekyll
         when 'description'
           options[k] = page['content'] || site['description'] || site['title']
         when 'category'
-          options[k] = page['flattr_category'] || site['flattr_category'] || 'audio'
+          options[k] = page['category'] || site['category'] || 'audio'
         when 'language'
-          options[k] = page['flattr_language'] || site['flattr_language'] || 'en_GB'
+          options[k] = page['language'] || site['language'] || 'en_GB'
         when 'tags'
           options[k] = page['tags'].join(', ') if page['tags']
         else
