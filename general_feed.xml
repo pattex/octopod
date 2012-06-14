@@ -4,11 +4,11 @@ layout: nil
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
 
- <title>&lt;3</title>
- <link href="{{ site.url }}/atom.xml" rel="self"/>
+ <title>{{ site.title }}</title>
+ <link href="{{ site.url }}/general_feed.xml" rel="self"/>
  <link href="{{ site.url }}"/>
  <updated>{{ site.time | date_to_xmlschema }}</updated>
- <id>{{ site.url }}</id>
+ <id>{{ site.url }}/</id>
  <author>
    <name>{{ site.author }}</name>
    <email>{{ site.email }}</email>
