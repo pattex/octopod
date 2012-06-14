@@ -6,7 +6,7 @@ layout: nil
   <channel>
     <title>{{ site.title }}</title>
     <link>{{ site.url }}</link>
-    <atom:link href="{{ site.url }}/episodes.rss" rel="self" type="application/rss+xml"/>
+    <atom:link href="{{ site.url }}/episodes.{{ page.format }}.rss" rel="self" type="application/rss+xml"/>
     <description>{{ site.description }}</description>
     <lastBuildDate>{{ site.time | time_to_rssschema }}</lastBuildDate>
     <language>{{ site.language }}</language>
