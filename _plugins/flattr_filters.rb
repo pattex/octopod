@@ -96,10 +96,10 @@ module Jekyll
     end
 
     def flattr_feed_options(site, page)
-      keys = %w[url title uid category language]
-      options = flattr_options(site, page, keys).map { |k, v| "#{k}=#{v}" }.join('&')
-
-      ERB::Util.url_encode(options)
+      keys = %w[url uid]
+      options = flattr_options(site, page, keys).map { |k, v|
+        "#{k == 'uid' ? 'user_id' : k}=#{ERB::Util.url_encode(v)}"
+      }.join('&amp;')
     end
 
   end
