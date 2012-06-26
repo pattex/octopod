@@ -19,6 +19,7 @@
   <link rel="stylesheet" href="/css/custom_styles.css">
   <link rel="stylesheet" href="/css/bootstrap-responsive.min.css">
 
+  <script src="/js/jquery.min.js"></script>
   <script src="/js/bootstrap.min.js"></script>
   <script src="/audiojs/audio.min.js"></script>
   {% if site.flattr_uid %}{% include flattr_loader.html %}{% endif %}
@@ -29,19 +30,28 @@
     <div class="navbar navbar-fixed-top">
       <div class="navbar-inner">
         <div class="container">
+          <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </a>
+
           <a class="brand" href="/">{{ site.title }}</a>
 
-          <ul class="nav">
-            <li class="divider-vertical"></li>
-            <li><a href="/">Episodes</a></li>
-            <li class="divider-vertical"></li>
-            <li><a href="/about.html">About</a></li>
-          </ul>
+          <div class="nav-collapse">
+            <ul class="nav">
+              <li class="divider-vertical"></li>
+              <li><a href="/">Episodes</a></li>
+              <li class="divider-vertical"></li>
+              <li><a href="/about.html">About</a></li>
+            </ul>
 
-          <form class="navbar-search pull-right" action="http://google.com/search" method="get">
-            <input type="text" class="search-query" name="q" results="0" placeholder="Search">
-            <input type="hidden" name="q" value="site:{{ site.url | host_from_url }}" />
-          </form>
+            <form class="navbar-search pull-right" action="http://google.com/search" method="get">
+              <input type="text" class="search-query" name="q" results="0" placeholder="Search">
+              <input type="hidden" name="q" value="site:{{ site.url | host_from_url }}" />
+            </form>
+          </div>
+
         </div>
       </div>
     </div>
