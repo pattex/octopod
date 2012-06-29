@@ -6,7 +6,7 @@ module Jekyll
     # Generates the query string part for the flattr load.js from the
     # configurations in _config.yml
     #
-    # {{ site | flattr_loader_options }}
+    #   {{ site | flattr_loader_options }}
     def flattr_loader_options(site)
       return if site['flattr_uid'].nil?
       keys = %w[mode https popout uid button language category]
@@ -17,7 +17,7 @@ module Jekyll
 
     # Returns a flattr button
     #
-    # {{ site | flattr_button:page }}
+    #   {{ site | flattr_button:page }}
     def flattr_button(site, page = nil)
       return if site['flattr_uid'].nil?
 
@@ -34,7 +34,7 @@ module Jekyll
 
     # Returns a RSS payment link.
     #
-    # {{ site | flattr_rss:post }}
+    #   {{ site | flattr_rss:post }}
     def flattr_rss(site, page = nil)
       return if site['flattr_uid'].nil?
       link =  '<atom:link rel="payment" href="https://flattr.com/submit/auto?'
@@ -43,7 +43,7 @@ module Jekyll
 
     # Returns a ATOM payment link.
     #
-    # {{ site | flattr_atom:post }}
+    #   {{ site | flattr_atom:post }}
     def flattr_atom(site, page = nil)
       return if site['flattr_uid'].nil?
       link =  '<link rel="payment" href="https://flattr.com/submit/auto?'
@@ -52,8 +52,8 @@ module Jekyll
 
     # Removes all leading "flattr_" from the keys of the given hash.
     #
-    # flattrize({ 'octopod' => 'awesome', 'flattr_uid' => 'pattex' })
-    # => { "octopod" => "awesome", "uid" => "pattex" }
+    #   flattrize({ 'octopod' => 'awesome', 'flattr_uid' => 'pattex' })
+    #   => { "octopod" => "awesome", "uid" => "pattex" }
     def flattrize(hsh)
       config = {}
       hsh.each { |k, v|
