@@ -2,6 +2,7 @@
 layout: page
 title: About Octopod
 subtitle: podcasting for geeks
+navigation: 1
 ---
 {{ site.description }}
 

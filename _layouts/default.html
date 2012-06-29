@@ -22,6 +22,7 @@
   <script src="/js/jquery.min.js"></script>
   <script src="/js/bootstrap.min.js"></script>
   <script src="/audiojs/audio.min.js"></script>
+  <script src="/js/custom.js"></script>
   {% if site.flattr_uid %}{% include flattr_loader.html %}{% endif %}
 </head>
 
@@ -39,12 +40,7 @@
           <a class="brand" href="/">{{ site.title }}</a>
 
           <div class="nav-collapse">
-            <ul class="nav">
-              <li class="divider-vertical"></li>
-              <li><a href="/">Episodes</a></li>
-              <li class="divider-vertical"></li>
-              <li><a href="/about.html">About</a></li>
-            </ul>
+            {{ site | navigation_list:page }}
 
             <form class="navbar-search pull-right" action="http://google.com/search" method="get">
               <input type="text" class="search-query" name="q" results="0" placeholder="Search">
