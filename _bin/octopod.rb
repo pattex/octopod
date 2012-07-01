@@ -93,7 +93,7 @@ if ARGV.size > 0 && (ARGV[0] == 'episode' || ARGV[0] == 'deploy')
     post_header = {
       'title'    => nil,
       'layout'   => 'post',
-      'tags'     => ['podcast'],
+      'tags'     => nil,
       'subtitle' => nil,
       'author'   => options['author'],
       'explicit' => options['explicit'] || 'no',
@@ -104,39 +104,39 @@ if ARGV.size > 0 && (ARGV[0] == 'episode' || ARGV[0] == 'deploy')
     opts = OptionParser.new do |opts|
       opts._octopod_banner = episode_help
 
-      opts.on("-a", "--author [AUTHOR]", "") do |episode_author|
+      opts.on("-a", "--author [AUTHOR]", "Name of post author") do |episode_author|
         post_header['author'] = options['author'] = episode_author
       end
 
-      opts.on("-d", "--duration [DURATION]", "") do |episode_duration|
+      opts.on("-d", "--duration [DURATION]", "Duration of the episode") do |episode_duration|
         post_header['duration'] = options['duration'] = episode_duration.to_i
       end
 
-      opts.on("-e", "--explicit [yes/no]", "") do |episode_explicit|
+      opts.on("-e", "--explicit [yes/no]", "Explicit rating for this episode (default: 'no')") do |episode_explicit|
         post_header['explicit'] = options['explicit'] = episode_explicit
       end
 
-      opts.on("-l", "--layout [LAYOUT]", "") do |episode_layout|
+      opts.on("-l", "--layout [LAYOUT]", "Layout to use (default: 'post')") do |episode_layout|
         post_header['layout'] = options['layout'] = episode_layout
       end
 
-      opts.on("-p", "--posts-dir [PATH]", "") do |episode_posts_dir|
+      opts.on("-p", "--posts-dir [PATH]", "Path to the post directory (default: '_posts')") do |episode_posts_dir|
         options['posts_dir'] = episode_posts_dir
       end
 
-      opts.on("-s", "--subtitle [TEXT]", "") do |episode_subtitle|
+      opts.on("-s", "--subtitle [TEXT]", "Subtitle of the episode") do |episode_subtitle|
         post_header['subtitle'] = options['subtitle'] = episode_subtitle
       end
 
-      opts.on("--summary [TEXT]", "") do |episode_summary|
+      opts.on("--summary [TEXT]", "Summary of the episode") do |episode_summary|
         post_header['summary'] = options['summary'] = episode_summary
       end
 
-      opts.on("--tags [tag1,tag2,...]", Array, "") do |episode_tags|
+      opts.on("--tags [tag1,tag2,...]", Array, "Tags for the episode") do |episode_tags|
         post_header['tags'] = options['tags'] = episode_tags
       end
 
-      opts.on("-t", "--title [TEXT]", "") do |episode_title|
+      opts.on("-t", "--title [TEXT]", "Title of the episode") do |episode_title|
         post_header['title'] = options['title'] = episode_title
       end
     end
