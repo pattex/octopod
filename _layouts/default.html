@@ -24,6 +24,11 @@
   <script src="/audiojs/audio.min.js"></script>
   <script src="/js/custom.js"></script>
   {% if site.flattr_uid %}{% include flattr_loader.html %}{% endif %}
+  {% if site.disqus_shortname %}
+  <script>
+    {{ site | disqus_config }}
+  </script>
+  {% endif %}
 </head>
 
 <body>

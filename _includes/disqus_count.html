@@ -1,13 +1,13 @@
 {% if site.disqus_shortname %}
 <a class="btn btn-inverse pull-right" href="{{ post.url }}#disqus_thread">
 <script type="text/javascript">
-  {{ site | disqus_config:post }}
-    (function () {
-        var s = document.createElement('script'); s.async = true;
-        s.type = 'text/javascript';
-        s.src = 'http://' + disqus_shortname + '.disqus.com/count.js';
-        (document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
-    }());
+  (function () {
+    {{ site | disqus_config:post }}
+    var s = document.createElement('script'); s.async = true;
+    s.type = 'text/javascript';
+    s.src = 'http://{{ site.disqus_shortname }}.disqus.com/count.js';
+    (document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
+  }());
 </script>
 </a>
 {% endif %}
