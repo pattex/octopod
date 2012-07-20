@@ -7,11 +7,11 @@ layout: nil
     <title>{{ site.title }}</title>
     <link>{{ site.url }}</link>
     <atom:link href="{{ site.url }}/episodes.{{ page.format }}.rss" rel="self" type="application/rss+xml"/>
-    <description>{{ site.description }}</description>
+    <description>{{ site.description | markdownify | strip_html }}</description>
     <lastBuildDate>{{ site.time | time_to_rssschema }}</lastBuildDate>
     <language>{{ site.language }}</language>
 
-    <itunes:summary>{{ site.description }}</itunes:summary>
+    <itunes:summary>{{ site.description | markdownify | strip_html }}</itunes:summary>
     <itunes:author>{{ site.author }}</itunes:author>
     <itunes:explicit>{{ site.explicit }}</itunes:explicit>
     <itunes:image href="{{ site.url }}/img/logo.jpg" />
