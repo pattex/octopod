@@ -4,5 +4,5 @@ div.container a.brand {
 }
 div.audio-meta { vertical-align: baseline; }
 div.audio-player { padding: 5px 0 0 0; }
-div #sidebar, section.active, div.content section:first-child { padding-top: 80px; }
 div #footer small { color: #999; }
+div.navbar-inner { -moz-border-radius: 0; -webkit-border-radius: 0; border-radius: 0; }

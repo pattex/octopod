@@ -32,31 +32,29 @@
 </head>
 
 <body>
-  <div class="container">
-    <div class="navbar navbar-fixed-top">
-      <div class="navbar-inner">
-        <div class="container">
-          <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </a>
+  <div class="navbar">
+    <div class="navbar-inner">
+      <div class="container">
+        <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </a>
 
-          <a class="brand" href="/">{{ site.title }}</a>
+        <a class="brand" href="/">{{ site.title }}</a>
 
-          <div class="nav-collapse">
-            {{ site | navigation_list:page }}
+        <div class="nav-collapse">
+          {{ site | navigation_list:page }}
 
-            <form class="navbar-search pull-right" action="http://google.com/search" method="get">
-              <input type="text" class="search-query" name="q" results="0" placeholder="Search">
-              <input type="hidden" name="q" value="site:{{ site.url | host_from_url }}" />
-            </form>
-          </div>
-
+          <form class="navbar-search pull-right" action="http://google.com/search" method="get">
+            <input type="text" class="search-query" name="q" results="0" placeholder="Search">
+            <input type="hidden" name="q" value="site:{{ site.url | host_from_url }}" />
+          </form>
         </div>
       </div>
     </div>
-
+  </div>
+  <div class="container">
     <div class="row">
       <div class="span8">
         <div class="content">
