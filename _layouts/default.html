@@ -7,7 +7,7 @@
   <title>{{ site.title }} - {{ page.title | otherwise:site.subtitle }}</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  {% if site.description %}<meta name="description" content="{{ site.description }}">{% endif %}
+  {% if site.description %}<meta name="description" content="{{ site.description | markdownify | strip_html }}">{% endif %}
   {% if site.author %}<meta name="author" content="{{ site.author }}">{% endif %}
 
   <link rel="alternate" type="application/atom+xml" href="/general_feed.xml" title="General Site Atom Feed (No Podcast Metadata!)" />
