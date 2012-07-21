@@ -11,9 +11,7 @@
   {% if site.author %}<meta name="author" content="{{ site.author }}">{% endif %}
 
   <link rel="alternate" type="application/atom+xml" href="/general_feed.xml" title="General Site Atom Feed (No Podcast Metadata!)" />
-  {% for format in site.episode_feed_formats %}
-  <link rel="alternate" type="application/rss+xml" title=".{{ format }} Episode RSS-Feed" href="/episodes.{{ format }}.rss" />
-  {% endfor %}
+  {{ site | episode_feeds_html }}
 
   <link rel="stylesheet" href="/css/bootstrap.min.css">
   <link rel="stylesheet" href="/css/custom_styles.css">

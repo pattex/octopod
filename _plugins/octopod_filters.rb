@@ -171,6 +171,69 @@ module Jekyll
       %Q{<li#{a_class}><a #{a_class} href="#{url}">#{title}</a></li>}
     end
 
+    # Returns an array of all episode feeds named by the convetion
+    # 'episodes.<episode_file_format>.rss' within the root directory. Also it
+    # contains all additional feeds specified by 'additional_feeds' in the
+    # '_config.yml'. If an 'episode_file_format' or key of 'additional_feeds'
+    # equals the optional parameter 'except', it will be skipped.
+    #
+    #   episode_feeds(site, except = nil) =>
+    #   [
+    #     ["m4a Episode RSS-Feed", "/episodes.m4a.rss"],
+    #     ["mp3 Episode RSS-Feed", "/episodes.mp3.rss"],
+    #     ["Torrent Feed m4a", "http://bitlove.org/octopod/octopod_m4a/feed"],
+    #     ["Torrent Feed mp3", "http://bitlove.org/octopod/octopod_mp3/feed"]
+    #   ]
+    def episode_feeds(site, except = nil)
+      feeds = []
+
+      if site['episode_feed_formats']
+        site['episode_feed_formats'].map { |f|
+         feeds << ["#{f} Episode RSS-Feed", "/episodes.#{f}.rss"] unless f == except
+        }
+      end
+
+      if site['additional_feeds']
+        site['additional_feeds'].each { |k, v|
+          feeds << [k.gsub('_', ' '), v] unless k == except
+        }
+      end
+
+      feeds
+    end
+
+    # Returns HTML links to all episode feeds named by the convetion
+    # 'episodes.<episode_file_format>.rss' within the root directory. Also it
+    # returns all additional feeds specified by 'additional_feeds' in the
+    # '_config.yml'. If an 'episode_file_format' or key of 'additional_feeds'
+    # equals the optional parameter 'except', it will be skipped.
+    #
+    #   {{ site | episode_feeds_html:'m4a' }} =>
+    #   <link rel="alternate" type="application/rss+xml" title="mp3 Episode RSS-Feed" href="/episodes.mp3.rss" />
+    #   <link rel="alternate" type="application/rss+xml" title="Torrent Feed m4a" href="http://bitlove.org/octopod/octopod_m4a/feed" />
+    #   <link rel="alternate" type="application/rss+xml" title="Torrent Feed mp3" href="http://bitlove.org/octopod/octopod_mp3/feed" />
+    def episode_feeds_html(site, except = nil)
+      episode_feeds(site, except).map { |f|
+        %Q{<link rel="alternate" type="application/rss+xml" title="#{f.first || f.last}" href="#{f.last}" />}
+      }.join("\n")
+    end
+
+    # Returns RSS-XML links to all episode feeds named by the convetion
+    # 'episodes.<episode_file_format>.rss' within the root directory. Also it
+    # returns all additional feeds specified by 'additional_feeds' in the
+    # '_config.yml'. If an 'episode_file_format' or key of 'additional_feeds'
+    # equals the optional parameter 'except', it will be skipped.
+    #
+    #   {{ site | episode_feeds_rss:'m4a' }} =>
+    #   <atom:link rel="alternate" href="/episodes.mp3.rss" type="application/rss+xml" title="mp3 Episode RSS-Feed"/>
+    #   <atom:link rel="alternate" href="http://bitlove.org/octopod/octopod_m4a/feed" type="application/rss+xml" title="Torrent Feed m4a"/>
+    #   <atom:link rel="alternate" href="http://bitlove.org/octopod/octopod_mp3/feed" type="application/rss+xml" title="Torrent Feed mp3"/>
+    def episode_feeds_rss(site, except = nil)
+      episode_feeds(site, except).map { |f|
+        %Q{<atom:link rel="alternate" href="#{f.last}" type="application/rss+xml" title="#{f.first || f.last}"/>}
+      }.join("\n")
+    end
+
   end
 end
 
