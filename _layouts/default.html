@@ -19,7 +19,6 @@
 
   <script src="/js/jquery.min.js"></script>
   <script src="/js/bootstrap.min.js"></script>
-  <script src="/audiojs/audio.min.js"></script>
   <script src="/js/custom.js"></script>
   {% if site.flattr_uid %}{% include flattr_loader.html %}{% endif %}
   {% if site.disqus_shortname %}
@@ -69,11 +68,5 @@
       <small class="pull-right">Powered by Octopod and <a href="http://jekyllrb.com/">Jekyll</a>.</small>
     </div>
   </div>
-<script>
-  audiojs.events.ready(function() {
-    var as = audiojs.createAll();
-  });
-  !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");
-</script>
 </body>
 </html>
