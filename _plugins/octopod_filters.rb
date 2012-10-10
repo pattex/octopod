@@ -66,14 +66,16 @@ module Jekyll
       File.size(path)
     end
 
-    # Returns an <audio> tag for the given file. As a second argument it takes
-    # one of the three possible preload behaviors auto/metadata/none.
-    #
-    #   {{ 'audiofile.m4a' | audio_tag }}
-    def audio_tag(filename, preload = nil)
-      return if filename.nil?
+    # Returns an <audio> tag for the given sources hash. As a second argument it
+    # takes one of the three possible preload behaviors auto/metadata/none.
+    def audio_tag(files, preload = nil)
+      return if files.nil?
       preload ||= 'none'
-      %Q{<audio src="/episodes/#{ERB::Util.url_encode(filename)}" preload="#{preload}" />}
+      tag = %Q{<audio  controls="controls" preload="#{preload}">\n}
+      files.each { |format, filename|
+        tag << %Q{<source src="/episodes/#{ERB::Util.url_encode(filename)}" type="#{mime_type(format)}"/>\n}
+      }
+      tag << "Your browser does not support the audio tag.\n</audio>"
     end
 
     # Gets a number of seconds and returns an human readable duration string of
