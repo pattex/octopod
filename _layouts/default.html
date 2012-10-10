@@ -13,13 +13,15 @@
   <link rel="alternate" type="application/atom+xml" href="/general_feed.xml" title="General Site Atom Feed (No Podcast Metadata!)" />
   {{ site | episode_feeds_html }}
 
-  <link rel="stylesheet" href="/css/bootstrap.min.css">
-  <link rel="stylesheet" href="/css/custom_styles.css">
-  <link rel="stylesheet" href="/css/bootstrap-responsive.min.css">
+  <link rel="stylesheet" type="text/css" href="/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="/mediaelement/mediaelementplayer.min.css">
+  <link rel="stylesheet" type="text/css" href="/css/custom_styles.css">
+  <link rel="stylesheet" type="text/css" href="/css/bootstrap-responsive.min.css">
 
-  <script src="/js/jquery.min.js"></script>
-  <script src="/js/bootstrap.min.js"></script>
-  <script src="/js/custom.js"></script>
+  <script type='text/javascript' src="/js/jquery.min.js"></script>
+  <script type='text/javascript' src="/js/bootstrap.min.js"></script>
+  <script type='text/javascript' src='/mediaelement/mediaelement-and-player.min.js'></script>
+  <script type='text/javascript' src="/js/custom.js"></script>
   {% if site.flattr_uid %}{% include flattr_loader.html %}{% endif %}
   {% if site.disqus_shortname %}
   <script>
@@ -69,4 +71,7 @@
     </div>
   </div>
 </body>
+<script>
+$('video,audio').mediaelementplayer();
+</script>
 </html>
