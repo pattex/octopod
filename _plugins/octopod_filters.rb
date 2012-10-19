@@ -73,7 +73,7 @@ module Jekyll
       preload ||= 'none'
       tag = %Q{<audio  controls="controls" preload="#{preload}">\n}
       files.each { |format, filename|
-        tag << %Q{<source src="/episodes/#{ERB::Util.url_encode(filename)}" type="#{mime_type(format)}"/>\n}
+        tag << %Q{<source src="/episodes/#{ERB::Util.url_encode(filename)}" type="audio/#{format == 'm4a' ? 'mp4' : format}"/>\n}
       }
       tag << "Your browser does not support the audio tag.\n</audio>"
     end
