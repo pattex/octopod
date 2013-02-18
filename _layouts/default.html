@@ -14,13 +14,17 @@
   {{ site | episode_feeds_html }}
 
   <link rel="stylesheet" type="text/css" href="/css/bootstrap.min.css">
-  <link rel="stylesheet" type="text/css" href="/mediaelement/mediaelementplayer.min.css">
+  <link href="/podlove-web-player/podlove-web-player/libs/mediaelement/build/mediaelementplayer.min.css" rel="stylesheet" media="screen" type="text/css" />
+  <link href="/podlove-web-player/podlove-web-player/libs/fontawesome/css/font-awesome.min.css" rel="stylesheet" media="screen" type="text/css" />
+  <link href="/podlove-web-player/podlove-web-player/podlove-web-player.css" rel="stylesheet" media="screen" type="text/css" />
   <link rel="stylesheet" type="text/css" href="/css/custom_styles.css">
   <link rel="stylesheet" type="text/css" href="/css/bootstrap-responsive.min.css">
 
-  <script type='text/javascript' src="/js/jquery.min.js"></script>
+  <script src="/podlove-web-player/podlove-web-player/libs/html5shiv.js"></script>
+  <script src="/podlove-web-player/podlove-web-player/libs/jquery-1.9.1.min.js"></script>
+  <script src="/podlove-web-player/podlove-web-player/libs/mediaelement/build/mediaelement-and-player.min.js"></script>
+  <script src="/podlove-web-player/podlove-web-player/podlove-web-player.js"></script>
   <script type='text/javascript' src="/js/bootstrap.min.js"></script>
-  <script type='text/javascript' src='/mediaelement/mediaelement-and-player.min.js'></script>
   <script type='text/javascript' src="/js/custom.js"></script>
   {% if site.flattr_uid %}{% include flattr_loader.html %}{% endif %}
   {% if site.disqus_shortname %}
@@ -72,7 +76,6 @@
   </div>
 </body>
 <script>
-$('video,audio').mediaelementplayer();
 !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");
 </script>
 </html>
