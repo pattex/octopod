@@ -21,6 +21,10 @@ twitter_nick:
 language: en
 explicit: 'no'  # 'yes'/'no'/clean
 license: CC BY-NC-SA 3.0
+# additional_feeds:
+#   itunes: http://itunes.apple.com/de/podcast/podcast_name/id42424242
+#   torrent_m4a: http://bitlove.org/example_user/example_podcast_m4a/feed
+#   torrent_mp3: http://bitlove.org/example_user/example_podcast_mp3/feed
 ## Flattr ######################################################################
 flattr_uid: # Flattr will not be used unless this is set
 flattr_button: compact # compact | default
