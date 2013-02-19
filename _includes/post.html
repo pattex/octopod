@@ -14,7 +14,7 @@
         <span class="label label-info">Duration: {{ post.duration | string_of_duration }}</span>
       </div>
       <div class="audio-player">
-        {{ post.audio | audio_tag }}
+        {{ post | web_player }}
       </div>
     </div>
     {% endif %}

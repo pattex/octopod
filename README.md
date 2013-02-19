@@ -1,8 +1,10 @@
 # Octopod - Jekyll based podcast delivery for geeks
 
-Octopod is a set of [Jekyll](http://jekyllrb.com/) templates and helpers to deliver your podcasts the cool, stable and PHP free way.
+Octopod is a set of [Jekyll](http://jekyllrb.com/) templates, helpers and extensions to deliver your podcasts the cool text file lover's way.
 
-If you are afraid of the command line of your computer or it's important for you to store data dynamically in a database or if you dislike the idea of convention over configuration, Octopod may be not the right choice for you. But if it's the case that you feel good while thinking about textfiles in a version control system and delivering static files, you should take a look at Octopod.
+If you are not afraid of the command line of your Computer and text files are the stuff to heat up your geeky little heart, Octopod may be worth a trial to publish your podcasts.
+
+The underlying assumptions of Octopod are that static content should be delivered statically and text files are the perfect way to handle podcast metadata.
 
 Octopod is simply a pre configured Jekyll website withe a few additions, optimised for Podcasting.  
 Octopod brings from the start:
@@ -14,7 +16,9 @@ Octopod brings from the start:
 
 ## Requirements, installation and setup
 
+    git submodule update --init --recursive
 
+    bundle install
 
 ## Usage
 
@@ -26,7 +30,7 @@ I shamelessly took some lines from other projects. And of cause Octopod is based
 Gratitude be to:
 * [Jekyll](http://jekyllrb.com/)
 * [Twitter Bootstrap](http://twitter.github.com/bootstrap/)
-* [audio.js](http://kolber.github.com/audiojs/)
+* [podlove-web-player](http://podlove.org/podlove-web-player/)
 * [Octopress](http://octopress.org/)
 * And the ones I've forgotten
 

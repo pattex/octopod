@@ -52,12 +52,13 @@ module Jekyll
     #   {{ "m4a" | mime_type }} => "audio/mp4a-latm"
     def mime_type(format)
       types = {
-        'mp3' => 'audio/mpeg',
-        'm4a' => 'audio/mp4a-latm',
-        'ogg' => 'application/ogg'
+        'mp3'  => 'mpeg',
+        'm4a'  => 'mp4a-latm',
+        'ogg'  => 'ogg',
+        'opus' => 'opus'
       }
 
-      types[format]
+      "audio/#{types[format]}"
     end
 
     def file_size(path, rel = nil)
@@ -66,16 +67,29 @@ module Jekyll
       File.size(path)
     end
 
-    # Returns an <audio> tag for the given sources hash. As a second argument it
-    # takes one of the three possible preload behaviors auto/metadata/none.
-    def audio_tag(files, preload = nil)
-      return if files.nil?
+    # TODO: Document me!
+    def web_player(page)
+      return if page['audio'].nil?
       preload ||= 'none'
-      tag = %Q{<audio  controls="controls" preload="#{preload}">\n}
-      files.each { |format, filename|
-        tag << %Q{<source src="/episodes/#{ERB::Util.url_encode(filename)}" type="audio/#{format == 'm4a' ? 'mp4' : format}"/>\n}
+      out = %Q{<audio id="#{id = page['id'][1..-1].gsub('/', '_')}_player">\n}
+      page['audio'].each { |format, filename|
+        out << %Q{<source src="/episodes/#{ERB::Util.url_encode(filename)}" type="audio/#{format == 'm4a' ? 'mp4' : format}"></source>\n}
       }
-      tag << "Your browser does not support the audio tag.\n</audio>"
+      out << %Q{<h3 data-pwp="title">#{page['title']}</h3>\n}
+      out << %Q{<h4 data-pwp="subtitle">#{page['title']}</h4>\n} if page['title']
+      out << %Q{<div data-pwp="summary">#{page['summary']}</div>\n} if page['summary']
+      out << %Q{<div data-pwp="chapters">\n#{page['chapters'].join("\n")}\n</div>\n} if page['chapters']
+      out << "</audio>\n"
+
+      out << "<script>\n$('##{id}_player').podlovewebplayer({\n"
+      out << "duration: '#{string_of_duration(page['duration'])}.000',\n"
+      out << "poster: '/img/logo-360x360.png',\n"
+      out << "alwaysShowHours: true,\n"
+      out << "startVolume: 0.8,\n"
+      out << "width: 'auto',\n"
+      out << "summaryVisible: false,\n"
+      out << "timecontrolsVisible: false,\n"
+      out << "chaptersVisible: true });\n</script>\n"
     end
 
     # Gets a number of seconds and returns an human readable duration string of
