@@ -75,15 +75,15 @@ module Jekyll
       page['audio'].each { |format, filename|
         out << %Q{<source src="/episodes/#{ERB::Util.url_encode(filename)}" type="audio/#{format == 'm4a' ? 'mp4' : format}"></source>\n}
       }
-      out << %Q{<h3 data-pwp="title">#{page['title']}</h3>\n}
-      out << %Q{<h4 data-pwp="subtitle">#{page['title']}</h4>\n} if page['title']
-      out << %Q{<div data-pwp="summary">#{page['summary']}</div>\n} if page['summary']
-      out << %Q{<div data-pwp="chapters">\n#{page['chapters'].join("\n")}\n</div>\n} if page['chapters']
       out << "</audio>\n"
 
       out << "<script>\n$('##{id}_player').podlovewebplayer({\n"
-      out << "duration: '#{string_of_duration(page['duration'])}.000',\n"
       out << "poster: '/img/logo-360x360.png',\n"
+      out << "title: '#{page['title']}',\n"
+      out << "subtitle: '#{page['subtitle']}',\n" if page['subtitle']
+      out << "chapters: '#{page['chapters'].join(%Q{'+"\\n"+'})}',\n" if page['chapters']
+      out << "summary: '#{page['summary']}',\n" if page['summary']
+      out << "duration: '#{string_of_duration(page['duration'])}.000',\n"
       out << "alwaysShowHours: true,\n"
       out << "startVolume: 0.8,\n"
       out << "width: 'auto',\n"

@@ -11,7 +11,6 @@
         {% for file in post.audio %}
         <a class="btn btn-primary" href="/episodes/{{ file.last }}">Download .{{ file.first }} ({{ file.last | file_size:'../' | string_of_size }})</a>
         {% endfor %}
-        <span class="label label-info">Duration: {{ post.duration | string_of_duration }}</span>
       </div>
       <div class="audio-player">
         {{ post | web_player }}
