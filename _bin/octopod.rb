@@ -91,14 +91,20 @@ if ARGV.size > 0 && (ARGV[0] == 'episode' || ARGV[0] == 'deploy')
   case ARGV[0]
   when 'episode'
     post_header = {
-      'title'    => nil,
-      'layout'   => 'post',
-      'tags'     => nil,
-      'subtitle' => nil,
-      'author'   => options['author'],
-      'explicit' => options['explicit'] || 'no',
-      'summary'  => nil,
-      'duration' => nil
+      'title'         => nil,
+      'layout'        => 'post',
+      'tags'          => nil,
+      'subtitle'      => nil,
+      'author'        => options['author'],
+      'explicit'      => options['explicit'] || 'no',
+      'summary'       => nil,
+      'duration'      => nil,
+      'episode_cover' => nil,
+      'audio'         => {
+        'm4a'  => 'name.m4a',
+        'mp3'  => 'name.mp3',
+        'opus' => 'name.opus'},
+      'chapters'      => ['00:00:00.000 First chapter']
     }
 
     opts = OptionParser.new do |opts|
@@ -158,6 +164,7 @@ if ARGV.size > 0 && (ARGV[0] == 'episode' || ARGV[0] == 'deploy')
       post.puts post_header.to_yaml
       post.puts '---'
       post.puts "Insert eloquent and worth reading text here.\n\n"
+      post.puts "{{ post | web_player:site }}\n\n"
       post.puts "## Shownotes\n* Note"
     end
 

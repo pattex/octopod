@@ -6,16 +6,9 @@
   {% include post_header.html %}
   {{ post.content }}
     {% if post.audio %}
-    <div class="audio">
-      <div class="audio-meta">
-        {% for file in post.audio %}
-        <a class="btn btn-primary" href="/episodes/{{ file.last }}">Download .{{ file.first }} ({{ file.last | file_size:'../' | string_of_size }})</a>
-        {% endfor %}
-      </div>
-      <div class="audio-player">
-        {{ post | web_player }}
-      </div>
-    </div>
+      {% for file in post.audio %}
+      <a class="btn btn-primary" href="/episodes/{{ file.last }}">Download .{{ file.first }} ({{ file.last | file_size:'../' | string_of_size }})</a>
+      {% endfor %}
     {% endif %}
   <hr>
   {{ site | flattr_button:post }}
