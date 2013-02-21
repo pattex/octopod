@@ -61,35 +61,71 @@ module Jekyll
       "audio/#{types[format]}"
     end
 
+    # Returns the size of a given file in bytes. If there is just a filename
+    # without a path, this method assumes that the file is an episode audio file
+    # which lives in /episodes.
     def file_size(path, rel = nil)
       path = path =~ /\// ? path : File.join('episodes', path)
       path = rel + path if rel
       File.size(path)
     end
 
-    # TODO: Document me!
-    def web_player(page)
-      return if page['audio'].nil?
-      preload ||= 'none'
-      out = %Q{<audio id="#{id = page['id'][1..-1].gsub('/', '_')}_player">\n}
-      page['audio'].each { |format, filename|
-        out << %Q{<source src="/episodes/#{ERB::Util.url_encode(filename)}" type="audio/#{format == 'm4a' ? 'mp4' : format}"></source>\n}
-      }
-      out << "</audio>\n"
+    # Returns a slug based on the id of a given page.
+    #
+    #   {{ page | slug }} => '2012_10_02_octopod'
+    def slug(page)
+      page['id'][1..-1].gsub('/', '_')
+    end
 
-      out << "<script>\n$('##{id}_player').podlovewebplayer({\n"
-      out << "poster: '/img/logo-360x360.png',\n"
-      out << "title: '#{page['title']}',\n"
-      out << "subtitle: '#{page['subtitle']}',\n" if page['subtitle']
-      out << "chapters: '#{page['chapters'].join(%Q{'+"\\n"+'})}',\n" if page['chapters']
-      out << "summary: '#{page['summary']}',\n" if page['summary']
-      out << "duration: '#{string_of_duration(page['duration'])}.000',\n"
-      out << "alwaysShowHours: true,\n"
-      out << "startVolume: 0.8,\n"
-      out << "width: 'auto',\n"
-      out << "summaryVisible: false,\n"
-      out << "timecontrolsVisible: false,\n"
-      out << "chaptersVisible: true });\n</script>\n"
+    # Returns an <audio>-tag for a given page with <source>-tags in it for every
+    # audio file in the page's YAML front matter.
+    #
+    # {{ page | audio_tag }}
+    def audio_tag(page)
+      out = %Q{<audio id="#{slug(page)}_player">\n}
+      out + page['audio'].map { |format, filename|
+        %Q{<source src="/episodes/#{ERB::Util.url_encode(filename)}" type="audio/#{format == 'm4a' ? 'mp4' : format}"></source>}
+      }.join("\n") + "\n</audio>\n"
+    end
+
+    # Returns the web player for the episode of a given page.
+    #
+    # {{ page | web_player:site }}
+    def web_player(page, site = nil)
+      return if page['audio'].nil?
+
+      options = {
+        'poster'              => '/img/logo-360x360.png',
+        'alwaysShowHours'     => 'true',
+        'startVolume'         => '0.8',
+        'width'               => 'auto',
+        'summaryVisible'      => 'false',
+        'timecontrolsVisible' => 'false',
+        'chaptersVisible'     => 'true'
+      }
+
+      simple_keys = %w[title alwaysShowHours startVolume width summaryVisible
+                         timecontrolsVisible chaptersVisible]
+
+      if site = site.dup
+        site.delete('title')
+        site.delete('subtitle')
+        options = options.merge(site)
+      end
+      options = options.merge(page)
+      options.delete('duration')
+
+      out = audio_tag(page)
+      out << "<script>\n$('##{slug(page)}_player').podlovewebplayer({\n"
+      out << "poster: '#{options['episode_cover'] || '/img/logo-360x360.png'}',\n"
+      out << "subtitle: '#{options['subtitle']}',\n" if options['subtitle']
+      out << "chapters: '#{options['chapters'].join(%Q{'+"\\n"+'})}',\n" if options['chapters']
+      out << "summary: '#{options['summary']}',\n" if options['summary']
+      out << "duration: '#{string_of_duration(options['duration'])}.000',\n"
+
+      out << simple_keys.map { |k|
+        "#{k}: #{options[k] =~ /\A(true|false|[0-9\.]+)\z/ ? options[k] : "'#{options[k]}'"}"
+      }.join(",\n") + "});\n</script>\n"
     end
 
     # Gets a number of seconds and returns an human readable duration string of

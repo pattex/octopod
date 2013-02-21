@@ -8,6 +8,18 @@ author: Uncle Octopod
 email: octopod@example.com
 keywords: [octopod, podcast, magic]
 itunes_categories: [Technology]
+# additional_feeds:
+#   itunes: http://itunes.apple.com/de/podcast/podcast_name/id42424242
+#   torrent_m4a: http://bitlove.org/example_user/example_podcast_m4a/feed
+#   torrent_mp3: http://bitlove.org/example_user/example_podcast_mp3/feed
+## podlove-web-palyer ##########################################################
+# poster: /img/logo-360x360.png
+# alwaysShowHours: true
+# startVolume: 0.8
+# width: auto
+# summaryVisible: false
+# timecontrolsVisible: false
+# chaptersVisible: true
 ## Rsync Deploy config #########################################################
 ### Be sure your public key is listed in your server's ~/.ssh/authorized_keys
 ### file.
@@ -15,16 +27,11 @@ ssh_user: user@host
 ssh_port: 22
 document_root: /path/to/your/htdocs/
 rsync_delete: true
-deploy_default: rsync
 # You can configure this #######################################################
 twitter_nick:
 language: en
 explicit: 'no'  # 'yes'/'no'/clean
-license: CC BY-NC-SA 3.0
-# additional_feeds:
-#   itunes: http://itunes.apple.com/de/podcast/podcast_name/id42424242
-#   torrent_m4a: http://bitlove.org/example_user/example_podcast_m4a/feed
-#   torrent_mp3: http://bitlove.org/example_user/example_podcast_mp3/feed
+# license: CC BY-NC-SA 3.0
 ## Flattr ######################################################################
 flattr_uid: # Flattr will not be used unless this is set
 flattr_button: compact # compact | default
@@ -33,11 +40,6 @@ flattr_popout:  0 # 1 | 0 (show popout when hovering mouse over button)
 flattr_language: en_GB # available languages - https://api.flattr.com/rest/v2/languages.txt
 flattr_category: audio # available categories - https://api.flattr.com/rest/v2/categories.txt
 ## Disqus comments #############################################################
-disqus_shortname: megamagisch
+disqus_shortname: 
 disqus_developer: 0 # 1 / 0
-## Other #######################################################################
-exclude:
-- Gemfile
-- Rakefile
-- README.md
-- _config.yml.sample
+
