@@ -14,7 +14,7 @@ module Jekyll
     #
     #   js_str_escape("Uncle Octopod's podcast") => "Uncle Octopod\'s podcast"
     def js_str_escape(str)
-      str.gsub("'", "\\\\'") if str
+      str.gsub("'", "\\\\'") if str.is_a?(String)
     end
 
     # Replaces relative urls with full urls
@@ -120,7 +120,6 @@ module Jekyll
         options = options.merge(site)
       end
       options = options.merge(page)
-      options.delete('duration')
 
       out = audio_tag(page)
       out << "<script>\n$('##{slug(page)}_player').podlovewebplayer({\n"
@@ -128,7 +127,7 @@ module Jekyll
       out << "subtitle: '#{js_str_escape(options['subtitle'])}',\n" if options['subtitle']
       out << "chapters: '#{options['chapters'].map { |c| js_str_escape(c) }.join(%Q{'+"\\n"+'})}',\n" if options['chapters']
       out << "summary: '#{js_str_escape(options['summary'])}',\n" if options['summary']
-      out << "duration: '#{string_of_duration(options['duration'])}.000',\n"
+      out << "duration: '#{string_of_duration(options['duration'])}',\n"
 
       out << simple_keys.map { |k|
         "#{k}: #{options[k] =~ /\A(true|false|[0-9\.]+)\z/ ? js_str_escape(options[k]) : "'#{js_str_escape(options[k])}'"}"
