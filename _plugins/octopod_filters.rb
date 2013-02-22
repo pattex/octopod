@@ -10,6 +10,13 @@ module Jekyll
       input.gsub(/<!\[CDATA\[/, '&lt;![CDATA[').gsub(/\]\]>/, ']]&gt;')
     end
 
+    # Escapes single quotes in a given string
+    #
+    #   js_str_escape("Uncle Octopod's podcast") => "Uncle Octopod\'s podcast"
+    def js_str_escape(str)
+      str.gsub("'", "\\\\'") if str
+    end
+
     # Replaces relative urls with full urls
     def expand_urls(input, url='')
       url ||= '/'
@@ -117,14 +124,14 @@ module Jekyll
 
       out = audio_tag(page)
       out << "<script>\n$('##{slug(page)}_player').podlovewebplayer({\n"
-      out << "poster: '#{options['episode_cover'] || '/img/logo-360x360.png'}',\n"
-      out << "subtitle: '#{options['subtitle']}',\n" if options['subtitle']
-      out << "chapters: '#{options['chapters'].join(%Q{'+"\\n"+'})}',\n" if options['chapters']
-      out << "summary: '#{options['summary']}',\n" if options['summary']
+      out << "poster: '#{js_str_escape(options['episode_cover']) || '/img/logo-360x360.png'}',\n"
+      out << "subtitle: '#{js_str_escape(options['subtitle'])}',\n" if options['subtitle']
+      out << "chapters: '#{options['chapters'].map { |c| js_str_escape(c) }.join(%Q{'+"\\n"+'})}',\n" if options['chapters']
+      out << "summary: '#{js_str_escape(options['summary'])}',\n" if options['summary']
       out << "duration: '#{string_of_duration(options['duration'])}.000',\n"
 
       out << simple_keys.map { |k|
-        "#{k}: #{options[k] =~ /\A(true|false|[0-9\.]+)\z/ ? options[k] : "'#{options[k]}'"}"
+        "#{k}: #{options[k] =~ /\A(true|false|[0-9\.]+)\z/ ? js_str_escape(options[k]) : "'#{js_str_escape(options[k])}'"}"
       }.join(",\n") + "});\n</script>\n"
     end
 
