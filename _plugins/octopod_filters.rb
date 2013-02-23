@@ -72,6 +72,7 @@ module Jekyll
     # without a path, this method assumes that the file is an episode audio file
     # which lives in /episodes.
     def file_size(path, rel = nil)
+      return 0 if path.nil?
       path = path =~ /\// ? path : File.join('episodes', path)
       path = rel + path if rel
       File.size(path)

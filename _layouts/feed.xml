@@ -33,7 +33,7 @@ layout: nil
     <itunes:category text="{{ category }}">
     {% endfor %}
     </itunes:category>
-    {% for post in site.posts %}{% if post.audio | audio:page.format %}
+    {% for post in site.posts %}{% if post.audio[page.format] %}
     <item>
       <title>{{ post.title }}</title>
       <link>{{ site.url }}{{ post.url }}</link>
