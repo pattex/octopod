@@ -12,7 +12,9 @@ Octopod brings from the start:
 * a ready to use [Twitter Bootstrap](http://twitter.github.com/bootstrap/) based layout
 * [Flattr](https://flattr.com/) support on the website and in the episode feed
 * comments via [Disqus](http://disqus.com/)
+* [Podlove Web Player](http://podlove.org/podlove-web-player/)
 * [Podlove Alternate Feeds](http://podlove.org/alternate-feeds/)
+* [Podlove Simple Chapters](http://podlove.org/simple-chapters/)
 
 ## Requirements, installation and setup
 
@@ -30,7 +32,7 @@ I shamelessly took some lines from other projects. And of cause Octopod is based
 Gratitude be to:
 * [Jekyll](http://jekyllrb.com/)
 * [Twitter Bootstrap](http://twitter.github.com/bootstrap/)
-* [podlove-web-player](http://podlove.org/podlove-web-player/)
+* [Podlove Web Player](http://podlove.org/podlove-web-player/)
 * [Octopress](http://octopress.org/)
 * And the ones I've forgotten
 
