@@ -53,6 +53,13 @@ layout: nil
       <itunes:explicit>{{ post.explicit | otherwise:site.explicit }}</itunes:explicit>
       <itunes:duration>{{ post.duration }}</itunes:duration>
       {{ site | flattr_rss:post }}
+      {% if post.chapters %}
+      <psc:chapters version="1.1" xmlns:psc="http://podlove.org/simple-chapters">
+        {% for chapter in post.chapters %}
+        <psc:chapter start="{{ chapter | split_chapter:'start' }}" title="{{ chapter | split_chapter:'title' }}" />
+        {% endfor %}
+      </psc:chapters>
+      {% endif %}
     </item>
     {% endif %}{% endfor %}
   </channel>

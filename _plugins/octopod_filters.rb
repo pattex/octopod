@@ -85,6 +85,30 @@ module Jekyll
       page['id'][1..-1].gsub('/', '_')
     end
 
+    # Splits a chapter, like it is written to the post YAML front matter into
+    # the components 'start' which refers to a single point in time relative to
+    # the beginning of the media file nad 'title' which defines the text to be
+    # the title of the chapter.
+    #
+    #   {{ '00:00:00.000 Welcome to Octopod!' | split_chapter }}
+    #     => { 'start' => '00:00:00.000', 'title' => 'Welcome to Octopod!' }
+    #
+    #   {{ '00:00:00.000 Welcome to Octopod!' | split_chapter:'title' }}
+    #     => 'Welcome to Octopod!'
+    #
+    #   {{ '00:00:00.000 Welcome to Octopod!' | split_chapter:'start' }}
+    #     => '00:00:00.000'
+    def split_chapter(chapter_str, attribute = nil)
+      attributes = chapter_str.split(/ /, 2)
+      return nil unless attributes.first.match(/\A(\d|:|\.)+\z/)
+
+      if attribute.nil?
+        { 'start' => attributes.first, 'title' => attributes.last }
+      else
+        attribute == 'start' ? attributes.first : attributes.last
+      end
+    end
+
     # Returns an <audio>-tag for a given page with <source>-tags in it for every
     # audio file in the page's YAML front matter.
     #
