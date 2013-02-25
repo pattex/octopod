@@ -1,13 +1,12 @@
-# Octopod - Jekyll based podcast delivery for geeks
+# Octopod - podcast delivery for geeks
 
 Octopod is a set of [Jekyll](http://jekyllrb.com/) templates, helpers and extensions to deliver your podcasts the cool text file lover's way.
 
-If you are not afraid of the command line of your Computer and text files are the stuff to heat up your geeky little heart, Octopod may be worth a trial to publish your podcasts.
+If you are not afraid of the command line of your computer and text files are the stuff to heat up your geeky little heart, Octopod may be worth a trial to publish your podcasts.
 
-The underlying assumptions of Octopod are that static content should be delivered statically and text files are the perfect way to handle podcast metadata.
+The underlying assumptions of Octopod are that static content should be delivered statically and text files are the perfect way to handle podcast metadata. So Octopod makes it easy to generate and deploy a website and feeds for your podcast out of one textfile and at least one audio file per episode.
 
-Octopod is simply a pre configured Jekyll website withe a few additions, optimised for Podcasting.  
-Octopod brings from the start:
+Octopod brings innately:
 * iTunes ready episode feeds for different file formats
 * a ready to use [Twitter Bootstrap](http://twitter.github.com/bootstrap/) based layout
 * [Flattr](https://flattr.com/) support on the website and in the episode feed
@@ -17,10 +16,25 @@ Octopod brings from the start:
 * [Podlove Simple Chapters](http://podlove.org/simple-chapters/)
 
 ## Requirements, installation and setup
+Since Jekyll and Octopod are written in the [Ruby programming language](http://www.ruby-lang.org/) you need a running Ruby interpreter – which sadly is sometimes easier said than done – and the [bundler](http://gembundler.com/) gem installed.
+And because Octopod lives in a git repository, you may also want to have the [git version control system](http://git-scm.com/) installed.
 
-    git submodule update --init --recursive
+The first step to your new and shiny podcast publishing system is to get a copy of it. And to get one, the best way should be to clone the repo.  
+So open your Terminal and type the following command:
 
+    git clone --recursive https://github.com/pattex/octopod.git
+
+Now you have to install all the required software to run Octopod.
+
+    cd octopod
     bundle install
+
+To set up your Octopod, just rename the sample config file and edit it as you need.
+
+    mv _config.yml.sample _config.yml
+    <your favourite editor> _config.yml
+
+*You can find a documentation of all the not Octopod specific settings on the [Configuration page of the Jekyll Wiki](https://github.com/mojombo/jekyll/wiki/Configuration).*
 
 ## Usage
 
