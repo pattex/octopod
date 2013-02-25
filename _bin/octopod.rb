@@ -108,6 +108,11 @@ if ARGV.size > 0 && (ARGV[0] == 'episode' || ARGV[0] == 'deploy')
         post_header['author'] = options['author'] = episode_author
       end
 
+      opts.on("-c", "--chapters [chapter1,chapter2,...]", Array, "The episodes chapters.") do |episode_chapters|
+        warn episode_chapters.inspect
+        post_header['chapters'] = options['chapters'] = episode_chapters
+      end
+
       opts.on("-d", "--duration [DURATION]", "Duration of the episode") do |episode_duration|
         post_header['duration'] = options['duration'] = episode_duration.to_i
       end
