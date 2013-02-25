@@ -39,6 +39,8 @@ To set up your Octopod, just rename the sample config file and edit it as you ne
 ## Usage
 
 ## Credits
+The beautiful Octopod Logo was designed and created by [Thekla "TeMeL" Löhr](http://www.temel-art.de/). Please support her with a little flattr.  
+<a href="https://flattr.com/thing/526869/TeMeL-on-Flattr" target="_blank"><img src="http://api.flattr.com/button/flattr-badge-large.png" alt="Flattr this" title="Flattr this" border="0" /></a>
 
 Some of this code is not written by me.  
 I shamelessly took some lines from other projects. And of cause Octopod is based on a list of frameworks, tools and plugins.
