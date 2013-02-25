@@ -61,8 +61,8 @@ module Jekyll
       types = {
         'mp3'  => 'mpeg',
         'm4a'  => 'mp4a-latm',
-        'ogg'  => 'ogg',
-        'opus' => 'opus'
+        'ogg'  => 'ogg; codecs=vorbis',
+        'opus' => 'ogg; codecs=opus'
       }
 
       "audio/#{types[format]}"
@@ -113,10 +113,11 @@ module Jekyll
     # audio file in the page's YAML front matter.
     #
     # {{ page | audio_tag }}
+    #
     def audio_tag(page)
-      out = %Q{<audio id="#{slug(page)}_player">\n}
+      out = %Q{<audio id="#{slug(page)}_player" preload="none">\n}
       out + page['audio'].map { |format, filename|
-        %Q{<source src="/episodes/#{ERB::Util.url_encode(filename)}" type="audio/#{format == 'm4a' ? 'mp4' : format}"></source>}
+        %Q{<source src="/episodes/#{ERB::Util.url_encode(filename)}" type="#{mime_type(format)}"></source>}
       }.join("\n") + "\n</audio>\n"
     end
 
