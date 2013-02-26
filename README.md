@@ -1,4 +1,5 @@
 # Octopod - podcast delivery for geeks
+<img src="https://raw.github.com/pattex/octopod/master/img/logo-360x360.png" alt="Octopod logo" style="float: right">
 
 Octopod is a set of [Jekyll](http://jekyllrb.com/) templates, helpers and extensions to deliver your podcasts the cool text file lover's way.
 
@@ -16,7 +17,7 @@ Octopod brings innately:
 * [Podlove Simple Chapters](http://podlove.org/simple-chapters/)
 
 ## Requirements, installation and setup
-Since Jekyll and Octopod are written in the [Ruby programming language](http://www.ruby-lang.org/) you need a running Ruby interpreter – which sadly is sometimes easier said than done – and the [bundler](http://gembundler.com/) gem installed.
+Since Jekyll and Octopod are written in the [Ruby programming language](http://www.ruby-lang.org/) you need a running Ruby interpreter – which sadly is sometimes easier said than done – and the [bundler](http://gembundler.com/) gem installed.  
 And because Octopod lives in a git repository, you may also want to have the [git version control system](http://git-scm.com/) installed.
 
 The first step to your new and shiny podcast publishing system is to get a copy of it. And to get one, the best way should be to clone the repo.  
