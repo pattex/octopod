@@ -1,4 +1,0 @@
-#!/usr/bin/env ruby
-ROOT_PATH = File.dirname(__FILE__)
-
-require File.join(ROOT_PATH, '_bin/octopod.rb')
