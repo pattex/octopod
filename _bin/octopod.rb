@@ -180,10 +180,6 @@ if ARGV.size > 0 && (ARGV[0] == 'episode' || ARGV[0] == 'deploy')
         options['document_root'] = deploy_document_root
       end
 
-      opts.on("--progress", "show progress during transfer") do |deploy_rsync_progress|
-        options['rsync_progress'] = deploy_rsync_progress
-      end
-
       opts.on("--rsync-delete", "Delete extraneous files from destination dir") do |deploy_rsync_delete|
         options['rsync_delete'] = deploy_rsync_delete
       end
@@ -205,7 +201,7 @@ if ARGV.size > 0 && (ARGV[0] == 'episode' || ARGV[0] == 'deploy')
     end
     puts "## Deploying website via Rsync"
 
-    rsync_command = "rsync -avze 'ssh -p #{options['ssh_port']}' #{exclude} \
+    rsync_command = "rsync --progress -avze 'ssh -p #{options['ssh_port']}' #{exclude} \
       #{"--delete" unless options['rsync_delete'] == false} \
       #{options['public_dir']}/ #{options['ssh_host']}:#{options['document_root']}"
 
