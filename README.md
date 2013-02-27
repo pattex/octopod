@@ -1,7 +1,9 @@
 # Octopod - podcast delivery for geeks
-<img src="https://raw.github.com/pattex/octopod/master/img/logo-360x360.png" alt="Octopod logo" style="float: right">
 
 Octopod is a set of [Jekyll](http://jekyllrb.com/) templates, helpers and extensions to deliver your podcasts the cool text file lover's way.
+<a href="http://flattr.com/thing/1153811/" target="_blank"><img src="http://api.flattr.com/button/flattr-badge-large.png" alt="Flattr this" title="Flattr this" border="0" /></a>
+
+<img src="https://raw.github.com/pattex/octopod/master/img/logo-360x360.png" alt="Octopod logo">
 
 If you are not afraid of the command line of your computer and text files are the stuff to heat up your geeky little heart, Octopod may be worth a trial to publish your podcasts.
 
@@ -15,6 +17,8 @@ Octopod brings innately:
 * [Podlove Web Player](http://podlove.org/podlove-web-player/)
 * [Podlove Alternate Feeds](http://podlove.org/alternate-feeds/)
 * [Podlove Simple Chapters](http://podlove.org/simple-chapters/)
+
+***Attention: This project is absolutely in a non 1.0 status. This means that there is no guarantee for not breaking this or that behavior with the next update. Hopefully you are brave enough to play with this cute little toy anyway. [Bug reports](https://github.com/pattex/octopod/issues) and even more push requests are highly welcome.***
 
 ## Requirements, installation and setup
 Since Jekyll and Octopod are written in the [Ruby programming language](http://www.ruby-lang.org/) you need a running Ruby interpreter – which sadly is sometimes easier said than done – and the [bundler](http://gembundler.com/) gem installed.  
@@ -39,6 +43,21 @@ To set up your Octopod, just rename the sample config file and edit it as you ne
 
 ## Usage
 
+Coming soon…  
+I promise!
+
+## Contributing
+
+At the moment Octopod is extremely made to fit my personal needs and preferences. But it's it is a high priority goal to become Octopod more generic. This and of course bug fixes would make the sweet little opctopd smile the most.
+
+But feel free to fork and push request and code and everything.
+
+1. Fork it
+2. Create your feature branch (`git checkout -b my-new-feature`)
+3. Commit your changes (`git commit -am 'Add some feature'`)
+4. Push to the branch (`git push origin my-new-feature`)
+5. Create new Pull Request
+
 ## Credits
 The beautiful Octopod Logo was designed and created by [Thekla "TeMeL" Löhr](http://www.temel-art.de/). Please support her with a little flattr.  
 <a href="https://flattr.com/thing/526869/TeMeL-on-Flattr" target="_blank"><img src="http://api.flattr.com/button/flattr-badge-large.png" alt="Flattr this" title="Flattr this" border="0" /></a>
@@ -51,7 +70,6 @@ Gratitude be to:
 * [Twitter Bootstrap](http://twitter.github.com/bootstrap/)
 * [Podlove Web Player](http://podlove.org/podlove-web-player/)
 * [Octopress](http://octopress.org/)
-* And the ones I've forgotten
 
 ## License
 
