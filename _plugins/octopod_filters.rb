@@ -112,23 +112,23 @@ module Jekyll
     # Returns an <audio>-tag for a given page with <source>-tags in it for every
     # audio file in the page's YAML front matter.
     #
-    # {{ page | audio_tag }}
+    # {{ page | audio_tag:site }}
     #
-    def audio_tag(page)
+    def audio_tag(page, site)
       out = %Q{<audio id="#{slug(page)}_player" preload="none">\n}
       out + page['audio'].map { |format, filename|
-        %Q{<source src="/episodes/#{ERB::Util.url_encode(filename)}" type="#{mime_type(format)}"></source>}
+        %Q{<source src="#{site['url']}/episodes/#{ERB::Util.url_encode(filename)}" type="#{mime_type(format)}"></source>}
       }.join("\n") + "\n</audio>\n"
     end
 
     # Returns the web player for the episode of a given page.
     #
     # {{ page | web_player:site }}
-    def web_player(page, site = nil)
+    def web_player(page, site)
       return if page['audio'].nil?
 
       options = {
-        'poster'              => '/img/logo-360x360.png',
+        'poster'              => "#{site['url']}/img/logo-360x360.png",
         'alwaysShowHours'     => 'true',
         'startVolume'         => '0.8',
         'width'               => 'auto',
@@ -147,9 +147,9 @@ module Jekyll
       end
       options = options.merge(page)
 
-      out = audio_tag(page)
+      out = audio_tag(page, site)
       out << "<script>\n$('##{slug(page)}_player').podlovewebplayer({\n"
-      out << "poster: '#{js_str_escape(options['episode_cover']) || '/img/logo-360x360.png'}',\n"
+      out << "poster: '#{js_str_escape(options['episode_cover']) || site['url'] + '/img/logo-360x360.png'}',\n"
       out << "subtitle: '#{js_str_escape(options['subtitle'])}',\n" if options['subtitle']
       out << "chapters: '#{options['chapters'].map { |c| js_str_escape(c) }.join(%Q{'+"\\n"+'})}',\n" if options['chapters']
       out << "summary: '#{js_str_escape(options['summary'])}',\n" if options['summary']
@@ -243,7 +243,7 @@ module Jekyll
       list =  ['<ul class="nav">']
       list << pages.map { |p|
         active = (p.url == page['url']) || (page.has_key?('next') && File.join(p.dir, p.basename) == '/index')
-        navigation_list_item(p.url, p.data['title'], active)
+        navigation_list_item(File.join(site['url'], p.url), p.data['title'], active)
       }
       list << ['</ul>']
 
@@ -273,7 +273,7 @@ module Jekyll
 
       if site['episode_feed_formats']
         site['episode_feed_formats'].map { |f|
-         feeds << ["#{f} Episode RSS-Feed", "/episodes.#{f}.rss"] unless f == except
+         feeds << ["#{f} Episode RSS-Feed", "#{site['url']}/episodes.#{f}.rss"] unless f == except
         }
       end
 
