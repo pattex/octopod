@@ -2,17 +2,17 @@
 <rss xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
   <channel>
     <title>Octopod</title>
-    <link>https://pattex.github.com/octopod</link>
-    <atom:link href="https://pattex.github.com/octopod/episodes.mp3.rss" rel="self" type="application/rss+xml" title="mp3 Episode RSS-Feed"/>
-    <atom:link rel="alternate" href="https://pattex.github.com/octopod/episodes.m4a.rss" type="application/rss+xml" title="m4a Episode RSS-Feed"/>
+    <link>http://pattex.github.com/octopod</link>
+    <atom:link href="http://pattex.github.com/octopod/episodes.mp3.rss" rel="self" type="application/rss+xml" title="mp3 Episode RSS-Feed"/>
+    <atom:link rel="alternate" href="http://pattex.github.com/octopod/episodes.m4a.rss" type="application/rss+xml" title="m4a Episode RSS-Feed"/>
     <description>My super duper cool podcast.</description>
-    <lastBuildDate>Thu, 28 Feb 2013 18:23:34 +0100</lastBuildDate>
+    <lastBuildDate>Thu, 28 Feb 2013 19:37:35 +0100</lastBuildDate>
     <language>en</language>
 
     <itunes:summary>My super duper cool podcast.</itunes:summary>
     <itunes:author>Uncle Octopod</itunes:author>
     <itunes:explicit>no</itunes:explicit>
-    <itunes:image href="https://pattex.github.com/octopod/img/logo.jpg" />
+    <itunes:image href="http://pattex.github.com/octopod/img/logo.jpg" />
     <itunes:owner>
       <itunes:name>Uncle Octopod</itunes:name>
       <itunes:email>octopod@example.com</itunes:email>
@@ -23,8 +23,8 @@
     <itunes:keywords>octopod, podcast, magic</itunes:keywords>
     <image>
       <title>Octopod</title>
-      <url>https://pattex.github.com/octopod/img/logo.jpg</url>
-      <link>https://pattex.github.com/octopod</link>
+      <url>http://pattex.github.com/octopod/img/logo.jpg</url>
+      <link>http://pattex.github.com/octopod</link>
     </image>
     
     <itunes:category text="Technology">
@@ -33,20 +33,20 @@
     
     <item>
       <title>megamagisch #003 – DüssstRopisch</title>
-      <link>https://pattex.github.com/octopod/2012/10/02/003-duessstropisch.html</link>
-      <comments>https://pattex.github.com/octopod/2012/10/02/003-duessstropisch.html#disqus_thread</comments>
+      <link>http://pattex.github.com/octopod/2012/10/02/003-duessstropisch.html</link>
+      <comments>http://pattex.github.com/octopod/2012/10/02/003-duessstropisch.html#disqus_thread</comments>
       <pubDate>Tue, 02 Oct 2012 00:00:00 +0200</pubDate>
       
-      <guid isPermaLink="false">https://pattex.github.com/octopod/2012/10/02/003-duessstropisch.html</guid>
+      <guid isPermaLink="false">http://pattex.github.com/octopod/2012/10/02/003-duessstropisch.html</guid>
       <description><![CDATA[<p><strong><em>An episode from the podcast <a href='http://megamagis.ch/'>megamagisch – phantastik und futurologie</a>.</em></strong></p>
 
 <p>Einige würden die Geschichte erzählen, wir wären umgezogen, hätten einen Schnupfen gehabt und Arbeitswochen hinter uns gebracht - weswegen keine Zeit vorhanden war, um die dritte Folge megamagisch zu produzieren. Der Podcast für Phantastik und Futurologie möchte es etwas anders formulieren. Wir haben neue Schlösser erobert, Krankheiten besiegt und nicht weniger als mit unseren Handlungen das Universum gerettet. Darum war für die Geschichten zu den Heldentaten nicht viel Zeit. Aber jetzt endlich ist es wieder so weit. Wir reden über Arnes Willowfetischismus, Max&#8217; Rajaniemimimimi weil er das neue Buch von Hannu noch nicht lesen konnte und unser Gast <a href='http://www.petereberst.de/'>Peter Eberst</a> nimmt uns mit in die Welt der Mittelalterfilme und auf ein Set in Hollywood wo er Quentin Tarantino die Hand geschüttelt hat.</p>
 
 <p>Ach und MOMENT! Wir haben Geschenke für Euch. In dieser Folge megamagisch verlosen wir nämlich ein <a href='http://www.reprodukt.com/creator_info.php?creators_id=99'>Donjon</a>-Comic-Paket, bestehend aus zehn Alben und eine DVD mit Peters letzten Film «<a href='http://www.mdr.de/geschichte-mitteldeutschlands/filme/karl/karl112.html'>Karl der Große - Der Aufstand der Thüringer</a>». Es sind allerdings Geschenke mit geforderter Gegenleistung – also wenn man es genau nimmt, gar keine Geschenke, aber wer nimmts schon genau. Das megamagischste Werk gewinnt. Mehr im Podcast :-)</p>
 <audio id='2012_10_02_003-duessstropisch_player' preload='none'>
-<source src='https://pattex.github.com/octopod/episodes/mm003.m4a' type='audio/mp4a-latm' />
-<source src='https://pattex.github.com/octopod/episodes/mm003.mp3' type='audio/mpeg' />
-<source src='https://pattex.github.com/octopod/episodes/mm003.opus' type='audio/ogg; codecs=opus' />
+<source src='http://pattex.github.com/octopod/episodes/mm003.m4a' type='audio/mp4a-latm' />
+<source src='http://pattex.github.com/octopod/episodes/mm003.mp3' type='audio/mpeg' />
+<source src='http://pattex.github.com/octopod/episodes/mm003.opus' type='audio/ogg; codecs=opus' />
 </audio><script>
 $('#2012_10_02_003-duessstropisch_player').podlovewebplayer({
 poster: '/img/megamagisch360.jpg',
@@ -93,9 +93,9 @@ chaptersVisible: true});
 
 <p>Ach und MOMENT! Wir haben Geschenke für Euch. In dieser Folge megamagisch verlosen wir nämlich ein <a href='http://www.reprodukt.com/creator_info.php?creators_id=99'>Donjon</a>-Comic-Paket, bestehend aus zehn Alben und eine DVD mit Peters letzten Film «<a href='http://www.mdr.de/geschichte-mitteldeutschlands/filme/karl/karl112.html'>Karl der Große - Der Aufstand der Thüringer</a>». Es sind allerdings Geschenke mit geforderter Gegenleistung – also wenn man es genau nimmt, gar keine Geschenke, aber wer nimmts schon genau. Das megamagischste Werk gewinnt. Mehr im Podcast :-)</p>
 <audio id='2012_10_02_003-duessstropisch_player' preload='none'>
-<source src='https://pattex.github.com/octopod/episodes/mm003.m4a' type='audio/mp4a-latm' />
-<source src='https://pattex.github.com/octopod/episodes/mm003.mp3' type='audio/mpeg' />
-<source src='https://pattex.github.com/octopod/episodes/mm003.opus' type='audio/ogg; codecs=opus' />
+<source src='http://pattex.github.com/octopod/episodes/mm003.m4a' type='audio/mp4a-latm' />
+<source src='http://pattex.github.com/octopod/episodes/mm003.mp3' type='audio/mpeg' />
+<source src='http://pattex.github.com/octopod/episodes/mm003.opus' type='audio/ogg; codecs=opus' />
 </audio><script>
 $('#2012_10_02_003-duessstropisch_player').podlovewebplayer({
 poster: '/img/megamagisch360.jpg',
@@ -136,14 +136,14 @@ chaptersVisible: true});
 
 <li><a href='http://xkcd.com/1098/'>xkcd - Star Ratings</a></li>
 </ul>]]></content:encoded>
-      <enclosure url="https://pattex.github.com/octopod/episodes/mm003.mp3" length="21069708" type="audio/mpeg" />
+      <enclosure url="http://pattex.github.com/octopod/episodes/mm003.mp3" length="21069708" type="audio/mpeg" />
       <itunes:keywords></itunes:keywords>
       <itunes:subtitle></itunes:subtitle>
       <itunes:summary></itunes:summary>
       <itunes:author>Max v. Malotki &amp; Arne Eilermann</itunes:author>
       <itunes:explicit>no</itunes:explicit>
       <itunes:duration>2203</itunes:duration>
-      <atom:link rel="payment" href="https://flattr.com/submit/auto?url=https%3A%2F%2Fpattex.github.com%2Foctopod%2F2012%2F10%2F02%2F003-duessstropisch.html&amp;user_id=pattex%23%20Flattr%20will%20not%20be%20used%20unless%20this%20is%20set" type="text/html" />
+      <atom:link rel="payment" href="https://flattr.com/submit/auto?url=http%3A%2F%2Fpattex.github.com%2Foctopod%2F2012%2F10%2F02%2F003-duessstropisch.html&amp;user_id=pattex%23%20Flattr%20will%20not%20be%20used%20unless%20this%20is%20set" type="text/html" />
       
       <psc:chapters version="1.1" xmlns:psc="http://podlove.org/simple-chapters">
         
@@ -171,11 +171,11 @@ chaptersVisible: true});
     
     <item>
       <title>Josh Woodward – Together On Our Own</title>
-      <link>https://pattex.github.com/octopod/2010/10/02/003-duessstropisch.html</link>
-      <comments>https://pattex.github.com/octopod/2010/10/02/003-duessstropisch.html#disqus_thread</comments>
+      <link>http://pattex.github.com/octopod/2010/10/02/003-duessstropisch.html</link>
+      <comments>http://pattex.github.com/octopod/2010/10/02/003-duessstropisch.html#disqus_thread</comments>
       <pubDate>Sat, 02 Oct 2010 00:00:00 +0200</pubDate>
       
-      <guid isPermaLink="false">https://pattex.github.com/octopod/2010/10/02/003-duessstropisch.html</guid>
+      <guid isPermaLink="false">http://pattex.github.com/octopod/2010/10/02/003-duessstropisch.html</guid>
       <description><![CDATA[<p><a href='http://www.joshwoodward.com/'>Josh Woodward</a> seems to have a career death wish. A prolific indie acoustic-rock songwriter, he has released ten albums in the past eight years, but he has chosen to give away all of his music for free. In a world of $18 CDs and lawsuits against file sharing grandmothers, Josh offers 180 songs as free downloads from his websites, and sells CDs on a name-your-own-price basis.</p>
 
 <p>This gamble has paid off well; he&#8217;s used file sharing to build a viral, worldwide network of fans. After over three-and-a-half million MP3 downloads from his site, he&#8217;s living proof that the music world is changing. His brand of energetic and passionate delivery with vivid stories, clever wordplay and dark humor may not be for everyone, but the Internet has made it possible to find its audience.</p>
@@ -184,9 +184,9 @@ chaptersVisible: true});
 
 <p>The Internet is the main source of exposure for Josh&#8217;s music. With almost 10,000 subscribers YouTube for the many VideoSongs and acoustic performances, and over ten thousand videos from other users feature his music, totalling over 150 million views. He was also a featured artist for Clear Channel New in Winter 2006, which included extensive online promotion and national radio airplay. He&#8217;s one of the most downloaded artists on Jamendo, a Creative Commons music site, where he won the award for Best Pop Artist in 2011. Since 2010, &#8220;Swansong&#8221; has been the featured song in Ubuntu Linux.</p>
 <audio id='2010_10_02_003-duessstropisch_player' preload='none'>
-<source src='https://pattex.github.com/octopod/episodes/josh_woodward_-_together_on_our_own.m4a' type='audio/mp4a-latm' />
-<source src='https://pattex.github.com/octopod/episodes/josh_woodward_-_together_on_our_own.mp3' type='audio/mpeg' />
-<source src='https://pattex.github.com/octopod/episodes/josh_woodward_-_together_on_our_own.opus' type='audio/ogg; codecs=opus' />
+<source src='http://pattex.github.com/octopod/episodes/josh_woodward_-_together_on_our_own.m4a' type='audio/mp4a-latm' />
+<source src='http://pattex.github.com/octopod/episodes/josh_woodward_-_together_on_our_own.mp3' type='audio/mpeg' />
+<source src='http://pattex.github.com/octopod/episodes/josh_woodward_-_together_on_our_own.opus' type='audio/ogg; codecs=opus' />
 </audio><script>
 $('#2010_10_02_003-duessstropisch_player').podlovewebplayer({
 poster: '/img/josh_woodward_ashes.jpeg',
@@ -220,9 +220,9 @@ chaptersVisible: true});
 
 <p>The Internet is the main source of exposure for Josh&#8217;s music. With almost 10,000 subscribers YouTube for the many VideoSongs and acoustic performances, and over ten thousand videos from other users feature his music, totalling over 150 million views. He was also a featured artist for Clear Channel New in Winter 2006, which included extensive online promotion and national radio airplay. He&#8217;s one of the most downloaded artists on Jamendo, a Creative Commons music site, where he won the award for Best Pop Artist in 2011. Since 2010, &#8220;Swansong&#8221; has been the featured song in Ubuntu Linux.</p>
 <audio id='2010_10_02_003-duessstropisch_player' preload='none'>
-<source src='https://pattex.github.com/octopod/episodes/josh_woodward_-_together_on_our_own.m4a' type='audio/mp4a-latm' />
-<source src='https://pattex.github.com/octopod/episodes/josh_woodward_-_together_on_our_own.mp3' type='audio/mpeg' />
-<source src='https://pattex.github.com/octopod/episodes/josh_woodward_-_together_on_our_own.opus' type='audio/ogg; codecs=opus' />
+<source src='http://pattex.github.com/octopod/episodes/josh_woodward_-_together_on_our_own.m4a' type='audio/mp4a-latm' />
+<source src='http://pattex.github.com/octopod/episodes/josh_woodward_-_together_on_our_own.mp3' type='audio/mpeg' />
+<source src='http://pattex.github.com/octopod/episodes/josh_woodward_-_together_on_our_own.opus' type='audio/ogg; codecs=opus' />
 </audio><script>
 $('#2010_10_02_003-duessstropisch_player').podlovewebplayer({
 poster: '/img/josh_woodward_ashes.jpeg',
@@ -248,34 +248,34 @@ chaptersVisible: true});
 
 <li><a href='http://www.joshwoodward.com/youtube'>Josh on Youtube</a></li>
 </ul>]]></content:encoded>
-      <enclosure url="https://pattex.github.com/octopod/episodes/josh_woodward_-_together_on_our_own.mp3" length="5104152" type="audio/mpeg" />
+      <enclosure url="http://pattex.github.com/octopod/episodes/josh_woodward_-_together_on_our_own.mp3" length="5104152" type="audio/mpeg" />
       <itunes:keywords></itunes:keywords>
       <itunes:subtitle></itunes:subtitle>
       <itunes:summary></itunes:summary>
       <itunes:author>Uncle Octopod</itunes:author>
       <itunes:explicit>no</itunes:explicit>
       <itunes:duration>296</itunes:duration>
-      <atom:link rel="payment" href="https://flattr.com/submit/auto?url=https%3A%2F%2Fpattex.github.com%2Foctopod%2F2010%2F10%2F02%2F003-duessstropisch.html&amp;user_id=pattex%23%20Flattr%20will%20not%20be%20used%20unless%20this%20is%20set" type="text/html" />
+      <atom:link rel="payment" href="https://flattr.com/submit/auto?url=http%3A%2F%2Fpattex.github.com%2Foctopod%2F2010%2F10%2F02%2F003-duessstropisch.html&amp;user_id=pattex%23%20Flattr%20will%20not%20be%20used%20unless%20this%20is%20set" type="text/html" />
       
     </item>
     
     <item>
       <title>Edgar Allan Poe - The Raven</title>
-      <link>https://pattex.github.com/octopod/1845/01/29/edgar-allan-poe-the-raven.html</link>
-      <comments>https://pattex.github.com/octopod/1845/01/29/edgar-allan-poe-the-raven.html#disqus_thread</comments>
+      <link>http://pattex.github.com/octopod/1845/01/29/edgar-allan-poe-the-raven.html</link>
+      <comments>http://pattex.github.com/octopod/1845/01/29/edgar-allan-poe-the-raven.html#disqus_thread</comments>
       <pubDate>Wed, 29 Jan 1845 00:00:00 +0100</pubDate>
       
-      <guid isPermaLink="false">https://pattex.github.com/octopod/1845/01/29/edgar-allan-poe-the-raven.html</guid>
+      <guid isPermaLink="false">http://pattex.github.com/octopod/1845/01/29/edgar-allan-poe-the-raven.html</guid>
       <description><![CDATA[<p><strong>&#8220;The Raven&#8221;</strong> is a narrative poem by American writer Edgar Allan Poe. First published in January 1845, the poem is often noted for its musicality, stylized language, and supernatural atmosphere. It tells of a talking raven&#8217;s mysterious visit to a distraught lover, tracing the man&#8217;s slow fall into madness. The lover, often identified as being a student, is lamenting the loss of his love, Lenore. Sitting on a bust of Pallas, the raven seems to further instigate his distress with its constant repetition of the word &#8220;Nevermore&#8221;. The poem makes use of a number of folk and classical references.</p>
 
 <p>Poe claimed to have written the poem very logically and methodically, intending to create a poem that would appeal to both critical and popular tastes, as he explained in his 1846 follow-up essay &#8220;The Philosophy of Composition&#8221;. The poem was inspired in part by a talking raven in the novel Barnaby Rudge: A Tale of the Riots of &#8216;Eighty by Charles Dickens. Poe borrows the complex rhythm and meter of Elizabeth Barrett&#8217;s poem &#8220;Lady Geraldine&#8217;s Courtship&#8221;, and makes use of internal rhyme as well as alliteration throughout.<br />&#8220;The Raven&#8221; was first attributed to Poe in print in the New York Evening Mirror on January 29, 1845. Its publication made Poe widely popular in his lifetime, although it did not bring him much financial success. Soon reprinted, parodied, and illustrated, critical opinion is divided as to the poem&#8217;s status, but it nevertheless remains one of the most famous poems ever written.</p>
 <audio id='1845_01_29_edgar-allan-poe-the-raven_player' preload='none'>
-<source src='https://pattex.github.com/octopod/episodes/edgar-allan-poe-the-raven.m4a' type='audio/mp4a-latm' />
-<source src='https://pattex.github.com/octopod/episodes/edgar-allan-poe-the-raven.mp3' type='audio/mpeg' />
-<source src='https://pattex.github.com/octopod/episodes/edgar-allan-poe-the-raven.opus' type='audio/ogg; codecs=opus' />
+<source src='http://pattex.github.com/octopod/episodes/edgar-allan-poe-the-raven.m4a' type='audio/mp4a-latm' />
+<source src='http://pattex.github.com/octopod/episodes/edgar-allan-poe-the-raven.mp3' type='audio/mpeg' />
+<source src='http://pattex.github.com/octopod/episodes/edgar-allan-poe-the-raven.opus' type='audio/ogg; codecs=opus' />
 </audio><script>
 $('#1845_01_29_edgar-allan-poe-the-raven_player').podlovewebplayer({
-poster: 'https://pattex.github.com/octopod/img/logo-360x360.png',
+poster: 'http://pattex.github.com/octopod/img/logo-360x360.png',
 duration: '00:07:56',
 title: 'Edgar Allan Poe - The Raven',
 alwaysShowHours: true,
@@ -296,12 +296,12 @@ chaptersVisible: true});
 
 <p>Poe claimed to have written the poem very logically and methodically, intending to create a poem that would appeal to both critical and popular tastes, as he explained in his 1846 follow-up essay &#8220;The Philosophy of Composition&#8221;. The poem was inspired in part by a talking raven in the novel Barnaby Rudge: A Tale of the Riots of &#8216;Eighty by Charles Dickens. Poe borrows the complex rhythm and meter of Elizabeth Barrett&#8217;s poem &#8220;Lady Geraldine&#8217;s Courtship&#8221;, and makes use of internal rhyme as well as alliteration throughout.<br />&#8220;The Raven&#8221; was first attributed to Poe in print in the New York Evening Mirror on January 29, 1845. Its publication made Poe widely popular in his lifetime, although it did not bring him much financial success. Soon reprinted, parodied, and illustrated, critical opinion is divided as to the poem&#8217;s status, but it nevertheless remains one of the most famous poems ever written.</p>
 <audio id='1845_01_29_edgar-allan-poe-the-raven_player' preload='none'>
-<source src='https://pattex.github.com/octopod/episodes/edgar-allan-poe-the-raven.m4a' type='audio/mp4a-latm' />
-<source src='https://pattex.github.com/octopod/episodes/edgar-allan-poe-the-raven.mp3' type='audio/mpeg' />
-<source src='https://pattex.github.com/octopod/episodes/edgar-allan-poe-the-raven.opus' type='audio/ogg; codecs=opus' />
+<source src='http://pattex.github.com/octopod/episodes/edgar-allan-poe-the-raven.m4a' type='audio/mp4a-latm' />
+<source src='http://pattex.github.com/octopod/episodes/edgar-allan-poe-the-raven.mp3' type='audio/mpeg' />
+<source src='http://pattex.github.com/octopod/episodes/edgar-allan-poe-the-raven.opus' type='audio/ogg; codecs=opus' />
 </audio><script>
 $('#1845_01_29_edgar-allan-poe-the-raven_player').podlovewebplayer({
-poster: 'https://pattex.github.com/octopod/img/logo-360x360.png',
+poster: 'http://pattex.github.com/octopod/img/logo-360x360.png',
 duration: '00:07:56',
 title: 'Edgar Allan Poe - The Raven',
 alwaysShowHours: true,
@@ -318,14 +318,14 @@ chaptersVisible: true});
 
 <li><a href='http://librivox.org/the-raven-multilingual-by-edgar-allan-poe/'>The Raven at LibriVox</a> from where I got the sound file</li>
 </ul>]]></content:encoded>
-      <enclosure url="https://pattex.github.com/octopod/episodes/edgar-allan-poe-the-raven.mp3" length="6801416" type="audio/mpeg" />
+      <enclosure url="http://pattex.github.com/octopod/episodes/edgar-allan-poe-the-raven.mp3" length="6801416" type="audio/mpeg" />
       <itunes:keywords></itunes:keywords>
       <itunes:subtitle></itunes:subtitle>
       <itunes:summary></itunes:summary>
       <itunes:author>Uncle Octopod</itunes:author>
       <itunes:explicit>no</itunes:explicit>
       <itunes:duration>476</itunes:duration>
-      <atom:link rel="payment" href="https://flattr.com/submit/auto?url=https%3A%2F%2Fpattex.github.com%2Foctopod%2F1845%2F01%2F29%2Fedgar-allan-poe-the-raven.html&amp;user_id=pattex%23%20Flattr%20will%20not%20be%20used%20unless%20this%20is%20set" type="text/html" />
+      <atom:link rel="payment" href="https://flattr.com/submit/auto?url=http%3A%2F%2Fpattex.github.com%2Foctopod%2F1845%2F01%2F29%2Fedgar-allan-poe-the-raven.html&amp;user_id=pattex%23%20Flattr%20will%20not%20be%20used%20unless%20this%20is%20set" type="text/html" />
       
     </item>
     
