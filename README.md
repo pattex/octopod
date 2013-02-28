@@ -1,7 +1,8 @@
 # Octopod - podcast delivery for geeks
 
-Octopod is a set of [Jekyll](http://jekyllrb.com/) templates, helpers and extensions to deliver your podcasts the cool text file lover's way.
-<a href="http://flattr.com/thing/1153811/" target="_blank"><img src="http://api.flattr.com/button/flattr-badge-large.png" alt="Flattr this" title="Flattr this" border="0" /></a>
+<a href="http://flattr.com/thing/1154435/pattex-on-GitHub" target="_blank"><img src="http://api.flattr.com/button/flattr-badge-large.png" alt="Flattr this" title="Flattr this" border="0" /></a>  
+Octopod is a set of [Jekyll](http://jekyllrb.com/) templates, helpers and extensions to deliver your podcasts the cool text file lover's way.  
+Please take a look at [this demo](http://pattex.github.com/octopod).
 
 <img src="https://raw.github.com/pattex/octopod/master/img/logo-360x360.png" alt="Octopod logo">
 
@@ -68,7 +69,7 @@ I shamelessly took some lines from other projects. And of cause Octopod is based
 Gratitude be to:
 * [Jekyll](http://jekyllrb.com/)
 * [Twitter Bootstrap](http://twitter.github.com/bootstrap/)
-* [Podlove Web Player](http://podlove.org/podlove-web-player/)
+* [The whole Podlove project](http://podlove.org/)
 * [Octopress](http://octopress.org/)
 
 ## License
@@ -99,5 +100,3 @@ THE SOFTWARE.
 
 Octopod Logo by [Thekla "TeMeL" Löhr](http://www.temel-art.de/) is licensed
 under a [Creative Commons Attribution 3.0 Germany License](http://creativecommons.org/licenses/by/3.0/de/).
-Permissions beyond the scope of this license may be available at
-[https://kleinerdrei.net/](https://kleinerdrei.net/).
