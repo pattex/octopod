@@ -4,7 +4,7 @@
  <title>Octopod</title>
  <link href="http://pattex.github.com/octopod/general_feed.xml" rel="self"/>
  <link href="http://pattex.github.com/octopod"/>
- <updated>2013-02-28T20:02:36+01:00</updated>
+ <updated>2013-02-28T20:13:23+01:00</updated>
  <id>http://pattex.github.com/octopod/</id>
  <author>
    <name>Uncle Octopod</name>
@@ -73,7 +73,7 @@ chaptersVisible: true});
    
    <link rel="enclosure" type="audio/ogg; codecs=opus" length="13670383" href="http://pattex.github.com/octopod/episodes/mm003.opus"/>
    
-   <link rel="payment" href="https://flattr.com/submit/auto?url=http%3A%2F%2Fpattex.github.com%2Foctopod%2F2012%2F10%2F02%2F003-duessstropisch.html&amp;user_id=pattex%23%20Flattr%20will%20not%20be%20used%20unless%20this%20is%20set" type="text/html" />
+   <link rel="payment" href="https://flattr.com/submit/auto?url=http%3A%2F%2Fpattex.github.com%2Foctopod%2F2012%2F10%2F02%2F003-duessstropisch.html&amp;user_id=pattex" type="text/html" />
  </entry>
  
  <entry>
@@ -124,7 +124,7 @@ chaptersVisible: true});
    
    <link rel="enclosure" type="audio/ogg; codecs=opus" length="2069705" href="http://pattex.github.com/octopod/episodes/josh_woodward_-_together_on_our_own.opus"/>
    
-   <link rel="payment" href="https://flattr.com/submit/auto?url=http%3A%2F%2Fpattex.github.com%2Foctopod%2F2010%2F10%2F02%2F003-duessstropisch.html&amp;user_id=pattex%23%20Flattr%20will%20not%20be%20used%20unless%20this%20is%20set" type="text/html" />
+   <link rel="payment" href="https://flattr.com/submit/auto?url=http%3A%2F%2Fpattex.github.com%2Foctopod%2F2010%2F10%2F02%2F003-duessstropisch.html&amp;user_id=pattex" type="text/html" />
  </entry>
  
  <entry>
@@ -152,7 +152,7 @@ chaptersVisible: true});
    
    <link rel="enclosure" type="audio/ogg; codecs=opus" length="2968176" href="http://pattex.github.com/octopod/episodes/edgar-allan-poe-the-raven.opus"/>
    
-   <link rel="payment" href="https://flattr.com/submit/auto?url=http%3A%2F%2Fpattex.github.com%2Foctopod%2F1845%2F01%2F29%2Fedgar-allan-poe-the-raven.html&amp;user_id=pattex%23%20Flattr%20will%20not%20be%20used%20unless%20this%20is%20set" type="text/html" />
+   <link rel="payment" href="https://flattr.com/submit/auto?url=http%3A%2F%2Fpattex.github.com%2Foctopod%2F1845%2F01%2F29%2Fedgar-allan-poe-the-raven.html&amp;user_id=pattex" type="text/html" />
  </entry>
  
 
