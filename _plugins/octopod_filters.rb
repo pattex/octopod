@@ -128,7 +128,6 @@ module Jekyll
       return if page['audio'].nil?
 
       options = {
-        'poster'              => "#{site['url']}/img/logo-360x360.png",
         'alwaysShowHours'     => 'true',
         'startVolume'         => '0.8',
         'width'               => 'auto',
@@ -149,7 +148,7 @@ module Jekyll
 
       out = audio_tag(page, site)
       out << "<script>\n$('##{slug(page)}_player').podlovewebplayer({\n"
-      out << "poster: '#{js_str_escape(options['episode_cover']) || site['url'] + '/img/logo-360x360.png'}',\n"
+      out << "poster: '#{site['url'] + js_str_escape(options['episode_cover']) || site['url'] + '/img/logo-360x360.png'}',\n"
       out << "subtitle: '#{js_str_escape(options['subtitle'])}',\n" if options['subtitle']
       out << "chapters: '#{options['chapters'].map { |c| js_str_escape(c) }.join(%Q{'+"\\n"+'})}',\n" if options['chapters']
       out << "summary: '#{js_str_escape(options['summary'])}',\n" if options['summary']
