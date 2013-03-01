@@ -78,7 +78,7 @@ module Jekyll
         when 'https'
           options[k] = 1
         when 'url'
-          options[k] = site['url'] + page['url'].to_s
+          options[k] = "#{site['url']}#{page['url']}"
         when 'description'
           options[k] = page['content'] || site['description'] || site['title']
         when 'category'

@@ -148,7 +148,7 @@ module Jekyll
 
       out = audio_tag(page, site)
       out << "<script>\n$('##{slug(page)}_player').podlovewebplayer({\n"
-      out << "poster: '#{site['url'] + js_str_escape(options['episode_cover']) || site['url'] + '/img/logo-360x360.png'}',\n"
+      out << "poster: '#{site['url']}#{(options['episode_cover'] || '/img/logo-360x360.png')}',\n"
       out << "subtitle: '#{js_str_escape(options['subtitle'])}',\n" if options['subtitle']
       out << "chapters: '#{options['chapters'].map { |c| js_str_escape(c) }.join(%Q{'+"\\n"+'})}',\n" if options['chapters']
       out << "summary: '#{js_str_escape(options['summary'])}',\n" if options['summary']
@@ -204,7 +204,7 @@ module Jekyll
       if page
         disqus_vars = {
           'disqus_identifier'  => page['url'],
-          'disqus_url'         => site['url'] + page['url'],
+          'disqus_url'         => "#{site['url']}#{page['url']}",
           'disqus_category_id' => page['disqus_category_id'] || site['disqus_category_id'],
           'disqus_title'       => page['title'] || site['site']
         }
