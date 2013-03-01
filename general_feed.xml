@@ -4,7 +4,7 @@
  <title>Octopod</title>
  <link href="http://pattex.github.com/octopod/general_feed.xml" rel="self"/>
  <link href="http://pattex.github.com/octopod"/>
- <updated>2013-02-28T20:16:27+01:00</updated>
+ <updated>2013-03-01T20:57:44+01:00</updated>
  <id>http://pattex.github.com/octopod/</id>
  <author>
    <name>Uncle Octopod</name>
@@ -135,9 +135,22 @@ chaptersVisible: true});
    <content type="html">&lt;p&gt;&lt;strong&gt;&amp;#8220;The Raven&amp;#8221;&lt;/strong&gt; is a narrative poem by American writer Edgar Allan Poe. First published in January 1845, the poem is often noted for its musicality, stylized language, and supernatural atmosphere. It tells of a talking raven&amp;#8217;s mysterious visit to a distraught lover, tracing the man&amp;#8217;s slow fall into madness. The lover, often identified as being a student, is lamenting the loss of his love, Lenore. Sitting on a bust of Pallas, the raven seems to further instigate his distress with its constant repetition of the word &amp;#8220;Nevermore&amp;#8221;. The poem makes use of a number of folk and classical references.&lt;/p&gt;
 
 &lt;p&gt;Poe claimed to have written the poem very logically and methodically, intending to create a poem that would appeal to both critical and popular tastes, as he explained in his 1846 follow-up essay &amp;#8220;The Philosophy of Composition&amp;#8221;. The poem was inspired in part by a talking raven in the novel Barnaby Rudge: A Tale of the Riots of &amp;#8216;Eighty by Charles Dickens. Poe borrows the complex rhythm and meter of Elizabeth Barrett&amp;#8217;s poem &amp;#8220;Lady Geraldine&amp;#8217;s Courtship&amp;#8221;, and makes use of internal rhyme as well as alliteration throughout.&lt;br /&gt;&amp;#8220;The Raven&amp;#8221; was first attributed to Poe in print in the New York Evening Mirror on January 29, 1845. Its publication made Poe widely popular in his lifetime, although it did not bring him much financial success. Soon reprinted, parodied, and illustrated, critical opinion is divided as to the poem&amp;#8217;s status, but it nevertheless remains one of the most famous poems ever written.&lt;/p&gt;
-
-&lt;p&gt;Liquid error: can&amp;#8217;t convert nil into String&lt;/p&gt;
-
+&lt;audio id='1845_01_29_edgar-allan-poe-the-raven_player' preload='none'&gt;
+&lt;source src='http://pattex.github.com/octopod/episodes/edgar-allan-poe-the-raven.m4a' type='audio/mp4a-latm' /&gt;
+&lt;source src='http://pattex.github.com/octopod/episodes/edgar-allan-poe-the-raven.mp3' type='audio/mpeg' /&gt;
+&lt;source src='http://pattex.github.com/octopod/episodes/edgar-allan-poe-the-raven.opus' type='audio/ogg; codecs=opus' /&gt;
+&lt;/audio&gt;&lt;script&gt;
+$('#1845_01_29_edgar-allan-poe-the-raven_player').podlovewebplayer({
+poster: 'http://pattex.github.com/octopod/img/logo-360x360.png',
+duration: '00:07:56',
+title: 'Edgar The Raven',
+alwaysShowHours: true,
+startVolume: 0.8,
+width: 'auto',
+summaryVisible: false,
+timecontrolsVisible: false,
+chaptersVisible: true});
+&lt;/script&gt;
 &lt;h2 id='shownotes'&gt;Shownotes&lt;/h2&gt;
 
 &lt;ul&gt;

@@ -6,7 +6,7 @@
     <atom:link href="http://pattex.github.com/octopod/episodes.m4a.rss" rel="self" type="application/rss+xml" title="m4a Episode RSS-Feed"/>
     <atom:link rel="alternate" href="http://pattex.github.com/octopod/episodes.mp3.rss" type="application/rss+xml" title="mp3 Episode RSS-Feed"/>
     <description>My super duper cool podcast.</description>
-    <lastBuildDate>Thu, 28 Feb 2013 20:16:27 +0100</lastBuildDate>
+    <lastBuildDate>Fri, 01 Mar 2013 20:57:44 +0100</lastBuildDate>
     <language>en</language>
 
     <itunes:summary>My super duper cool podcast.</itunes:summary>
@@ -269,9 +269,22 @@ chaptersVisible: true});
       <description><![CDATA[<p><strong>&#8220;The Raven&#8221;</strong> is a narrative poem by American writer Edgar Allan Poe. First published in January 1845, the poem is often noted for its musicality, stylized language, and supernatural atmosphere. It tells of a talking raven&#8217;s mysterious visit to a distraught lover, tracing the man&#8217;s slow fall into madness. The lover, often identified as being a student, is lamenting the loss of his love, Lenore. Sitting on a bust of Pallas, the raven seems to further instigate his distress with its constant repetition of the word &#8220;Nevermore&#8221;. The poem makes use of a number of folk and classical references.</p>
 
 <p>Poe claimed to have written the poem very logically and methodically, intending to create a poem that would appeal to both critical and popular tastes, as he explained in his 1846 follow-up essay &#8220;The Philosophy of Composition&#8221;. The poem was inspired in part by a talking raven in the novel Barnaby Rudge: A Tale of the Riots of &#8216;Eighty by Charles Dickens. Poe borrows the complex rhythm and meter of Elizabeth Barrett&#8217;s poem &#8220;Lady Geraldine&#8217;s Courtship&#8221;, and makes use of internal rhyme as well as alliteration throughout.<br />&#8220;The Raven&#8221; was first attributed to Poe in print in the New York Evening Mirror on January 29, 1845. Its publication made Poe widely popular in his lifetime, although it did not bring him much financial success. Soon reprinted, parodied, and illustrated, critical opinion is divided as to the poem&#8217;s status, but it nevertheless remains one of the most famous poems ever written.</p>
-
-<p>Liquid error: can&#8217;t convert nil into String</p>
-
+<audio id='1845_01_29_edgar-allan-poe-the-raven_player' preload='none'>
+<source src='http://pattex.github.com/octopod/episodes/edgar-allan-poe-the-raven.m4a' type='audio/mp4a-latm' />
+<source src='http://pattex.github.com/octopod/episodes/edgar-allan-poe-the-raven.mp3' type='audio/mpeg' />
+<source src='http://pattex.github.com/octopod/episodes/edgar-allan-poe-the-raven.opus' type='audio/ogg; codecs=opus' />
+</audio><script>
+$('#1845_01_29_edgar-allan-poe-the-raven_player').podlovewebplayer({
+poster: 'http://pattex.github.com/octopod/img/logo-360x360.png',
+duration: '00:07:56',
+title: 'Edgar The Raven',
+alwaysShowHours: true,
+startVolume: 0.8,
+width: 'auto',
+summaryVisible: false,
+timecontrolsVisible: false,
+chaptersVisible: true});
+</script>
 <h2 id='shownotes'>Shownotes</h2>
 
 <ul>
@@ -282,9 +295,22 @@ chaptersVisible: true});
       <content:encoded><![CDATA[<p><strong>&#8220;The Raven&#8221;</strong> is a narrative poem by American writer Edgar Allan Poe. First published in January 1845, the poem is often noted for its musicality, stylized language, and supernatural atmosphere. It tells of a talking raven&#8217;s mysterious visit to a distraught lover, tracing the man&#8217;s slow fall into madness. The lover, often identified as being a student, is lamenting the loss of his love, Lenore. Sitting on a bust of Pallas, the raven seems to further instigate his distress with its constant repetition of the word &#8220;Nevermore&#8221;. The poem makes use of a number of folk and classical references.</p>
 
 <p>Poe claimed to have written the poem very logically and methodically, intending to create a poem that would appeal to both critical and popular tastes, as he explained in his 1846 follow-up essay &#8220;The Philosophy of Composition&#8221;. The poem was inspired in part by a talking raven in the novel Barnaby Rudge: A Tale of the Riots of &#8216;Eighty by Charles Dickens. Poe borrows the complex rhythm and meter of Elizabeth Barrett&#8217;s poem &#8220;Lady Geraldine&#8217;s Courtship&#8221;, and makes use of internal rhyme as well as alliteration throughout.<br />&#8220;The Raven&#8221; was first attributed to Poe in print in the New York Evening Mirror on January 29, 1845. Its publication made Poe widely popular in his lifetime, although it did not bring him much financial success. Soon reprinted, parodied, and illustrated, critical opinion is divided as to the poem&#8217;s status, but it nevertheless remains one of the most famous poems ever written.</p>
-
-<p>Liquid error: can&#8217;t convert nil into String</p>
-
+<audio id='1845_01_29_edgar-allan-poe-the-raven_player' preload='none'>
+<source src='http://pattex.github.com/octopod/episodes/edgar-allan-poe-the-raven.m4a' type='audio/mp4a-latm' />
+<source src='http://pattex.github.com/octopod/episodes/edgar-allan-poe-the-raven.mp3' type='audio/mpeg' />
+<source src='http://pattex.github.com/octopod/episodes/edgar-allan-poe-the-raven.opus' type='audio/ogg; codecs=opus' />
+</audio><script>
+$('#1845_01_29_edgar-allan-poe-the-raven_player').podlovewebplayer({
+poster: 'http://pattex.github.com/octopod/img/logo-360x360.png',
+duration: '00:07:56',
+title: 'Edgar The Raven',
+alwaysShowHours: true,
+startVolume: 0.8,
+width: 'auto',
+summaryVisible: false,
+timecontrolsVisible: false,
+chaptersVisible: true});
+</script>
 <h2 id='shownotes'>Shownotes</h2>
 
 <ul>
