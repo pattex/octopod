@@ -5,13 +5,11 @@ module Jekyll
       src = path.sub("#{@base}/", '')
       nested_files = %w[img/bigplay.psd podlove-web-player.php readme.txt
         screenshot-1.png screenshot-2.png settings.php standalone.html
-        libs/mediaelement/README.md
-        podlove-web-player/podlove-web-player/libs/fontawesome/docs/README.md]
+        libs/mediaelement/README.md]
       exclude_dirs = %w[
         podlove-web-player/podlove-web-player/samples
         podlove-web-player/podlove-web-player/libs/mediaelement/demo
         podlove-web-player/podlove-web-player/libs/mediaelement/media
-        podlove-web-player/podlove-web-player/libs/fontawesome/docs
       ]
 
       excludes = %w[ChangeLog Gemfile Gemfile.lock README.md octopod podlove-web-player/readme.md]
