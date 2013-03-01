@@ -14,7 +14,7 @@ module Jekyll
         podlove-web-player/podlove-web-player/libs/fontawesome/docs
       ]
 
-      excludes = %w[Gemfile Gemfile.lock README.md octopod podlove-web-player/readme.md]
+      excludes = %w[ChangeLog Gemfile Gemfile.lock README.md octopod podlove-web-player/readme.md]
       excludes.concat(nested_files.map { |f| File.join('podlove-web-player/podlove-web-player', f) })
 
       return true if excludes.include?(src) || exclude_dirs.include?(File.dirname(src))
