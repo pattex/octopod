@@ -1,4 +1,4 @@
-require 'erb'
+#require 'erb'
 require 'uri'
 require 'digest/sha1'
 
@@ -10,11 +10,11 @@ module Jekyll
       input.gsub(/<!\[CDATA\[/, '&lt;![CDATA[').gsub(/\]\]>/, ']]&gt;')
     end
 
-    # Escapes single quotes in a given string
-    #
-    #   js_str_escape("Uncle Octopod's podcast") => "Uncle Octopod\'s podcast"
-    def js_str_escape(str)
-      str.gsub("'", "\\\\'") if str.is_a?(String)
+    # Escapes HTML entities in JSON strings.
+    # More or less a copy of the equivalent method in Active Support.
+    # https://github.com/rails/rails/tree/master/activesupport
+    def j(str)
+      str.to_s.gsub(/[&"><]/) { |e| { '&' => '\u0026', '>' => '\u003E', '<' => '\u003C' }[e] }
     end
 
     # Replaces relative urls with full urls
@@ -149,13 +149,13 @@ module Jekyll
       out = audio_tag(page, site)
       out << "<script>\n$('##{slug(page)}_player').podlovewebplayer({\n"
       out << "poster: '#{site['url']}#{(options['episode_cover'] || '/img/logo-360x360.png')}',\n"
-      out << "subtitle: '#{js_str_escape(options['subtitle'])}',\n" if options['subtitle']
-      out << "chapters: '#{options['chapters'].map { |c| js_str_escape(c) }.join(%Q{'+"\\n"+'})}',\n" if options['chapters']
-      out << "summary: '#{js_str_escape(options['summary'])}',\n" if options['summary']
+      out << "subtitle: '#{j(options['subtitle'])}',\n" if options['subtitle']
+      out << "chapters: '#{options['chapters'].map { |c| j(c) }.join(%Q{'+"\\n"+'})}',\n" if options['chapters']
+      out << "summary: '#{j(options['summary'])}',\n" if options['summary']
       out << "duration: '#{string_of_duration(options['duration'])}',\n"
 
       out << simple_keys.map { |k|
-        "#{k}: #{options[k] =~ /\A(true|false|[0-9\.]+)\z/ ? js_str_escape(options[k]) : "'#{js_str_escape(options[k])}'"}"
+        "#{k}: #{options[k] =~ /\A(true|false|[0-9\.]+)\z/ ? options[k] : "'#{j(options[k])}'"}"
       }.join(",\n") + "});\n</script>\n"
     end
 
