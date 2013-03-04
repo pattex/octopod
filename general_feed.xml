@@ -4,7 +4,7 @@
  <title>Octopod</title>
  <link href="http://pattex.github.com/octopod/general_feed.xml" rel="self"/>
  <link href="http://pattex.github.com/octopod"/>
- <updated>2013-03-01T21:35:45+01:00</updated>
+ <updated>2013-03-04T23:07:27+01:00</updated>
  <id>http://pattex.github.com/octopod/</id>
  <author>
    <name>Uncle Octopod</name>
@@ -31,6 +31,7 @@ $('#2012_10_02_003-duessstropisch_player').podlovewebplayer({
 poster: 'http://pattex.github.com/octopod/img/megamagisch360.jpg',
 chapters: '00:00:00.000 [hallo] Da sind wir wieder!'+&quot;\n&quot;+'00:01:29.000 [megamagisch] Was hat da denn so lange gedauert?'+&quot;\n&quot;+'00:02:39.000 [comic] Buffy the Vampire Slayer: Willow—Wonderland'+&quot;\n&quot;+'00:06:16.000 [comic] TeMeL - WOHLSTAND'+&quot;\n&quot;+'00:08:10.000 [buch] Hannu Rajaniemi - The Fractal Prince'+&quot;\n&quot;+'00:11:03.000 [schauspielerei] Peter Eberst'+&quot;\n&quot;+'00:27:01.000 [verschenkung] Donjon'+&quot;\n&quot;+'00:33:35.000 [megamagisch] Bisschen Druck'+&quot;\n&quot;+'00:34:57.000 [megamagisch] Danke und Tschüs',
 duration: '00:36:43',
+permalink: 'http://pattex.github.com/octopod/2012/10/02/003-duessstropisch.html',
 title: 'DüssstRopisch',
 alwaysShowHours: true,
 startVolume: 0.8,
@@ -96,6 +97,7 @@ chaptersVisible: true});
 $('#2010_10_02_003-duessstropisch_player').podlovewebplayer({
 poster: 'http://pattex.github.com/octopod/img/josh_woodward_ashes.jpeg',
 duration: '00:04:56',
+permalink: 'http://pattex.github.com/octopod/2010/10/02/003-duessstropisch.html',
 title: 'Together On Our Own',
 alwaysShowHours: true,
 startVolume: 0.8,
@@ -143,6 +145,7 @@ chaptersVisible: true});
 $('#1845_01_29_edgar-allan-poe-the-raven_player').podlovewebplayer({
 poster: 'http://pattex.github.com/octopod/img/logo-360x360.png',
 duration: '00:07:56',
+permalink: 'http://pattex.github.com/octopod/1845/01/29/edgar-allan-poe-the-raven.html',
 title: 'Edgar The Raven',
 alwaysShowHours: true,
 startVolume: 0.8,
