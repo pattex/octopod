@@ -133,7 +133,8 @@ module Jekyll
         'width'               => 'auto',
         'summaryVisible'      => 'false',
         'timecontrolsVisible' => 'false',
-        'chaptersVisible'     => 'true'
+        'chaptersVisible'     => 'true',
+        'sharebuttonsVisible' => 'false'
       }
 
       simple_keys = %w[title alwaysShowHours startVolume width summaryVisible
@@ -153,6 +154,7 @@ module Jekyll
       out << "chapters: '#{options['chapters'].map { |c| js_str_escape(c) }.join(%Q{'+"\\n"+'})}',\n" if options['chapters']
       out << "summary: '#{js_str_escape(options['summary'])}',\n" if options['summary']
       out << "duration: '#{string_of_duration(options['duration'])}',\n"
+      out << "permalink: '#{site['url']}#{page['url']}',\n"
 
       out << simple_keys.map { |k|
         "#{k}: #{options[k] =~ /\A(true|false|[0-9\.]+)\z/ ? js_str_escape(options[k]) : "'#{js_str_escape(options[k])}'"}"

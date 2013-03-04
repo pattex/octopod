@@ -20,6 +20,7 @@ itunes_categories: [Technology]
 # summaryVisible: false
 # timecontrolsVisible: false
 # chaptersVisible: true
+# sharebuttonsVisible: false
 ## Rsync Deploy config #########################################################
 ### Be sure your public key is listed in your server's ~/.ssh/authorized_keys
 ### file.
