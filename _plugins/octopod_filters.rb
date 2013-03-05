@@ -4,6 +4,7 @@ require 'digest/sha1'
 
 module Jekyll
   module OctopodFilters
+    JSON_ENTITIES = { '&' => '\u0026', '>' => '\u003E', '<' => '\u003C', "'" => '\u0027' }
 
     # Escapes CDATA sections in post content
     def cdata_escape(input)
@@ -14,7 +15,7 @@ module Jekyll
     # More or less a copy of the equivalent method in Active Support.
     # https://github.com/rails/rails/tree/master/activesupport
     def j(str)
-      str.to_s.gsub(/[&"><]/) { |e| { '&' => '\u0026', '>' => '\u003E', '<' => '\u003C' }[e] }
+      str.to_s.gsub(/[&"><']/) { |e| JSON_ENTITIES[e] }
     end
 
     # Replaces relative urls with full urls
@@ -208,7 +209,7 @@ module Jekyll
           'disqus_identifier'  => page['url'],
           'disqus_url'         => "#{site['url']}#{page['url']}",
           'disqus_category_id' => page['disqus_category_id'] || site['disqus_category_id'],
-          'disqus_title'       => page['title'] || site['site']
+          'disqus_title'       => j(page['title'] || site['site'])
         }
       else
         disqus_vars = {
