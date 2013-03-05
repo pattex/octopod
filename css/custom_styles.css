@@ -6,4 +6,3 @@ div.audio-meta { vertical-align: baseline; }
 div.audio-player { padding: 5px 0 0 0; }
 div #footer small { color: #999; }
 div.navbar-inner { -moz-border-radius: 0; -webkit-border-radius: 0; border-radius: 0; }
-div.podlovewebplayer_wrapper [class^="icon-"], div.podlovewebplayer_wrapper [class*=" icon-"] { display: inline; }
