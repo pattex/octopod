@@ -139,7 +139,7 @@ module Jekyll
       }
 
       simple_keys = %w[title alwaysShowHours startVolume width summaryVisible
-                         timecontrolsVisible chaptersVisible]
+        timecontrolsVisible chaptersVisible sharebuttonsVisible]
 
       if site = site.dup
         site.delete('title')
