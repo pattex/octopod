@@ -4,52 +4,13 @@
  <title>Octopod</title>
  <link href="http://pattex.github.com/octopod/general_feed.xml" rel="self"/>
  <link href="http://pattex.github.com/octopod"/>
- <updated>2013-03-08T11:48:48+01:00</updated>
+ <updated>2013-03-08T12:01:48+01:00</updated>
  <id>http://pattex.github.com/octopod/</id>
  <author>
    <name>Uncle Octopod</name>
    <email>octopod@example.com</email>
  </author>
 
- 
- <entry>
-   <title>Why I <3 Octopod</title>
-   <link href="http://pattex.github.com/octopod/2013/03/06/why-i-_3-octopod.html"/>
-   <updated>2013-03-06T00:00:00+01:00</updated>
-   <id>http://pattex.github.com/octopod/2013/03/06/why-i-_3-octopod</id>
-   <content type="html">&lt;p&gt;Insert eloquent and worth reading text here.&lt;/p&gt;
-&lt;audio id='2013_03_06_why-i-_3-octopod_player' preload='none'&gt;
-&lt;source src='http://pattex.github.com/octopod/episodes/name.m4a' type='audio/mp4a-latm' /&gt;
-&lt;source src='http://pattex.github.com/octopod/episodes/name.mp3' type='audio/mpeg' /&gt;
-&lt;source src='http://pattex.github.com/octopod/episodes/name.opus' type='audio/ogg; codecs=opus' /&gt;
-&lt;/audio&gt;&lt;script&gt;
-$('#2013_03_06_why-i-_3-octopod_player').podlovewebplayer({
-poster: 'http://pattex.github.com/octopod/img/logo-360x360.png',
-duration: '00:00:00',
-permalink: 'http://pattex.github.com/octopod/2013/03/06/why-i-_3-octopod.html',
-title: 'Why I \u003C3 Octopod',
-alwaysShowHours: true,
-startVolume: 0.8,
-width: 'auto',
-summaryVisible: false,
-timecontrolsVisible: false,
-chaptersVisible: true,
-sharebuttonsVisible: 'true'});
-&lt;/script&gt;
-&lt;h2 id='shownotes'&gt;Shownotes&lt;/h2&gt;
-
-&lt;ul&gt;
-&lt;li&gt;Note&lt;/li&gt;
-&lt;/ul&gt;</content>
-   
-   <link rel="enclosure" type="audio/mp4a-latm" length="Liquid error: No such file or directory - episodes/name.m4a" href="http://pattex.github.com/octopod/episodes/name.m4a"/>
-   
-   <link rel="enclosure" type="audio/mpeg" length="Liquid error: No such file or directory - episodes/name.mp3" href="http://pattex.github.com/octopod/episodes/name.mp3"/>
-   
-   <link rel="enclosure" type="audio/ogg; codecs=opus" length="Liquid error: No such file or directory - episodes/name.opus" href="http://pattex.github.com/octopod/episodes/name.opus"/>
-   
-   <link rel="payment" href="https://flattr.com/submit/auto?url=http%3A%2F%2Fpattex.github.com%2Foctopod%2F2013%2F03%2F06%2Fwhy-i-_3-octopod.html&amp;user_id=pattex" type="text/html" />
- </entry>
  
  <entry>
    <title>DüssstRopisch</title>

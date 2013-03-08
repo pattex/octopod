@@ -7,7 +7,7 @@
     <atom:link rel="alternate" href="http://pattex.github.com/octopod/episodes.m4a.rss" type="application/rss+xml" title="m4a Episode RSS-Feed"/>
 <atom:link rel="alternate" href="http://pattex.github.com/octopod/episodes.opus.rss" type="application/rss+xml" title="opus Episode RSS-Feed"/>
     <description>My super duper cool podcast.</description>
-    <lastBuildDate>Fri, 08 Mar 2013 11:48:48 +0100</lastBuildDate>
+    <lastBuildDate>Fri, 08 Mar 2013 12:01:48 +0100</lastBuildDate>
     <language>en</language>
 
     <itunes:summary>My super duper cool podcast.</itunes:summary>
@@ -31,72 +31,6 @@
     <itunes:category text="Technology">
     
     </itunes:category>
-    
-    <item>
-      <title>Why I <3 Octopod</title>
-      <link>http://pattex.github.com/octopod/2013/03/06/why-i-_3-octopod.html</link>
-      <comments>http://pattex.github.com/octopod/2013/03/06/why-i-_3-octopod.html#disqus_thread</comments>
-      <pubDate>Wed, 06 Mar 2013 00:00:00 +0100</pubDate>
-      
-      <guid isPermaLink="false">http://pattex.github.com/octopod/2013/03/06/why-i-_3-octopod.html</guid>
-      <description><![CDATA[<p>Insert eloquent and worth reading text here.</p>
-<audio id='2013_03_06_why-i-_3-octopod_player' preload='none'>
-<source src='http://pattex.github.com/octopod/episodes/name.m4a' type='audio/mp4a-latm' />
-<source src='http://pattex.github.com/octopod/episodes/name.mp3' type='audio/mpeg' />
-<source src='http://pattex.github.com/octopod/episodes/name.opus' type='audio/ogg; codecs=opus' />
-</audio><script>
-$('#2013_03_06_why-i-_3-octopod_player').podlovewebplayer({
-poster: 'http://pattex.github.com/octopod/img/logo-360x360.png',
-duration: '00:00:00',
-permalink: 'http://pattex.github.com/octopod/2013/03/06/why-i-_3-octopod.html',
-title: 'Why I \u003C3 Octopod',
-alwaysShowHours: true,
-startVolume: 0.8,
-width: 'auto',
-summaryVisible: false,
-timecontrolsVisible: false,
-chaptersVisible: true,
-sharebuttonsVisible: 'true'});
-</script>
-<h2 id='shownotes'>Shownotes</h2>
-
-<ul>
-<li>Note</li>
-</ul>]]></description>
-      <content:encoded><![CDATA[<p>Insert eloquent and worth reading text here.</p>
-<audio id='2013_03_06_why-i-_3-octopod_player' preload='none'>
-<source src='http://pattex.github.com/octopod/episodes/name.m4a' type='audio/mp4a-latm' />
-<source src='http://pattex.github.com/octopod/episodes/name.mp3' type='audio/mpeg' />
-<source src='http://pattex.github.com/octopod/episodes/name.opus' type='audio/ogg; codecs=opus' />
-</audio><script>
-$('#2013_03_06_why-i-_3-octopod_player').podlovewebplayer({
-poster: 'http://pattex.github.com/octopod/img/logo-360x360.png',
-duration: '00:00:00',
-permalink: 'http://pattex.github.com/octopod/2013/03/06/why-i-_3-octopod.html',
-title: 'Why I \u003C3 Octopod',
-alwaysShowHours: true,
-startVolume: 0.8,
-width: 'auto',
-summaryVisible: false,
-timecontrolsVisible: false,
-chaptersVisible: true,
-sharebuttonsVisible: 'true'});
-</script>
-<h2 id='shownotes'>Shownotes</h2>
-
-<ul>
-<li>Note</li>
-</ul>]]></content:encoded>
-      <enclosure url="http://pattex.github.com/octopod/episodes/name.mp3" length="Liquid error: No such file or directory - episodes/name.mp3" type="audio/mpeg" />
-      <itunes:keywords></itunes:keywords>
-      <itunes:subtitle></itunes:subtitle>
-      <itunes:summary></itunes:summary>
-      <itunes:author>Uncle Octopod</itunes:author>
-      <itunes:explicit>no</itunes:explicit>
-      <itunes:duration></itunes:duration>
-      <atom:link rel="payment" href="https://flattr.com/submit/auto?url=http%3A%2F%2Fpattex.github.com%2Foctopod%2F2013%2F03%2F06%2Fwhy-i-_3-octopod.html&amp;user_id=pattex" type="text/html" />
-      
-    </item>
     
     <item>
       <title>DüssstRopisch</title>
