@@ -158,7 +158,7 @@ module Jekyll
       out << "permalink: '#{site['url']}#{page['url']}',\n"
 
       out << simple_keys.map { |k|
-        "#{k}: #{options[k] =~ /\A(true|false|[0-9\.]+)\z/ ? options[k] : "'#{j(options[k])}'"}"
+        "#{k}: #{(k = options[k].to_s) =~ /\A(true|false|[0-9\.]+)\z/ ? k : "'#{j(k)}'"}"
       }.join(",\n") + "});\n</script>\n"
     end
 
