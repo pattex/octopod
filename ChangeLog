@@ -1,7 +1,11 @@
+== 0.2.1 [2013-03-08]
+
+* Fixed a podlove-web-player integration bug, that thought of I already had
+
 == 0.2.0 [2013-03-08]
 
 * Updated podlove-web-player to v2.0.5
-* Fixed some  podlove-web-player integration failures
+* Fixed some podlove-web-player integration failures
 
 == 0.1.0 [2013-02-27]
 
