@@ -7,7 +7,7 @@
     <atom:link rel="alternate" href="http://pattex.github.com/octopod/episodes.m4a.rss" type="application/rss+xml" title="m4a Episode RSS-Feed"/>
 <atom:link rel="alternate" href="http://pattex.github.com/octopod/episodes.mp3.rss" type="application/rss+xml" title="mp3 Episode RSS-Feed"/>
     <description>My super duper cool podcast.</description>
-    <lastBuildDate>Fri, 08 Mar 2013 12:01:48 +0100</lastBuildDate>
+    <lastBuildDate>Fri, 08 Mar 2013 14:46:39 +0100</lastBuildDate>
     <language>en</language>
 
     <itunes:summary>My super duper cool podcast.</itunes:summary>
@@ -61,7 +61,7 @@ width: 'auto',
 summaryVisible: false,
 timecontrolsVisible: false,
 chaptersVisible: true,
-sharebuttonsVisible: 'true'});
+sharebuttonsVisible: true});
 </script>
 <h2 id='shownotes'>Shownotes</h2>
 
@@ -112,7 +112,7 @@ width: 'auto',
 summaryVisible: false,
 timecontrolsVisible: false,
 chaptersVisible: true,
-sharebuttonsVisible: 'true'});
+sharebuttonsVisible: true});
 </script>
 <h2 id='shownotes'>Shownotes</h2>
 
@@ -204,7 +204,7 @@ width: 'auto',
 summaryVisible: false,
 timecontrolsVisible: false,
 chaptersVisible: true,
-sharebuttonsVisible: 'true'});
+sharebuttonsVisible: true});
 </script>
 <h2 id='shownotes'>Shownotes</h2>
 
@@ -242,7 +242,7 @@ width: 'auto',
 summaryVisible: false,
 timecontrolsVisible: false,
 chaptersVisible: true,
-sharebuttonsVisible: 'true'});
+sharebuttonsVisible: true});
 </script>
 <h2 id='shownotes'>Shownotes</h2>
 
@@ -294,7 +294,7 @@ width: 'auto',
 summaryVisible: false,
 timecontrolsVisible: false,
 chaptersVisible: true,
-sharebuttonsVisible: 'true'});
+sharebuttonsVisible: true});
 </script>
 <h2 id='shownotes'>Shownotes</h2>
 
@@ -322,7 +322,7 @@ width: 'auto',
 summaryVisible: false,
 timecontrolsVisible: false,
 chaptersVisible: true,
-sharebuttonsVisible: 'true'});
+sharebuttonsVisible: true});
 </script>
 <h2 id='shownotes'>Shownotes</h2>
 

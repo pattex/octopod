@@ -4,7 +4,7 @@
  <title>Octopod</title>
  <link href="http://pattex.github.com/octopod/general_feed.xml" rel="self"/>
  <link href="http://pattex.github.com/octopod"/>
- <updated>2013-03-08T12:01:48+01:00</updated>
+ <updated>2013-03-08T14:46:39+01:00</updated>
  <id>http://pattex.github.com/octopod/</id>
  <author>
    <name>Uncle Octopod</name>
@@ -39,7 +39,7 @@ width: 'auto',
 summaryVisible: false,
 timecontrolsVisible: false,
 chaptersVisible: true,
-sharebuttonsVisible: 'true'});
+sharebuttonsVisible: true});
 &lt;/script&gt;
 &lt;h2 id='shownotes'&gt;Shownotes&lt;/h2&gt;
 
@@ -106,7 +106,7 @@ width: 'auto',
 summaryVisible: false,
 timecontrolsVisible: false,
 chaptersVisible: true,
-sharebuttonsVisible: 'true'});
+sharebuttonsVisible: true});
 &lt;/script&gt;
 &lt;h2 id='shownotes'&gt;Shownotes&lt;/h2&gt;
 
@@ -155,7 +155,7 @@ width: 'auto',
 summaryVisible: false,
 timecontrolsVisible: false,
 chaptersVisible: true,
-sharebuttonsVisible: 'true'});
+sharebuttonsVisible: true});
 &lt;/script&gt;
 &lt;h2 id='shownotes'&gt;Shownotes&lt;/h2&gt;
 
