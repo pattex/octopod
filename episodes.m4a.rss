@@ -7,7 +7,7 @@
     <atom:link rel="alternate" href="http://pattex.github.com/octopod/episodes.mp3.rss" type="application/rss+xml" title="mp3 Episode RSS-Feed"/>
 <atom:link rel="alternate" href="http://pattex.github.com/octopod/episodes.opus.rss" type="application/rss+xml" title="opus Episode RSS-Feed"/>
     <description>My super duper cool podcast.</description>
-    <lastBuildDate>Tue, 05 Mar 2013 10:54:51 +0100</lastBuildDate>
+    <lastBuildDate>Fri, 08 Mar 2013 11:48:48 +0100</lastBuildDate>
     <language>en</language>
 
     <itunes:summary>My super duper cool podcast.</itunes:summary>
@@ -31,6 +31,72 @@
     <itunes:category text="Technology">
     
     </itunes:category>
+    
+    <item>
+      <title>Why I <3 Octopod</title>
+      <link>http://pattex.github.com/octopod/2013/03/06/why-i-_3-octopod.html</link>
+      <comments>http://pattex.github.com/octopod/2013/03/06/why-i-_3-octopod.html#disqus_thread</comments>
+      <pubDate>Wed, 06 Mar 2013 00:00:00 +0100</pubDate>
+      
+      <guid isPermaLink="false">http://pattex.github.com/octopod/2013/03/06/why-i-_3-octopod.html</guid>
+      <description><![CDATA[<p>Insert eloquent and worth reading text here.</p>
+<audio id='2013_03_06_why-i-_3-octopod_player' preload='none'>
+<source src='http://pattex.github.com/octopod/episodes/name.m4a' type='audio/mp4a-latm' />
+<source src='http://pattex.github.com/octopod/episodes/name.mp3' type='audio/mpeg' />
+<source src='http://pattex.github.com/octopod/episodes/name.opus' type='audio/ogg; codecs=opus' />
+</audio><script>
+$('#2013_03_06_why-i-_3-octopod_player').podlovewebplayer({
+poster: 'http://pattex.github.com/octopod/img/logo-360x360.png',
+duration: '00:00:00',
+permalink: 'http://pattex.github.com/octopod/2013/03/06/why-i-_3-octopod.html',
+title: 'Why I \u003C3 Octopod',
+alwaysShowHours: true,
+startVolume: 0.8,
+width: 'auto',
+summaryVisible: false,
+timecontrolsVisible: false,
+chaptersVisible: true,
+sharebuttonsVisible: 'true'});
+</script>
+<h2 id='shownotes'>Shownotes</h2>
+
+<ul>
+<li>Note</li>
+</ul>]]></description>
+      <content:encoded><![CDATA[<p>Insert eloquent and worth reading text here.</p>
+<audio id='2013_03_06_why-i-_3-octopod_player' preload='none'>
+<source src='http://pattex.github.com/octopod/episodes/name.m4a' type='audio/mp4a-latm' />
+<source src='http://pattex.github.com/octopod/episodes/name.mp3' type='audio/mpeg' />
+<source src='http://pattex.github.com/octopod/episodes/name.opus' type='audio/ogg; codecs=opus' />
+</audio><script>
+$('#2013_03_06_why-i-_3-octopod_player').podlovewebplayer({
+poster: 'http://pattex.github.com/octopod/img/logo-360x360.png',
+duration: '00:00:00',
+permalink: 'http://pattex.github.com/octopod/2013/03/06/why-i-_3-octopod.html',
+title: 'Why I \u003C3 Octopod',
+alwaysShowHours: true,
+startVolume: 0.8,
+width: 'auto',
+summaryVisible: false,
+timecontrolsVisible: false,
+chaptersVisible: true,
+sharebuttonsVisible: 'true'});
+</script>
+<h2 id='shownotes'>Shownotes</h2>
+
+<ul>
+<li>Note</li>
+</ul>]]></content:encoded>
+      <enclosure url="http://pattex.github.com/octopod/episodes/name.m4a" length="Liquid error: No such file or directory - episodes/name.m4a" type="audio/mp4a-latm" />
+      <itunes:keywords></itunes:keywords>
+      <itunes:subtitle></itunes:subtitle>
+      <itunes:summary></itunes:summary>
+      <itunes:author>Uncle Octopod</itunes:author>
+      <itunes:explicit>no</itunes:explicit>
+      <itunes:duration></itunes:duration>
+      <atom:link rel="payment" href="https://flattr.com/submit/auto?url=http%3A%2F%2Fpattex.github.com%2Foctopod%2F2013%2F03%2F06%2Fwhy-i-_3-octopod.html&amp;user_id=pattex" type="text/html" />
+      
+    </item>
     
     <item>
       <title>DüssstRopisch</title>
@@ -60,7 +126,8 @@ startVolume: 0.8,
 width: 'auto',
 summaryVisible: false,
 timecontrolsVisible: false,
-chaptersVisible: true});
+chaptersVisible: true,
+sharebuttonsVisible: 'true'});
 </script>
 <h2 id='shownotes'>Shownotes</h2>
 
@@ -110,7 +177,8 @@ startVolume: 0.8,
 width: 'auto',
 summaryVisible: false,
 timecontrolsVisible: false,
-chaptersVisible: true});
+chaptersVisible: true,
+sharebuttonsVisible: 'true'});
 </script>
 <h2 id='shownotes'>Shownotes</h2>
 
@@ -174,11 +242,11 @@ chaptersVisible: true});
     
     <item>
       <title>Together On Our Own</title>
-      <link>http://pattex.github.com/octopod/2010/10/02/003-duessstropisch.html</link>
-      <comments>http://pattex.github.com/octopod/2010/10/02/003-duessstropisch.html#disqus_thread</comments>
+      <link>http://pattex.github.com/octopod/2010/10/02/003-together-on-our-own.html</link>
+      <comments>http://pattex.github.com/octopod/2010/10/02/003-together-on-our-own.html#disqus_thread</comments>
       <pubDate>Sat, 02 Oct 2010 00:00:00 +0200</pubDate>
       
-      <guid isPermaLink="false">http://pattex.github.com/octopod/2010/10/02/003-duessstropisch.html</guid>
+      <guid isPermaLink="false">http://pattex.github.com/octopod/2010/10/02/003-together-on-our-own.html</guid>
       <description><![CDATA[<p><a href='http://www.joshwoodward.com/'>Josh Woodward</a> seems to have a career death wish. A prolific indie acoustic-rock songwriter, he has released ten albums in the past eight years, but he has chosen to give away all of his music for free. In a world of $18 CDs and lawsuits against file sharing grandmothers, Josh offers 180 songs as free downloads from his websites, and sells CDs on a name-your-own-price basis.</p>
 
 <p>This gamble has paid off well; he&#8217;s used file sharing to build a viral, worldwide network of fans. After over three-and-a-half million MP3 downloads from his site, he&#8217;s living proof that the music world is changing. His brand of energetic and passionate delivery with vivid stories, clever wordplay and dark humor may not be for everyone, but the Internet has made it possible to find its audience.</p>
@@ -186,22 +254,23 @@ chaptersVisible: true});
 <p>To date, he&#8217;s released ten albums. His most recent, &#8220;The Wake&#8221;, was released in August 2012. The album represents a distillation of the best of what his music has to offer: upbeat folk rockers, delicate acoustic pieces, with a touch of humor in places. VideoSongs - music videos of the entire production process - were made for each of the 13 songs. A Kickstarter campaign to fund the album ended up being overfunded by 250%. As with all of Josh&#8217;s music, it&#8217;s a one-man operation: written, performed, recorded and released with a do-it-yourself, guerilla mentality.</p>
 
 <p>The Internet is the main source of exposure for Josh&#8217;s music. With almost 10,000 subscribers YouTube for the many VideoSongs and acoustic performances, and over ten thousand videos from other users feature his music, totalling over 150 million views. He was also a featured artist for Clear Channel New in Winter 2006, which included extensive online promotion and national radio airplay. He&#8217;s one of the most downloaded artists on Jamendo, a Creative Commons music site, where he won the award for Best Pop Artist in 2011. Since 2010, &#8220;Swansong&#8221; has been the featured song in Ubuntu Linux.</p>
-<audio id='2010_10_02_003-duessstropisch_player' preload='none'>
+<audio id='2010_10_02_003-together-on-our-own_player' preload='none'>
 <source src='http://pattex.github.com/octopod/episodes/josh_woodward_-_together_on_our_own.m4a' type='audio/mp4a-latm' />
 <source src='http://pattex.github.com/octopod/episodes/josh_woodward_-_together_on_our_own.mp3' type='audio/mpeg' />
 <source src='http://pattex.github.com/octopod/episodes/josh_woodward_-_together_on_our_own.opus' type='audio/ogg; codecs=opus' />
 </audio><script>
-$('#2010_10_02_003-duessstropisch_player').podlovewebplayer({
+$('#2010_10_02_003-together-on-our-own_player').podlovewebplayer({
 poster: 'http://pattex.github.com/octopod/img/josh_woodward_ashes.jpeg',
 duration: '00:04:56',
-permalink: 'http://pattex.github.com/octopod/2010/10/02/003-duessstropisch.html',
+permalink: 'http://pattex.github.com/octopod/2010/10/02/003-together-on-our-own.html',
 title: 'Together On Our Own',
 alwaysShowHours: true,
 startVolume: 0.8,
 width: 'auto',
 summaryVisible: false,
 timecontrolsVisible: false,
-chaptersVisible: true});
+chaptersVisible: true,
+sharebuttonsVisible: 'true'});
 </script>
 <h2 id='shownotes'>Shownotes</h2>
 
@@ -223,22 +292,23 @@ chaptersVisible: true});
 <p>To date, he&#8217;s released ten albums. His most recent, &#8220;The Wake&#8221;, was released in August 2012. The album represents a distillation of the best of what his music has to offer: upbeat folk rockers, delicate acoustic pieces, with a touch of humor in places. VideoSongs - music videos of the entire production process - were made for each of the 13 songs. A Kickstarter campaign to fund the album ended up being overfunded by 250%. As with all of Josh&#8217;s music, it&#8217;s a one-man operation: written, performed, recorded and released with a do-it-yourself, guerilla mentality.</p>
 
 <p>The Internet is the main source of exposure for Josh&#8217;s music. With almost 10,000 subscribers YouTube for the many VideoSongs and acoustic performances, and over ten thousand videos from other users feature his music, totalling over 150 million views. He was also a featured artist for Clear Channel New in Winter 2006, which included extensive online promotion and national radio airplay. He&#8217;s one of the most downloaded artists on Jamendo, a Creative Commons music site, where he won the award for Best Pop Artist in 2011. Since 2010, &#8220;Swansong&#8221; has been the featured song in Ubuntu Linux.</p>
-<audio id='2010_10_02_003-duessstropisch_player' preload='none'>
+<audio id='2010_10_02_003-together-on-our-own_player' preload='none'>
 <source src='http://pattex.github.com/octopod/episodes/josh_woodward_-_together_on_our_own.m4a' type='audio/mp4a-latm' />
 <source src='http://pattex.github.com/octopod/episodes/josh_woodward_-_together_on_our_own.mp3' type='audio/mpeg' />
 <source src='http://pattex.github.com/octopod/episodes/josh_woodward_-_together_on_our_own.opus' type='audio/ogg; codecs=opus' />
 </audio><script>
-$('#2010_10_02_003-duessstropisch_player').podlovewebplayer({
+$('#2010_10_02_003-together-on-our-own_player').podlovewebplayer({
 poster: 'http://pattex.github.com/octopod/img/josh_woodward_ashes.jpeg',
 duration: '00:04:56',
-permalink: 'http://pattex.github.com/octopod/2010/10/02/003-duessstropisch.html',
+permalink: 'http://pattex.github.com/octopod/2010/10/02/003-together-on-our-own.html',
 title: 'Together On Our Own',
 alwaysShowHours: true,
 startVolume: 0.8,
 width: 'auto',
 summaryVisible: false,
 timecontrolsVisible: false,
-chaptersVisible: true});
+chaptersVisible: true,
+sharebuttonsVisible: 'true'});
 </script>
 <h2 id='shownotes'>Shownotes</h2>
 
@@ -260,7 +330,7 @@ chaptersVisible: true});
       <itunes:author>Uncle Octopod</itunes:author>
       <itunes:explicit>no</itunes:explicit>
       <itunes:duration>296</itunes:duration>
-      <atom:link rel="payment" href="https://flattr.com/submit/auto?url=http%3A%2F%2Fpattex.github.com%2Foctopod%2F2010%2F10%2F02%2F003-duessstropisch.html&amp;user_id=pattex" type="text/html" />
+      <atom:link rel="payment" href="https://flattr.com/submit/auto?url=http%3A%2F%2Fpattex.github.com%2Foctopod%2F2010%2F10%2F02%2F003-together-on-our-own.html&amp;user_id=pattex" type="text/html" />
       
     </item>
     
@@ -289,7 +359,8 @@ startVolume: 0.8,
 width: 'auto',
 summaryVisible: false,
 timecontrolsVisible: false,
-chaptersVisible: true});
+chaptersVisible: true,
+sharebuttonsVisible: 'true'});
 </script>
 <h2 id='shownotes'>Shownotes</h2>
 
@@ -316,7 +387,8 @@ startVolume: 0.8,
 width: 'auto',
 summaryVisible: false,
 timecontrolsVisible: false,
-chaptersVisible: true});
+chaptersVisible: true,
+sharebuttonsVisible: 'true'});
 </script>
 <h2 id='shownotes'>Shownotes</h2>
 
