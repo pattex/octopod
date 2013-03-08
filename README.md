@@ -1,6 +1,6 @@
 # Octopod - podcast delivery for geeks
 
-Version 0.1.0
+Version 0.2.0
 
 <a href="http://flattr.com/thing/1154435/pattex-on-GitHub" target="_blank"><img src="http://api.flattr.com/button/flattr-badge-large.png" alt="Flattr this" title="Flattr this" border="0" /></a>
 Octopod is a set of [Jekyll](http://jekyllrb.com/) templates, helpers and extensions to deliver your podcasts the cool text file lover's way.
