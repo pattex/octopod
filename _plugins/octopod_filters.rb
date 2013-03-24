@@ -6,7 +6,7 @@ module Jekyll
   module OctopodFilters
     JSON_ENTITIES = { '&' => '\u0026', '>' => '\u003E', '<' => '\u003C', "'" => '\u0027' }
 
-    # Escapes CDATA sections in post content
+    # Escapes  some text for CDATA
     def cdata_escape(input)
       input.gsub(/<!\[CDATA\[/, '&lt;![CDATA[').gsub(/\]\]>/, ']]&gt;')
     end
@@ -19,6 +19,9 @@ module Jekyll
     end
 
     # Replaces relative urls with full urls
+    #
+    #   {{ "about.html" | expand_urls }}             => "/about.html"
+    #   {{ "about.html" | expand_urls:site.url }}  => "http://example.com/about.html"
     def expand_urls(input, url='')
       url ||= '/'
       input.gsub /(\s+(href|src)\s*=\s*["|']{1})(\/[^\"'>]*)/ do
@@ -43,7 +46,7 @@ module Jekyll
     end
 
     # Returns the value of a given hash. Is no key as second parameter given, it
-    # try first "mp3", than "m4a" and than it will return a more or less random
+    # trys first "mp3", than "m4a" and than it will return a more or less random
     # value.
     #
     #   {{ post.audio | audio:"m4a" }} => "my-episode.m4a"
@@ -72,6 +75,8 @@ module Jekyll
     # Returns the size of a given file in bytes. If there is just a filename
     # without a path, this method assumes that the file is an episode audio file
     # which lives in /episodes.
+    #
+    #   {{ "example.m4a" | file_size }} => 4242
     def file_size(path, rel = nil)
       return 0 if path.nil?
       path = path =~ /\// ? path : File.join('episodes', path)
@@ -113,8 +118,7 @@ module Jekyll
     # Returns an <audio>-tag for a given page with <source>-tags in it for every
     # audio file in the page's YAML front matter.
     #
-    # {{ page | audio_tag:site }}
-    #
+    #   {{ page | audio_tag:site }}
     def audio_tag(page, site)
       out = %Q{<audio id="#{slug(page)}_player" preload="none">\n}
       out + page['audio'].map { |format, filename|
@@ -124,7 +128,7 @@ module Jekyll
 
     # Returns the web player for the episode of a given page.
     #
-    # {{ page | web_player:site }}
+    #   {{ page | web_player:site }}
     def web_player(page, site)
       return if page['audio'].nil?
 
@@ -203,6 +207,9 @@ module Jekyll
     # Generates the config for disqus integration
     # If a page object is given, it generates the config variables only for this
     # page. Otherwise it generate only the global config variables.
+    #
+    #   {{ site | disqus_config }}
+    #   {{ site | disqus_config:page }}
     def disqus_config(site, page = nil)
       if page
         disqus_vars = {
@@ -225,11 +232,11 @@ module Jekyll
     # Returns the hex-encoded hash value of a given string. The optional
     # second argument defines the length of the returned string.
     #
-    #   {{ "Octopod" | sha1:8 }} => "8b20a59c"
-    def sha1(str, lenght = nil)
+    #   {{ "Octopod" | sha1 }} => "8b20a59c"
+    #   {{ "Octopod" | sha1:23 }} => "8b20a59c8e2dcb5e1f845ba"
+    def sha1(str, lenght = 8)
       sha1 = Digest::SHA1.hexdigest(str)
-
-      lenght.nil? ? sha1 : sha1[0, lenght.to_i]
+      sha1[0, lenght.to_i]
     end
 
     # Returns a, ready to use, navigation list of all pages that have
