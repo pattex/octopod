@@ -8,15 +8,16 @@
 * Flattr-Buttons in den RSS-Feed. - http://vemedio.com/support/instacast/faq/podcast-publisher-information-integration-with-flattr
 
 ## Sugar
+* ADN-Support
+* Podcaster-Info in Konfigurierbar (Links und Avatar und Zeuch)
 * Verifikation aller Benutzereingaben
 * Support für mehrere Podcasts
 * Support für mehrere Versionen des selben Formats
-* Shownotes als PDF(?)
 * Support für externe Audiodateien
 * Auphonic Support
 * Textvorlage für Subscribe Page
 * Template für automatisches generieren einer About Page
-* Wiki-Pges
+* Wiki-Pages
   * Octopod in the wild
   * Additional liquid filters
   * Usage

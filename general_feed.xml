@@ -2,10 +2,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 
  <title>Octopod</title>
- <link href="http://pattex.github.com/octopod/general_feed.xml" rel="self"/>
- <link href="http://pattex.github.com/octopod"/>
- <updated>2013-03-08T14:46:39+01:00</updated>
- <id>http://pattex.github.com/octopod/</id>
+ <link href="https://pattex.github.io/octopod/general_feed.xml" rel="self"/>
+ <link href="https://pattex.github.io/octopod"/>
+ <updated>2014-12-02T16:16:14+01:00</updated>
+ <id>https://pattex.github.io/octopod/</id>
  <author>
    <name>Uncle Octopod</name>
    <email>octopod@example.com</email>
@@ -14,24 +14,27 @@
  
  <entry>
    <title>DüssstRopisch</title>
-   <link href="http://pattex.github.com/octopod/2012/10/02/003-duessstropisch.html"/>
+   <link href="https://pattex.github.io/octopod/2012/10/02/003-duessstropisch.html"/>
    <updated>2012-10-02T00:00:00+02:00</updated>
-   <id>http://pattex.github.com/octopod/2012/10/02/003-duessstropisch</id>
-   <content type="html">&lt;p&gt;&lt;strong&gt;&lt;em&gt;An episode from the podcast &lt;a href='http://megamagis.ch/'&gt;megamagisch – phantastik und futurologie&lt;/a&gt;.&lt;/em&gt;&lt;/strong&gt;&lt;/p&gt;
+   <id>https://pattex.github.io/octopod/2012/10/02/003-duessstropisch</id>
+   <content type="html">
+&lt;p&gt;&lt;strong&gt;&lt;em&gt;An episode from the podcast &lt;a href=&quot;http://megamagis.ch/&quot;&gt;megamagisch – phantastik und futurologie&lt;/a&gt;.&lt;/em&gt;&lt;/strong&gt;&lt;/p&gt;
 
-&lt;p&gt;Einige würden die Geschichte erzählen, wir wären umgezogen, hätten einen Schnupfen gehabt und Arbeitswochen hinter uns gebracht - weswegen keine Zeit vorhanden war, um die dritte Folge megamagisch zu produzieren. Der Podcast für Phantastik und Futurologie möchte es etwas anders formulieren. Wir haben neue Schlösser erobert, Krankheiten besiegt und nicht weniger als mit unseren Handlungen das Universum gerettet. Darum war für die Geschichten zu den Heldentaten nicht viel Zeit. Aber jetzt endlich ist es wieder so weit. Wir reden über Arnes Willowfetischismus, Max&amp;#8217; Rajaniemimimimi weil er das neue Buch von Hannu noch nicht lesen konnte und unser Gast &lt;a href='http://www.petereberst.de/'&gt;Peter Eberst&lt;/a&gt; nimmt uns mit in die Welt der Mittelalterfilme und auf ein Set in Hollywood wo er Quentin Tarantino die Hand geschüttelt hat.&lt;/p&gt;
+&lt;p&gt;Einige würden die Geschichte erzählen, wir wären umgezogen, hätten einen Schnupfen gehabt und Arbeitswochen hinter uns gebracht - weswegen keine Zeit vorhanden war, um die dritte Folge megamagisch zu produzieren. Der Podcast für Phantastik und Futurologie möchte es etwas anders formulieren. Wir haben neue Schlösser erobert, Krankheiten besiegt und nicht weniger als mit unseren Handlungen das Universum gerettet. Darum war für die Geschichten zu den Heldentaten nicht viel Zeit. Aber jetzt endlich ist es wieder so weit. Wir reden über Arnes Willowfetischismus, Max’ Rajaniemimimimi weil er das neue Buch von Hannu noch nicht lesen konnte und unser Gast &lt;a href=&quot;http://www.petereberst.de/&quot;&gt;Peter Eberst&lt;/a&gt; nimmt uns mit in die Welt der Mittelalterfilme und auf ein Set in Hollywood wo er Quentin Tarantino die Hand geschüttelt hat.&lt;/p&gt;
 
-&lt;p&gt;Ach und MOMENT! Wir haben Geschenke für Euch. In dieser Folge megamagisch verlosen wir nämlich ein &lt;a href='http://www.reprodukt.com/creator_info.php?creators_id=99'&gt;Donjon&lt;/a&gt;-Comic-Paket, bestehend aus zehn Alben und eine DVD mit Peters letzten Film «&lt;a href='http://www.mdr.de/geschichte-mitteldeutschlands/filme/karl/karl112.html'&gt;Karl der Große - Der Aufstand der Thüringer&lt;/a&gt;». Es sind allerdings Geschenke mit geforderter Gegenleistung – also wenn man es genau nimmt, gar keine Geschenke, aber wer nimmts schon genau. Das megamagischste Werk gewinnt. Mehr im Podcast :-)&lt;/p&gt;
-&lt;audio id='2012_10_02_003-duessstropisch_player' preload='none'&gt;
-&lt;source src='http://pattex.github.com/octopod/episodes/mm003.m4a' type='audio/mp4a-latm' /&gt;
-&lt;source src='http://pattex.github.com/octopod/episodes/mm003.mp3' type='audio/mpeg' /&gt;
-&lt;source src='http://pattex.github.com/octopod/episodes/mm003.opus' type='audio/ogg; codecs=opus' /&gt;
-&lt;/audio&gt;&lt;script&gt;
+&lt;p&gt;Ach und MOMENT! Wir haben Geschenke für Euch. In dieser Folge megamagisch verlosen wir nämlich ein &lt;a href=&quot;http://www.reprodukt.com/creator_info.php?creators_id=99&quot;&gt;Donjon&lt;/a&gt;-Comic-Paket, bestehend aus zehn Alben und eine DVD mit Peters letzten Film «&lt;a href=&quot;http://www.mdr.de/geschichte-mitteldeutschlands/filme/karl/karl112.html&quot;&gt;Karl der Große - Der Aufstand der Thüringer&lt;/a&gt;». Es sind allerdings Geschenke mit geforderter Gegenleistung – also wenn man es genau nimmt, gar keine Geschenke, aber wer nimmts schon genau. Das megamagischste Werk gewinnt. Mehr im Podcast :-)&lt;/p&gt;
+
+&lt;p&gt;&lt;audio id='2012_10_02_003-duessstropisch_player' preload='none'&gt;
+&lt;source src='https://pattex.github.io/octopod/episodes/mm003.m4a' type='audio/mp4a-latm' /&gt;
+&lt;source src='https://pattex.github.io/octopod/episodes/mm003.mp3' type='audio/mpeg' /&gt;
+&lt;source src='https://pattex.github.io/octopod/episodes/mm003.opus' type='audio/ogg; codecs=opus' /&gt;
+&lt;/audio&gt;&lt;/p&gt;
+&lt;script&gt;
 $('#2012_10_02_003-duessstropisch_player').podlovewebplayer({
-poster: 'http://pattex.github.com/octopod/img/megamagisch360.jpg',
+poster: 'https://pattex.github.io/octopod/img/megamagisch360.jpg',
 chapters: '00:00:00.000 [hallo] Da sind wir wieder!'+&quot;\n&quot;+'00:01:29.000 [megamagisch] Was hat da denn so lange gedauert?'+&quot;\n&quot;+'00:02:39.000 [comic] Buffy the Vampire Slayer: Willow—Wonderland'+&quot;\n&quot;+'00:06:16.000 [comic] TeMeL - WOHLSTAND'+&quot;\n&quot;+'00:08:10.000 [buch] Hannu Rajaniemi - The Fractal Prince'+&quot;\n&quot;+'00:11:03.000 [schauspielerei] Peter Eberst'+&quot;\n&quot;+'00:27:01.000 [verschenkung] Donjon'+&quot;\n&quot;+'00:33:35.000 [megamagisch] Bisschen Druck'+&quot;\n&quot;+'00:34:57.000 [megamagisch] Danke und Tschüs',
 duration: '00:36:43',
-permalink: 'http://pattex.github.com/octopod/2012/10/02/003-duessstropisch.html',
+permalink: 'https://pattex.github.io/octopod/2012/10/02/003-duessstropisch.html',
 title: 'DüssstRopisch',
 alwaysShowHours: true,
 startVolume: 0.8,
@@ -41,64 +44,68 @@ timecontrolsVisible: false,
 chaptersVisible: true,
 sharebuttonsVisible: true});
 &lt;/script&gt;
-&lt;h2 id='shownotes'&gt;Shownotes&lt;/h2&gt;
+&lt;h2 id=&quot;shownotes&quot;&gt;Shownotes&lt;/h2&gt;
 
 &lt;ul&gt;
-&lt;li&gt;&lt;a href='http://www.imdb.com/title/tt0118276/'&gt;Buffy the Vampire Slayer&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://www.imdb.com/title/tt0118276/&quot;&gt;Buffy the Vampire Slayer&lt;/a&gt;&lt;/li&gt;
 
-&lt;li&gt;&lt;a href='http://www.darkhorse.com/Buffy'&gt;Buffyverse bei Dark Horse&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://www.darkhorse.com/Buffy&quot;&gt;Buffyverse bei Dark Horse&lt;/a&gt;&lt;/li&gt;
 
-&lt;li&gt;&lt;a href='http://www.darkhorse.com/Comics/18-174/Buffy-the-Vampire-Slayer-Willow-Wonderland-1-David-Mack-cover'&gt;Buffy the Vampire Slayer: Willow—Wonderland #1&lt;/a&gt; / &lt;a href='http://www.darkhorse.com/Comics/22-106/Buffy-the-Vampire-Slayer-Willow-Wonderland-1-Megan-Lara-variant-cover'&gt;Alternatives Cover&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://www.darkhorse.com/Comics/18-174/Buffy-the-Vampire-Slayer-Willow-Wonderland-1-David-Mack-cover&quot;&gt;Buffy the Vampire Slayer: Willow—Wonderland #1&lt;/a&gt; / &lt;a href=&quot;http://www.darkhorse.com/Comics/22-106/Buffy-the-Vampire-Slayer-Willow-Wonderland-1-Megan-Lara-variant-cover&quot;&gt;Alternatives Cover&lt;/a&gt;&lt;/li&gt;
 
-&lt;li&gt;&lt;a href='http://www.temel-art.de/wordpress/'&gt;TeMeL&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://www.temel-art.de/wordpress/&quot;&gt;TeMeL&lt;/a&gt;&lt;/li&gt;
 
-&lt;li&gt;&lt;a href='http://www.temel-art.de/wordpress/wohlstand/'&gt;TeMeL - WOHLSTAND&lt;/a&gt; &amp;#8211;&amp;gt; &lt;a href='http://www.epsilongrafix.de/index.php?page=shop.product_details&amp;amp;flypage=flypage.tpl&amp;amp;product_id=495&amp;amp;category_id=75&amp;amp;option=com_virtuemart&amp;amp;Itemid=135'&gt;VORBESTELLEN&lt;/a&gt; &amp;lt;&amp;#8211;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://www.temel-art.de/wordpress/wohlstand/&quot;&gt;TeMeL - WOHLSTAND&lt;/a&gt; –&amp;gt; &lt;a href=&quot;http://www.epsilongrafix.de/index.php?page=shop.product_details&amp;flypage=flypage.tpl&amp;product_id=495&amp;category_id=75&amp;option=com_virtuemart&amp;Itemid=135&quot;&gt;VORBESTELLEN&lt;/a&gt; &amp;lt;–&lt;/li&gt;
 
-&lt;li&gt;&lt;a href='http://www.amazon.de/Quantum-Thief-Hannu-Rajaniemi/dp/0765367661/'&gt;Hannu Rajaniemi - The Quantum Thief&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://www.amazon.de/Quantum-Thief-Hannu-Rajaniemi/dp/0765367661/&quot;&gt;Hannu Rajaniemi - The Quantum Thief&lt;/a&gt;&lt;/li&gt;
 
-&lt;li&gt;&lt;a href='http://www.amazon.de/The-Fractal-Prince-Hannu-Rajaniemi/dp/0575088923/'&gt;Hannu Rajaniemi - The Fractal Prince&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://www.amazon.de/The-Fractal-Prince-Hannu-Rajaniemi/dp/0575088923/&quot;&gt;Hannu Rajaniemi - The Fractal Prince&lt;/a&gt;&lt;/li&gt;
 
-&lt;li&gt;&lt;a href='http://www.petereberst.de/'&gt;Peter Eberst&lt;/a&gt; und &lt;a href='http://www.imdb.com/name/nm3270142/'&gt;in der IMDB&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://www.petereberst.de/&quot;&gt;Peter Eberst&lt;/a&gt; und &lt;a href=&quot;http://www.imdb.com/name/nm3270142/&quot;&gt;in der IMDB&lt;/a&gt;&lt;/li&gt;
 
-&lt;li&gt;&lt;a href='http://www.mdr.de/geschichte-mitteldeutschlands/filme/karl/karl112.html'&gt;Karl der Große - Der Aufstand der Thüringer&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://www.mdr.de/geschichte-mitteldeutschlands/filme/karl/karl112.html&quot;&gt;Karl der Große - Der Aufstand der Thüringer&lt;/a&gt;&lt;/li&gt;
 
-&lt;li&gt;&lt;a href='http://www.imdb.com/title/tt0361748/'&gt;Inglourious Basterds&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://www.imdb.com/title/tt0361748/&quot;&gt;Inglourious Basterds&lt;/a&gt;&lt;/li&gt;
 
-&lt;li&gt;&lt;a href='http://www.reprodukt.com/creator_info.php?creators_id=99'&gt;Donjon&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://www.reprodukt.com/creator_info.php?creators_id=99&quot;&gt;Donjon&lt;/a&gt;&lt;/li&gt;
 
-&lt;li&gt;&lt;a href='http://xkcd.com/1098/'&gt;xkcd - Star Ratings&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;</content>
+&lt;li&gt;&lt;a href=&quot;http://xkcd.com/1098/&quot;&gt;xkcd - Star Ratings&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</content>
    
-   <link rel="enclosure" type="audio/mp4a-latm" length="14176135" href="http://pattex.github.com/octopod/episodes/mm003.m4a"/>
+   <link rel="enclosure" type="audio/mp4a-latm" length="14176135" href="https://pattex.github.io/octopod/episodes/mm003.m4a"/>
    
-   <link rel="enclosure" type="audio/mpeg" length="21069708" href="http://pattex.github.com/octopod/episodes/mm003.mp3"/>
+   <link rel="enclosure" type="audio/mpeg" length="21069708" href="https://pattex.github.io/octopod/episodes/mm003.mp3"/>
    
-   <link rel="enclosure" type="audio/ogg; codecs=opus" length="13670383" href="http://pattex.github.com/octopod/episodes/mm003.opus"/>
+   <link rel="enclosure" type="audio/ogg; codecs=opus" length="13670383" href="https://pattex.github.io/octopod/episodes/mm003.opus"/>
    
-   <link rel="payment" href="https://flattr.com/submit/auto?url=http%3A%2F%2Fpattex.github.com%2Foctopod%2F2012%2F10%2F02%2F003-duessstropisch.html&amp;user_id=pattex" type="text/html" />
+   <link rel="payment" href="https://flattr.com/submit/auto?url=https%3A%2F%2Fpattex.github.io%2Foctopod%2F2012%2F10%2F02%2F003-duessstropisch.html&amp;user_id=pattex" type="text/html" />
  </entry>
  
  <entry>
    <title>Together On Our Own</title>
-   <link href="http://pattex.github.com/octopod/2010/10/02/003-together-on-our-own.html"/>
+   <link href="https://pattex.github.io/octopod/2010/10/02/003-together-on-our-own.html"/>
    <updated>2010-10-02T00:00:00+02:00</updated>
-   <id>http://pattex.github.com/octopod/2010/10/02/003-together-on-our-own</id>
-   <content type="html">&lt;p&gt;&lt;a href='http://www.joshwoodward.com/'&gt;Josh Woodward&lt;/a&gt; seems to have a career death wish. A prolific indie acoustic-rock songwriter, he has released ten albums in the past eight years, but he has chosen to give away all of his music for free. In a world of $18 CDs and lawsuits against file sharing grandmothers, Josh offers 180 songs as free downloads from his websites, and sells CDs on a name-your-own-price basis.&lt;/p&gt;
+   <id>https://pattex.github.io/octopod/2010/10/02/003-together-on-our-own</id>
+   <content type="html">
+&lt;p&gt;&lt;a href=&quot;http://www.joshwoodward.com/&quot;&gt;Josh Woodward&lt;/a&gt; seems to have a career death wish. A prolific indie acoustic-rock songwriter, he has released ten albums in the past eight years, but he has chosen to give away all of his music for free. In a world of $18 CDs and lawsuits against file sharing grandmothers, Josh offers 180 songs as free downloads from his websites, and sells CDs on a name-your-own-price basis.&lt;/p&gt;
 
-&lt;p&gt;This gamble has paid off well; he&amp;#8217;s used file sharing to build a viral, worldwide network of fans. After over three-and-a-half million MP3 downloads from his site, he&amp;#8217;s living proof that the music world is changing. His brand of energetic and passionate delivery with vivid stories, clever wordplay and dark humor may not be for everyone, but the Internet has made it possible to find its audience.&lt;/p&gt;
+&lt;p&gt;This gamble has paid off well; he’s used file sharing to build a viral, worldwide network of fans. After over three-and-a-half million MP3 downloads from his site, he’s living proof that the music world is changing. His brand of energetic and passionate delivery with vivid stories, clever wordplay and dark humor may not be for everyone, but the Internet has made it possible to find its audience.&lt;/p&gt;
 
-&lt;p&gt;To date, he&amp;#8217;s released ten albums. His most recent, &amp;#8220;The Wake&amp;#8221;, was released in August 2012. The album represents a distillation of the best of what his music has to offer: upbeat folk rockers, delicate acoustic pieces, with a touch of humor in places. VideoSongs - music videos of the entire production process - were made for each of the 13 songs. A Kickstarter campaign to fund the album ended up being overfunded by 250%. As with all of Josh&amp;#8217;s music, it&amp;#8217;s a one-man operation: written, performed, recorded and released with a do-it-yourself, guerilla mentality.&lt;/p&gt;
+&lt;p&gt;To date, he’s released ten albums. His most recent, “The Wake”, was released in August 2012. The album represents a distillation of the best of what his music has to offer: upbeat folk rockers, delicate acoustic pieces, with a touch of humor in places. VideoSongs - music videos of the entire production process - were made for each of the 13 songs. A Kickstarter campaign to fund the album ended up being overfunded by 250%. As with all of Josh’s music, it’s a one-man operation: written, performed, recorded and released with a do-it-yourself, guerilla mentality.&lt;/p&gt;
 
-&lt;p&gt;The Internet is the main source of exposure for Josh&amp;#8217;s music. With almost 10,000 subscribers YouTube for the many VideoSongs and acoustic performances, and over ten thousand videos from other users feature his music, totalling over 150 million views. He was also a featured artist for Clear Channel New in Winter 2006, which included extensive online promotion and national radio airplay. He&amp;#8217;s one of the most downloaded artists on Jamendo, a Creative Commons music site, where he won the award for Best Pop Artist in 2011. Since 2010, &amp;#8220;Swansong&amp;#8221; has been the featured song in Ubuntu Linux.&lt;/p&gt;
-&lt;audio id='2010_10_02_003-together-on-our-own_player' preload='none'&gt;
-&lt;source src='http://pattex.github.com/octopod/episodes/josh_woodward_-_together_on_our_own.m4a' type='audio/mp4a-latm' /&gt;
-&lt;source src='http://pattex.github.com/octopod/episodes/josh_woodward_-_together_on_our_own.mp3' type='audio/mpeg' /&gt;
-&lt;source src='http://pattex.github.com/octopod/episodes/josh_woodward_-_together_on_our_own.opus' type='audio/ogg; codecs=opus' /&gt;
-&lt;/audio&gt;&lt;script&gt;
+&lt;p&gt;The Internet is the main source of exposure for Josh’s music. With almost 10,000 subscribers YouTube for the many VideoSongs and acoustic performances, and over ten thousand videos from other users feature his music, totalling over 150 million views. He was also a featured artist for Clear Channel New in Winter 2006, which included extensive online promotion and national radio airplay. He’s one of the most downloaded artists on Jamendo, a Creative Commons music site, where he won the award for Best Pop Artist in 2011. Since 2010, “Swansong” has been the featured song in Ubuntu Linux.&lt;/p&gt;
+
+&lt;p&gt;&lt;audio id='2010_10_02_003-together-on-our-own_player' preload='none'&gt;
+&lt;source src='https://pattex.github.io/octopod/episodes/josh_woodward_-_together_on_our_own.m4a' type='audio/mp4a-latm' /&gt;
+&lt;source src='https://pattex.github.io/octopod/episodes/josh_woodward_-_together_on_our_own.mp3' type='audio/mpeg' /&gt;
+&lt;source src='https://pattex.github.io/octopod/episodes/josh_woodward_-_together_on_our_own.opus' type='audio/ogg; codecs=opus' /&gt;
+&lt;/audio&gt;&lt;/p&gt;
+&lt;script&gt;
 $('#2010_10_02_003-together-on-our-own_player').podlovewebplayer({
-poster: 'http://pattex.github.com/octopod/img/josh_woodward_ashes.jpeg',
+poster: 'https://pattex.github.io/octopod/img/josh_woodward_ashes.jpeg',
 duration: '00:04:56',
-permalink: 'http://pattex.github.com/octopod/2010/10/02/003-together-on-our-own.html',
+permalink: 'https://pattex.github.io/octopod/2010/10/02/003-together-on-our-own.html',
 title: 'Together On Our Own',
 alwaysShowHours: true,
 startVolume: 0.8,
@@ -108,46 +115,50 @@ timecontrolsVisible: false,
 chaptersVisible: true,
 sharebuttonsVisible: true});
 &lt;/script&gt;
-&lt;h2 id='shownotes'&gt;Shownotes&lt;/h2&gt;
+&lt;h2 id=&quot;shownotes&quot;&gt;Shownotes&lt;/h2&gt;
 
 &lt;ul&gt;
-&lt;li&gt;&lt;a href='http://www.joshwoodward.com/'&gt;Josh&amp;#8217;s Website&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://www.joshwoodward.com/&quot;&gt;Josh’s Website&lt;/a&gt;&lt;/li&gt;
 
-&lt;li&gt;&lt;a href='http://www.joshwoodward.com/facebook'&gt;Josh on facebook&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://www.joshwoodward.com/facebook&quot;&gt;Josh on facebook&lt;/a&gt;&lt;/li&gt;
 
-&lt;li&gt;&lt;a href='http://www.joshwoodward.com/twitter'&gt;Josh on Twitter&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://www.joshwoodward.com/twitter&quot;&gt;Josh on Twitter&lt;/a&gt;&lt;/li&gt;
 
-&lt;li&gt;&lt;a href='https://plus.google.com/101571669884946264381/posts'&gt;Josh on Google+&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://plus.google.com/101571669884946264381/posts&quot;&gt;Josh on Google+&lt;/a&gt;&lt;/li&gt;
 
-&lt;li&gt;&lt;a href='http://www.joshwoodward.com/youtube'&gt;Josh on Youtube&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;</content>
+&lt;li&gt;&lt;a href=&quot;http://www.joshwoodward.com/youtube&quot;&gt;Josh on Youtube&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</content>
    
-   <link rel="enclosure" type="audio/mp4a-latm" length="3098448" href="http://pattex.github.com/octopod/episodes/josh_woodward_-_together_on_our_own.m4a"/>
+   <link rel="enclosure" type="audio/mp4a-latm" length="3098448" href="https://pattex.github.io/octopod/episodes/josh_woodward_-_together_on_our_own.m4a"/>
    
-   <link rel="enclosure" type="audio/mpeg" length="5104152" href="http://pattex.github.com/octopod/episodes/josh_woodward_-_together_on_our_own.mp3"/>
+   <link rel="enclosure" type="audio/mpeg" length="5104152" href="https://pattex.github.io/octopod/episodes/josh_woodward_-_together_on_our_own.mp3"/>
    
-   <link rel="enclosure" type="audio/ogg; codecs=opus" length="2069705" href="http://pattex.github.com/octopod/episodes/josh_woodward_-_together_on_our_own.opus"/>
+   <link rel="enclosure" type="audio/ogg; codecs=opus" length="2069705" href="https://pattex.github.io/octopod/episodes/josh_woodward_-_together_on_our_own.opus"/>
    
-   <link rel="payment" href="https://flattr.com/submit/auto?url=http%3A%2F%2Fpattex.github.com%2Foctopod%2F2010%2F10%2F02%2F003-together-on-our-own.html&amp;user_id=pattex" type="text/html" />
+   <link rel="payment" href="https://flattr.com/submit/auto?url=https%3A%2F%2Fpattex.github.io%2Foctopod%2F2010%2F10%2F02%2F003-together-on-our-own.html&amp;user_id=pattex" type="text/html" />
  </entry>
  
  <entry>
    <title>Edgar The Raven</title>
-   <link href="http://pattex.github.com/octopod/1845/01/29/edgar-allan-poe-the-raven.html"/>
-   <updated>1845-01-29T00:00:00+01:00</updated>
-   <id>http://pattex.github.com/octopod/1845/01/29/edgar-allan-poe-the-raven</id>
-   <content type="html">&lt;p&gt;&lt;strong&gt;&amp;#8220;The Raven&amp;#8221;&lt;/strong&gt; is a narrative poem by American writer Edgar Allan Poe. First published in January 1845, the poem is often noted for its musicality, stylized language, and supernatural atmosphere. It tells of a talking raven&amp;#8217;s mysterious visit to a distraught lover, tracing the man&amp;#8217;s slow fall into madness. The lover, often identified as being a student, is lamenting the loss of his love, Lenore. Sitting on a bust of Pallas, the raven seems to further instigate his distress with its constant repetition of the word &amp;#8220;Nevermore&amp;#8221;. The poem makes use of a number of folk and classical references.&lt;/p&gt;
+   <link href="https://pattex.github.io/octopod/1845/01/29/edgar-allan-poe-the-raven.html"/>
+   <updated>1845-01-29T00:00:00+00:53</updated>
+   <id>https://pattex.github.io/octopod/1845/01/29/edgar-allan-poe-the-raven</id>
+   <content type="html">
+&lt;p&gt;&lt;strong&gt;“The Raven”&lt;/strong&gt; is a narrative poem by American writer Edgar Allan Poe. First published in January 1845, the poem is often noted for its musicality, stylized language, and supernatural atmosphere. It tells of a talking raven’s mysterious visit to a distraught lover, tracing the man’s slow fall into madness. The lover, often identified as being a student, is lamenting the loss of his love, Lenore. Sitting on a bust of Pallas, the raven seems to further instigate his distress with its constant repetition of the word “Nevermore”. The poem makes use of a number of folk and classical references.&lt;/p&gt;
 
-&lt;p&gt;Poe claimed to have written the poem very logically and methodically, intending to create a poem that would appeal to both critical and popular tastes, as he explained in his 1846 follow-up essay &amp;#8220;The Philosophy of Composition&amp;#8221;. The poem was inspired in part by a talking raven in the novel Barnaby Rudge: A Tale of the Riots of &amp;#8216;Eighty by Charles Dickens. Poe borrows the complex rhythm and meter of Elizabeth Barrett&amp;#8217;s poem &amp;#8220;Lady Geraldine&amp;#8217;s Courtship&amp;#8221;, and makes use of internal rhyme as well as alliteration throughout.&lt;br /&gt;&amp;#8220;The Raven&amp;#8221; was first attributed to Poe in print in the New York Evening Mirror on January 29, 1845. Its publication made Poe widely popular in his lifetime, although it did not bring him much financial success. Soon reprinted, parodied, and illustrated, critical opinion is divided as to the poem&amp;#8217;s status, but it nevertheless remains one of the most famous poems ever written.&lt;/p&gt;
-&lt;audio id='1845_01_29_edgar-allan-poe-the-raven_player' preload='none'&gt;
-&lt;source src='http://pattex.github.com/octopod/episodes/edgar-allan-poe-the-raven.m4a' type='audio/mp4a-latm' /&gt;
-&lt;source src='http://pattex.github.com/octopod/episodes/edgar-allan-poe-the-raven.mp3' type='audio/mpeg' /&gt;
-&lt;source src='http://pattex.github.com/octopod/episodes/edgar-allan-poe-the-raven.opus' type='audio/ogg; codecs=opus' /&gt;
-&lt;/audio&gt;&lt;script&gt;
+&lt;p&gt;Poe claimed to have written the poem very logically and methodically, intending to create a poem that would appeal to both critical and popular tastes, as he explained in his 1846 follow-up essay “The Philosophy of Composition”. The poem was inspired in part by a talking raven in the novel Barnaby Rudge: A Tale of the Riots of ‘Eighty by Charles Dickens. Poe borrows the complex rhythm and meter of Elizabeth Barrett’s poem “Lady Geraldine’s Courtship”, and makes use of internal rhyme as well as alliteration throughout.&lt;br /&gt;“The Raven” was first attributed to Poe in print in the New York Evening Mirror on January 29, 1845. Its publication made Poe widely popular in his lifetime, although it did not bring him much financial success. Soon reprinted, parodied, and illustrated, critical opinion is divided as to the poem’s status, but it nevertheless remains one of the most famous poems ever written.&lt;/p&gt;
+
+&lt;p&gt;&lt;audio id='1845_01_29_edgar-allan-poe-the-raven_player' preload='none'&gt;
+&lt;source src='https://pattex.github.io/octopod/episodes/edgar-allan-poe-the-raven.m4a' type='audio/mp4a-latm' /&gt;
+&lt;source src='https://pattex.github.io/octopod/episodes/edgar-allan-poe-the-raven.mp3' type='audio/mpeg' /&gt;
+&lt;source src='https://pattex.github.io/octopod/episodes/edgar-allan-poe-the-raven.opus' type='audio/ogg; codecs=opus' /&gt;
+&lt;/audio&gt;&lt;/p&gt;
+&lt;script&gt;
 $('#1845_01_29_edgar-allan-poe-the-raven_player').podlovewebplayer({
-poster: 'http://pattex.github.com/octopod/img/logo-360x360.png',
+poster: 'https://pattex.github.io/octopod/img/logo-360x360.png',
 duration: '00:07:56',
-permalink: 'http://pattex.github.com/octopod/1845/01/29/edgar-allan-poe-the-raven.html',
+permalink: 'https://pattex.github.io/octopod/1845/01/29/edgar-allan-poe-the-raven.html',
 title: 'Edgar The Raven',
 alwaysShowHours: true,
 startVolume: 0.8,
@@ -157,21 +168,22 @@ timecontrolsVisible: false,
 chaptersVisible: true,
 sharebuttonsVisible: true});
 &lt;/script&gt;
-&lt;h2 id='shownotes'&gt;Shownotes&lt;/h2&gt;
+&lt;h2 id=&quot;shownotes&quot;&gt;Shownotes&lt;/h2&gt;
 
 &lt;ul&gt;
-&lt;li&gt;&lt;a href='https://en.wikipedia.org/wiki/The_Raven'&gt;The Raven in the Wikipedia&lt;/a&gt; where I took the description from&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://en.wikipedia.org/wiki/The_Raven&quot;&gt;The Raven in the Wikipedia&lt;/a&gt; where I took the description from&lt;/li&gt;
 
-&lt;li&gt;&lt;a href='http://librivox.org/the-raven-multilingual-by-edgar-allan-poe/'&gt;The Raven at LibriVox&lt;/a&gt; from where I got the sound file&lt;/li&gt;
-&lt;/ul&gt;</content>
+&lt;li&gt;&lt;a href=&quot;http://librivox.org/the-raven-multilingual-by-edgar-allan-poe/&quot;&gt;The Raven at LibriVox&lt;/a&gt; from where I got the sound file&lt;/li&gt;
+&lt;/ul&gt;
+</content>
    
-   <link rel="enclosure" type="audio/mp4a-latm" length="4247830" href="http://pattex.github.com/octopod/episodes/edgar-allan-poe-the-raven.m4a"/>
+   <link rel="enclosure" type="audio/mp4a-latm" length="4247830" href="https://pattex.github.io/octopod/episodes/edgar-allan-poe-the-raven.m4a"/>
    
-   <link rel="enclosure" type="audio/mpeg" length="6801416" href="http://pattex.github.com/octopod/episodes/edgar-allan-poe-the-raven.mp3"/>
+   <link rel="enclosure" type="audio/mpeg" length="6801416" href="https://pattex.github.io/octopod/episodes/edgar-allan-poe-the-raven.mp3"/>
    
-   <link rel="enclosure" type="audio/ogg; codecs=opus" length="2968176" href="http://pattex.github.com/octopod/episodes/edgar-allan-poe-the-raven.opus"/>
+   <link rel="enclosure" type="audio/ogg; codecs=opus" length="2968176" href="https://pattex.github.io/octopod/episodes/edgar-allan-poe-the-raven.opus"/>
    
-   <link rel="payment" href="https://flattr.com/submit/auto?url=http%3A%2F%2Fpattex.github.com%2Foctopod%2F1845%2F01%2F29%2Fedgar-allan-poe-the-raven.html&amp;user_id=pattex" type="text/html" />
+   <link rel="payment" href="https://flattr.com/submit/auto?url=https%3A%2F%2Fpattex.github.io%2Foctopod%2F1845%2F01%2F29%2Fedgar-allan-poe-the-raven.html&amp;user_id=pattex" type="text/html" />
  </entry>
  
 
