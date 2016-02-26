@@ -5,7 +5,7 @@
     {{ site | disqus_config:post }}
     var s = document.createElement('script'); s.async = true;
     s.type = 'text/javascript';
-    s.src = 'http://{{ site.disqus_shortname }}.disqus.com/count.js';
+    s.src = 'https://{{ site.disqus_shortname }}.disqus.com/count.js';
     (document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
   }());
 </script>
